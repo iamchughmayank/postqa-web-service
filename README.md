@@ -19,6 +19,13 @@ cd postqa-web-service
 pytest postman/testScripts/TestCRUD.py -s -v --uname usernameToLoginWith --passwd passwordToLoginWith
 ```
 
+### Required Arguments
+```
+--uname sernameToLoginWith : Username with which script needs to try logging in
+--passwd passwordToLoginWith: Password for the above username
+
+```
+
 ### Optional Arguments
 ```
 --alluredir=reports/ : If Allure is installed
