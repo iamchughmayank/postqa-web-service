@@ -1,13 +1,10 @@
 dist/
-*cache*
 *html*
 *egg*
 *pyc*
 *.log
-*.apk
 .idea/*
 venv*
 .vscode
 logs/
-reports
 .vscode
