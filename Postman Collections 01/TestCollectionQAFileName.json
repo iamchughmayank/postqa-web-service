@@ -14,7 +14,23 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": "postman-echo.com/get"
+        "url": {
+          "raw": "postman-echo.com/get?somekey=somevalue",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "somekey",
+              "value": "somevalue",
+              "type": "text"
+            }
+          ]
+        }
       },
       "response": []
     }
