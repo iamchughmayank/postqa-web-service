@@ -15,7 +15,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "postman-echo.com/get?somekey=somevalue&anotherkey=anothervalue",
+          "raw": "postman-echo.com/get?somekey=somevalue&anotherkey=anothervalue&onemorekey=onemorevalue&lastvalue=lastvalue",
           "host": [
             "postman-echo",
             "com"
@@ -31,6 +31,15 @@
             {
               "key": "anotherkey",
               "value": "anothervalue"
+            },
+            {
+              "key": "onemorekey",
+              "value": "onemorevalue"
+            },
+            {
+              "key": "lastvalue",
+              "value": "lastvalue",
+              "type": "text"
             }
           ]
         }
