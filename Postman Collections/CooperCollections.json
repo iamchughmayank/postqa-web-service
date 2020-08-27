@@ -61,19 +61,6 @@
         "url": ""
       },
       "response": []
-    },
-    {
-      "name": "servicecheck",
-      "_postman_id": "e06c8cfb-7af1-47b6-97c4-6ddf41e4f91f",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": ""
-      },
-      "response": []
     }
   ]
 }
