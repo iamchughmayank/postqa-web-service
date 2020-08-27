@@ -1,0 +1,66 @@
+{
+  "info": {
+    "_postman_id": "32a7add5-b688-42b9-a79c-8fa2f869c56b",
+    "name": "My Collection",
+    "description": "This is a test collection!",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Request 1",
+      "_postman_id": "2a28c596-0ba2-4f25-ac0d-40c23379f830",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://www.postman-echo.com/get?param1=value1",
+          "protocol": "https",
+          "host": [
+            "www",
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "param1",
+              "value": "value1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "one more",
+      "_postman_id": "1807bea5-c728-40ed-a574-0d59e10d8572",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    },
+    {
+      "name": "test",
+      "_postman_id": "a5d390ff-0c9f-4f95-8518-c68b8c502058",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    }
+  ]
+}
