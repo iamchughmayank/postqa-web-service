@@ -551,6 +551,157 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://www.google-analytics.com/j/collect?v=1&_v=j85&a=807878853&t=event&ni=1&_s=1&dl=https%3A%2F%2Flearning.postman.com%2Fdocs%2Fsending-requests%2Fcapturing-request-data%2Finterceptor%2F&ul=en-gb&de=UTF-8&dt=Using%20Postman%20Interceptor%20%7C%20Postma",
+      "_postman_id": "dab86d4d-33bb-45e3-bd39-57a5908ca248",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://www.google-analytics.com/j/collect?v=1&_v=j85&a=807878853&t=event&ni=1&_s=1&dl=https%3A%2F%2Flearning.postman.com%2Fdocs%2Fsending-requests%2Fcapturing-request-data%2Finterceptor%2F&ul=en-gb&de=UTF-8&dt=Using%20Postman%20Interceptor%20%7C%20Postman%20Learning%20Center&sd=24-bit&sr=1920x1080&vp=1920x969&je=0&ec=User%20Engagement&ea=Scroll%20-%2050-percent&el=Scroll-50-https%3A%2F%2Flearning.postman.com%2Fdocs%2Fsending-requests%2Fcapturing-request-data%2Finterceptor%2F&_u=SCEACEABBAAAAC~&jid=101829048&gjid=941224945&cid=616124604.1597646637&tid=UA-43979731-4&_gid=1121327637.1598848652&_r=1&gtm=2wg8q1M42M5N&z=1625682367",
+          "protocol": "https",
+          "host": [
+            "www",
+            "google-analytics",
+            "com"
+          ],
+          "path": [
+            "j",
+            "collect"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "1"
+            },
+            {
+              "key": "_v",
+              "value": "j85"
+            },
+            {
+              "key": "a",
+              "value": "807878853"
+            },
+            {
+              "key": "t",
+              "value": "event"
+            },
+            {
+              "key": "ni",
+              "value": "1"
+            },
+            {
+              "key": "_s",
+              "value": "1"
+            },
+            {
+              "key": "dl",
+              "value": "https%3A%2F%2Flearning.postman.com%2Fdocs%2Fsending-requests%2Fcapturing-request-data%2Finterceptor%2F"
+            },
+            {
+              "key": "ul",
+              "value": "en-gb"
+            },
+            {
+              "key": "de",
+              "value": "UTF-8"
+            },
+            {
+              "key": "dt",
+              "value": "Using%20Postman%20Interceptor%20%7C%20Postman%20Learning%20Center"
+            },
+            {
+              "key": "sd",
+              "value": "24-bit"
+            },
+            {
+              "key": "sr",
+              "value": "1920x1080"
+            },
+            {
+              "key": "vp",
+              "value": "1920x969"
+            },
+            {
+              "key": "je",
+              "value": "0"
+            },
+            {
+              "key": "ec",
+              "value": "User%20Engagement"
+            },
+            {
+              "key": "ea",
+              "value": "Scroll%20-%2050-percent"
+            },
+            {
+              "key": "el",
+              "value": "Scroll-50-https%3A%2F%2Flearning.postman.com%2Fdocs%2Fsending-requests%2Fcapturing-request-data%2Finterceptor%2F"
+            },
+            {
+              "key": "_u",
+              "value": "SCEACEABBAAAAC~"
+            },
+            {
+              "key": "jid",
+              "value": "101829048"
+            },
+            {
+              "key": "gjid",
+              "value": "941224945"
+            },
+            {
+              "key": "cid",
+              "value": "616124604.1597646637"
+            },
+            {
+              "key": "tid",
+              "value": "UA-43979731-4"
+            },
+            {
+              "key": "_gid",
+              "value": "1121327637.1598848652"
+            },
+            {
+              "key": "_r",
+              "value": "1"
+            },
+            {
+              "key": "gtm",
+              "value": "2wg8q1M42M5N"
+            },
+            {
+              "key": "z",
+              "value": "1625682367"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
