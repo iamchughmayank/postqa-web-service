@@ -5081,6 +5081,72 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
+      "_postman_id": "9c550149-0211-49bd-8000-0e9c0b33fb5f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH fbeed541ff6d02097fa0d9c8398047abdf050b36"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "0"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\"]],407,[[\"1599210977089\",null,[],null,null,null,null,\"[283,1599210977089000,\\\"!uLulu5pCmQgXBiJr9LZYPHecAFUihCQCAAADrlIAAAAUCgF4b_4Ugp3uKYK9njEVNQYdbtPEhHzZA-VUeI4Dl4Xi2wsKPybcXSaPGETNXUIbxhTY5e-qBkIg61T78E2c3wAEE9M_5X7DDtovQKeFbErdjhZMj58ijaEJu_OyAa_6R0shaZrFx23diiVcymrKT5t2B1bbaN4drBPTDQx3_fT0FDzLqC-3LIriB1SSf_fYI5fY-uFSzTjPYjh4Nj44r1YUiUoOI5hE-z9rh3fZH2D0JL9qikFf0LmZvW8NSy5mDisneUfdf59YzzcBNdC6rEjl6d6ijRkjhfyWM-fSCIC0-7HMWR01AAG_eyasWIgmCOCp-_RThCbC2tgoJtA7ReyM2qKhHaVdyQKpk4kQaELxqmXsKGpffqFuM32LMpIeDqiYzmBwTv3AAo3G9m7VJ_GVkujB1xUit_viA79u0cSzaQslr-kgUoe-J_rwVU6CkKcChHGuN2AFSQTrIUVnXvd48pY6-_QLltP1mi9KorNPKifs4cDWr4K1xZkBr7aYj4z2AinUJ0VMuzoCgCxAMx4LNseh9CAlCOTS7cOICeyWKj8PP6hg71MYjzawHqjSOcNcnM7dXE_LCd3OGO_eNj2ga2N250O3p3pqNij_NySP9H6npGUZlOHhSUq4qNXftZNRmXaAHcPqYHDE8I3qhqCV9DnVhsttIuGyStLcWSHXMZmE_OIjwmn93CLDJI5gs-Ylzi7oLc9l7uhZ9zLGhIp4jXY6K4lx_G6C0o8BqJ66vaE4fERYtMhHvsTyexJF85To6jOeAP2fOwL1vsPiwasz9xfPPTLfTHopxHPdU9UGbC0V1zJnYvkcHTM6LCkoTX7vHeJNjwsR3VYvERgSM-oAfkpcCipSu9fxGgGSIDCtdvf8HXZLW6oK3IAlLa5QgpCG_x8n9Fk8iY6vRxTxih2F8nb_3OAeOL4be78KAH9Ia2WXwpNNxXb0vKnzyEXRQI8jG-J5jAkSiJjwB3m76c9RFbmY3r-eQN5HbMFNr1UQxCaw5YNknDCNWmBDcZt_mDdy2-ngwuXb6bg05TxtLm7juySRG6lPywfU_MmfBPS6rf8rcnuwHUD1kI0N\\\",1997341517,true]\",null,null,null,null,null,null,null,null,null,null,null,[],164,null,null,null,null,null,[]]],\"1599210977089\",[],null,null,null,null,null,null,null,null,0]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            },
+            {
+              "key": "authuser",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
