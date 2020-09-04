@@ -39185,65 +39185,6 @@
         "url": "https://postmanlabs.atlassian.net/gateway/api/pubsub/subscribe"
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
-      "_postman_id": "942874bd-b9dc-45e5-873c-47fc3905cc21",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json,text/javascript,*/*"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingComplete\",\"event\":{\"appKey\":\"com.gtmhub.jira.addon\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:03.601Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
-          "options": {
-            "raw": {}
-          }
-        },
-        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
-      },
-      "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/browse/CFDTN-133",
-      "_postman_id": "782b37b2-8857-44f3-ae1c-00e0a1e12b40",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Upgrade-Insecure-Requests",
-            "value": "1"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Accept",
-            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-          }
-        ],
-        "url": "https://postmanlabs.atlassian.net/browse/CFDTN-133"
-      },
-      "response": []
     }
   ],
   "event": [
