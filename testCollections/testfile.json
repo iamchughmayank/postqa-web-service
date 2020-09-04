@@ -3966,6 +3966,64 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/notification-log/api/2/notifications/count/unseen?cloudId=0d13b137-2934-4b74-a921-694ab83c54c5&source=atlaskitNotificationLogClient&currentCount=10",
+      "_postman_id": "1352f56d-0604-40d9-9ad5-5a8e0588e73f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "x-app-version",
+            "value": "5.0.0-atlaskitNotificationLogClient"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/notification-log/api/2/notifications/count/unseen?cloudId=0d13b137-2934-4b74-a921-694ab83c54c5&source=atlaskitNotificationLogClient&currentCount=10",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "notification-log",
+            "api",
+            "2",
+            "notifications",
+            "count",
+            "unseen"
+          ],
+          "query": [
+            {
+              "key": "cloudId",
+              "value": "0d13b137-2934-4b74-a921-694ab83c54c5"
+            },
+            {
+              "key": "source",
+              "value": "atlaskitNotificationLogClient"
+            },
+            {
+              "key": "currentCount",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
