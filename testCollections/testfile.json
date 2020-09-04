@@ -3048,6 +3048,112 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://us02web.zoom.us/wjmf",
+      "_postman_id": "2a7670a8-d7da-4fbe-83d4-9e434aef5e96",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "ff",
+              "value": "false"
+            },
+            {
+              "key": "id",
+              "value": "9502a8d415804ceb844e82e675a45938"
+            },
+            {
+              "key": "mi",
+              "value": "Y2+FbUWzTdisqSDYmZGKQQ=="
+            },
+            {
+              "key": "mn",
+              "value": "83512079777"
+            },
+            {
+              "key": "msg",
+              "value": "launch via urlscheme"
+            },
+            {
+              "key": "reason",
+              "value": "auto"
+            },
+            {
+              "key": "ua",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+            }
+          ],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": "https://us02web.zoom.us/wjmf"
+      },
+      "response": []
+    },
+    {
+      "name": "https://rollout.ada.support/zoom/client.json",
+      "_postman_id": "ab58d27a-3068-4643-8825-445ec6260546",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://rollout.ada.support/zoom/client.json"
+      },
+      "response": []
+    },
+    {
+      "name": "https://static.ada.support/images/7ce19ca8-b7d8-4a2f-860e-fe711fd55d7a.svg",
+      "_postman_id": "4fd45e63-94fe-4b2c-85fa-4649fe5f83c6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://static.ada.support/images/7ce19ca8-b7d8-4a2f-860e-fe711fd55d7a.svg"
+      },
+      "response": []
     }
   ],
   "event": [
