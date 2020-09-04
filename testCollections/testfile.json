@@ -1025,6 +1025,58 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://docs.google.com/offline/common/manifest?ouid=u98371d2e499ee6de",
+      "_postman_id": "79dc0eb6-4661-4242-b778-8197ecdaa49f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://docs.google.com/offline/common/manifest?ouid=u98371d2e499ee6de",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "offline",
+            "common",
+            "manifest"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
