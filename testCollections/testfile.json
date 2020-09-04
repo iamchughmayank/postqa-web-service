@@ -2363,62 +2363,6 @@
         }
       },
       "response": []
-    },
-    {
-      "name": "https://clients6.google.com/batch/drive/v2internal?%24ct=multipart%2Fmixed%3B%20boundary%3D%22%3D%3D%3D%3D%3Djiny2txfoz5h%3D%3D%3D%3D%3D%22&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ",
-      "_postman_id": "43ce30e2-f9b4-49bb-88cb-3f5425f644f0",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "content-type",
-            "value": "text/plain; charset=UTF-8"
-          },
-          {
-            "key": "Accept",
-            "value": "*/*"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "--=====jiny2txfoz5h=====\r\ncontent-type: application/http\r\ncontent-transfer-encoding: binary\r\n\r\nGET /drive/v2internal/changes?openDrive=false&reason=302&syncType=0&errorRecovery=false&includeDeleted=true&includeSubscribed=true&maxResults=1000&startChangeId=172&fields=kind%2ClargestChangeId%2CnextPageToken%2Citems(deleted%2CfileId%2Cid%2Ckind%2Cfile(kind%2CmodifiedDate%2CpairedDocType%2ChasAppsScriptAddOn%2CmodifiedByMeDate%2ClastViewedByMeDate%2Cowners(kind%2CpermissionId%2CdisplayName%2Cpicture%2CemailAddress%2Cdomain%2Cid)%2ChasThumbnail%2CthumbnailVersion%2Ctitle%2Cid%2Cshared%2CsharedWithMeDate%2CuserPermission(role)%2CexplicitlyTrashed%2CmimeType%2Csubscribed%2CfileExtension%2CprimarySyncParentId%2Crecency%2CrecencyReason%2Cversion%2CactionItems%2CteamDriveId%2CtemplateData(description%2Ccategory%2CgalleryState)%2ChasAugmentedPermissions%2CprimaryDomainName%2CorganizationDisplayName%2CpassivelySubscribed%2Cparents(id)%2Ccapabilities(canShareChildFiles%2CcanShareChildFolders%2CcanDownload%2CcanEdit%2CcanShare%2CcanTrash%2CcanReadTeamDrive)%2Clabels(starred%2Ctrashed%2Crestricted))%2CteamDriveId%2CteamDrive(kind%2Cid%2Cname%2CcolorRgb%2CbackgroundImageLink%2Ccreator%2CpermissionsSummary%2Ctrusted%2CprimaryDomainName%2CorganizationDisplayName%2Crestrictions%2CbackgroundImageGridViewLink%2CbackgroundImageListViewLink%2Chidden%2Ccapabilities(canAddChildren%2CcanAddFolderFromAnotherDrive%2CcanChangeTeamDriveBackground%2CcanComment%2CcanCopy%2CcanDeleteTeamDrive%2CcanDownload%2CcanEdit%2CcanManageMembers%2CcanManageVisitors%2CcanRemoveChildren%2CcanRename%2CcanRenameTeamDrive%2CcanShareOutsideDomain%2CcanDeleteChildren%2CcanTrashChildren)))&appDataFilter=NO_APP_DATA&filters=DRIVE_DATASERVICE&supportsTeamDrives=true&includeCorpusRemovals=true&includeTeamDriveItems=true&retryCount=0&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ HTTP/1.1\r\nauthorization: SAPISIDHASH 1599210576_b5c0cef3b7a5f0afa6a9478de36d34f9219927bb_u\r\n\r\n--=====jiny2txfoz5h=====--\r\n",
-          "options": {
-            "raw": {}
-          }
-        },
-        "url": {
-          "raw": "https://clients6.google.com/batch/drive/v2internal?%24ct=multipart%2Fmixed%3B%20boundary%3D%22%3D%3D%3D%3D%3Djiny2txfoz5h%3D%3D%3D%3D%3D%22&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ",
-          "protocol": "https",
-          "host": [
-            "clients6",
-            "google",
-            "com"
-          ],
-          "path": [
-            "batch",
-            "drive",
-            "v2internal"
-          ],
-          "query": [
-            {
-              "key": "%24ct",
-              "value": "multipart%2Fmixed%3B%20boundary%3D%22%3D%3D%3D%3D%3Djiny2txfoz5h%3D%3D%3D%3D%3D%22"
-            },
-            {
-              "key": "key",
-              "value": "AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ"
-            }
-          ]
-        }
-      },
-      "response": []
     }
   ],
   "event": [
