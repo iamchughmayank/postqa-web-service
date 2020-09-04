@@ -6229,6 +6229,281 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=ViewPageQuery",
+      "_postman_id": "c70168fd-f1c0-4eee-baad-8577f019b4f4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "ViewPageQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"ViewPageQuery\",\"variables\":{\"contentId\":\"1565590307\",\"versionOverride\":null,\"embeddedContentRender\":null},\"query\":\"query ViewPageQuery($contentId: ID, $versionOverride: Int, $embeddedContentRender: String) {\\n  content(id: $contentId, version: $versionOverride, embeddedContentRender: $embeddedContentRender) {\\n    nodes {\\n      id\\n      type\\n      status\\n      title\\n      metadata {\\n        frontend {\\n          spaFriendly\\n          commentsSpaFriendly\\n          __typename\\n        }\\n        __typename\\n      }\\n      properties(key: \\\"editor\\\") {\\n        nodes {\\n          id\\n          key\\n          value\\n          __typename\\n        }\\n        __typename\\n      }\\n      operations {\\n        operation\\n        targetType\\n        __typename\\n      }\\n      space {\\n        id\\n        key\\n        name\\n        __typename\\n      }\\n      history {\\n        createdDate\\n        __typename\\n      }\\n      ancestors {\\n        ...viewPageContentDetailsFragment\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment viewPageContentDetailsFragment on Content {\\n  id\\n  type\\n  status\\n  title\\n  __typename\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=ViewPageQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "ViewPageQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=WebItemLocationQuery",
+      "_postman_id": "c0fb2e79-eda9-421a-b3d3-6f64052bf4ee",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "WebItemLocationQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"WebItemLocationQuery\",\"variables\":{\"location\":\"page.view.selection/action-panel\",\"locations\":[],\"contentId\":\"1565590307\",\"spaceKey\":null,\"version\":null},\"query\":\"query WebItemLocationQuery($location: String, $locations: [String], $contentId: ID, $spaceKey: String, $version: Int) {\\n  webItemSections(location: $location, locations: $locations, contentId: $contentId, key: $spaceKey, version: $version) {\\n    id\\n    label\\n    styleClass\\n    items {\\n      accessKey\\n      completeKey\\n      hasCondition\\n      id\\n      icon {\\n        path\\n        __typename\\n      }\\n      params {\\n        key\\n        value\\n        __typename\\n      }\\n      label\\n      moduleKey\\n      section\\n      styleClass\\n      tooltip\\n      url\\n      urlWithoutContextPath\\n      weight\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=WebItemLocationQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "WebItemLocationQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=WebPanelLocationQuery,ViewPageRedirectQuery,WebPanelLocationQuery,spaceForBaseSpaceQuery,ContentViewedEventQuery,FrontendResourceRenderQuery",
+      "_postman_id": "0ae0a149-fda3-44bb-abe0-e0284d80d674",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "WebPanelLocationQuery,ViewPageRedirectQuery,WebPanelLocationQuery,spaceForBaseSpaceQuery,ContentViewedEventQuery,FrontendResourceRenderQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"operationName\":\"WebPanelLocationQuery\",\"variables\":{\"contentId\":\"1565590307\",\"location\":\"atl.general\"},\"query\":\"query WebPanelLocationQuery($location: String, $contentId: ID, $spaceKey: String) {\\n  webPanels(location: $location, contentId: $contentId, key: $spaceKey) {\\n    moduleKey\\n    completeKey\\n    html\\n    location\\n    label\\n    weight\\n    name\\n    __typename\\n  }\\n}\\n\"},{\"operationName\":\"ViewPageRedirectQuery\",\"variables\":{\"contentId\":\"1565590307\"},\"query\":\"query ViewPageRedirectQuery($contentId: ID) {\\n  content(id: $contentId) {\\n    nodes {\\n      id\\n      type\\n      status\\n      title\\n      space {\\n        id\\n        homepageId\\n        key\\n        __typename\\n      }\\n      history {\\n        createdDate\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n  user(current: true) {\\n    id\\n    __typename\\n  }\\n}\\n\"},{\"operationName\":\"WebPanelLocationQuery\",\"variables\":{\"contentId\":\"1565590307\",\"location\":\"atl.footer\"},\"query\":\"query WebPanelLocationQuery($location: String, $contentId: ID, $spaceKey: String) {\\n  webPanels(location: $location, contentId: $contentId, key: $spaceKey) {\\n    moduleKey\\n    completeKey\\n    html\\n    location\\n    label\\n    weight\\n    name\\n    __typename\\n  }\\n}\\n\"},{\"operationName\":\"spaceForBaseSpaceQuery\",\"variables\":{\"spaceKey\":\"INT\"},\"query\":\"query spaceForBaseSpaceQuery($spaceKey: String) {\\n  spaces(spaceKey: $spaceKey) {\\n    nodes {\\n      id\\n      key\\n      name\\n      homepage {\\n        id\\n        __typename\\n      }\\n      icon {\\n        ...iconDetails\\n        __typename\\n      }\\n      type\\n      settings {\\n        routeOverrideEnabled\\n        __typename\\n      }\\n      theme {\\n        themeKey\\n        __typename\\n      }\\n      lookAndFeel {\\n        headings {\\n          key\\n          value\\n          __typename\\n        }\\n        menus {\\n          hoverOrFocus {\\n            key\\n            value\\n            __typename\\n          }\\n          color\\n          __typename\\n        }\\n        header {\\n          backgroundColor\\n          button {\\n            backgroundColor\\n            color\\n            __typename\\n          }\\n          primaryNavigation {\\n            color\\n            hoverOrFocus {\\n              key\\n              value\\n              __typename\\n            }\\n            __typename\\n          }\\n          secondaryNavigation {\\n            color\\n            hoverOrFocus {\\n              key\\n              value\\n              __typename\\n            }\\n            __typename\\n          }\\n          search {\\n            backgroundColor\\n            color\\n            __typename\\n          }\\n          __typename\\n        }\\n        content {\\n          screen {\\n            background\\n            backgroundColor\\n            backgroundImage\\n            backgroundPosition\\n            backgroundSize\\n            backgroundRepeat\\n            backgroundOrigin\\n            backgroundClip\\n            backgroundAttachment\\n            backgroundBlendMode\\n            layer {\\n              background\\n              backgroundColor\\n              backgroundImage\\n              backgroundPosition\\n              backgroundSize\\n              backgroundRepeat\\n              backgroundOrigin\\n              backgroundClip\\n              backgroundAttachment\\n              backgroundBlendMode\\n              width\\n              height\\n              __typename\\n            }\\n            gutterTop\\n            gutterRight\\n            gutterBottom\\n            gutterLeft\\n            __typename\\n          }\\n          container {\\n            background\\n            backgroundColor\\n            backgroundImage\\n            backgroundPosition\\n            backgroundSize\\n            backgroundRepeat\\n            backgroundOrigin\\n            backgroundClip\\n            backgroundAttachment\\n            backgroundBlendMode\\n            padding\\n            borderRadius\\n            __typename\\n          }\\n          header {\\n            background\\n            backgroundColor\\n            backgroundImage\\n            backgroundPosition\\n            backgroundSize\\n            backgroundRepeat\\n            backgroundOrigin\\n            backgroundClip\\n            backgroundAttachment\\n            backgroundBlendMode\\n            padding\\n            borderRadius\\n            __typename\\n          }\\n          body {\\n            background\\n            backgroundColor\\n            backgroundImage\\n            backgroundPosition\\n            backgroundSize\\n            backgroundRepeat\\n            backgroundOrigin\\n            backgroundClip\\n            backgroundAttachment\\n            backgroundBlendMode\\n            padding\\n            borderRadius\\n            __typename\\n          }\\n          __typename\\n        }\\n        __typename\\n      }\\n      metadata {\\n        labels {\\n          nodes {\\n            prefix\\n            name\\n            id\\n            __typename\\n          }\\n          __typename\\n        }\\n        __typename\\n      }\\n      operations {\\n        operation\\n        targetType\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment iconDetails on Icon {\\n  path\\n  width\\n  height\\n  isDefault\\n  __typename\\n}\\n\"},{\"operationName\":\"ContentViewedEventQuery\",\"variables\":{\"contentId\":\"1565590307\"},\"query\":\"query ContentViewedEventQuery($contentId: ID) {\\n  content(id: $contentId, trigger: \\\"viewed\\\") {\\n    nodes {\\n      id\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"},{\"operationName\":\"FrontendResourceRenderQuery\",\"variables\":{},\"query\":\"query FrontendResourceRenderQuery {\\n  internalFrontendResource {\\n    resourceList {\\n      type\\n      url\\n      attributes {\\n        key\\n        value\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=WebPanelLocationQuery,ViewPageRedirectQuery,WebPanelLocationQuery,spaceForBaseSpaceQuery,ContentViewedEventQuery,FrontendResourceRenderQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "WebPanelLocationQuery,ViewPageRedirectQuery,WebPanelLocationQuery,spaceForBaseSpaceQuery,ContentViewedEventQuery,FrontendResourceRenderQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "f7555ed5-fdbd-4dd9-8876-e25100291880",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:17:16.918Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"contentType\":\"page\",\"startTime\":0,\"timeout\":60000,\"task\":\"view-content\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-8513327a87c59c1ce41ba0b8406fe7a8\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.925Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"contentType\":\"page\",\"startTime\":0,\"timeout\":60000,\"task\":\"view-page\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-b50d12a6a8c9f96d0c1d20c93ef267ef\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.931Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":0,\"timeout\":60000,\"task\":\"view-page:complete\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-2ce38cba19ea542881d27874d7767398\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.937Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"title\":\"\",\"path\":\"\",\"url\":\"\",\"referrer\":\"\",\"search\":\"\",\"eventType\":\"screen\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{},\"name\":\"viewPageScreen\"},\"category\":null,\"name\":\"viewPageScreen\",\"messageId\":\"ajs-97b0bfc832fe425e834488ad40343fdc\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"page\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.942Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"@atlaskit/feature-flag-client\",\"actionSubject\":\"feature\",\"action\":\"exposed\",\"attributes\":{\"flagKey\":\"confluence.frontend.app-navigation\",\"reason\":\"RULE_MATCH\",\"ruleId\":\"845995f2-63c6-45ae-914d-1ece81ecaa93\",\"value\":\"home\"},\"eventType\":\"track\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"feature exposed\",\"messageId\":\"ajs-8a62b5d32ad2ceac27adb6bef0f23af7\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.948Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":1053.6949999950593,\"timeout\":30000,\"task\":\"navigation/app-nav-container-navigation\",\"taskId\":\"d97b7c13-02e1-46f6-83a6-55f049f8b745\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-51a0062eb4d1f70b17a016dde0ffafa6\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.956Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":1054.0749999927357,\"timeout\":30000,\"task\":\"navigation/app-nav-global-navigation\",\"taskId\":\"a39abb3f-a12e-45f9-bbdd-de7a4b9d207a\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-5e956f11bdd17b25b7e7df84fdf2840f\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:17:16.963Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/wiki/rest/api/space/INT/settings",
+      "_postman_id": "d338cf49-5dd1-4c23-a56c-0120f0b27ee9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/wiki/rest/api/space/INT/settings"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=SetUserPreferencesMutation",
+      "_postman_id": "a2671fdc-a619-438a-98e1-5bc3ba6b90e0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "SetUserPreferencesMutation"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"operationName\":\"SetUserPreferencesMutation\",\"variables\":{\"preferences\":[{\"cloudId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"key\":\"localStorage/atlassian.5f3a07abd0884f0049937eb9.frontend.confluence.cachedAssets\",\"value\":\"\\\"{\\\\\\\"translations.en-US\\\\\\\":\\\\\\\"translations.en-US~9d121199.GmTnGNLfFK.js\\\\\\\",\\\\\\\"runtime\\\\\\\":\\\\\\\"runtime~app.Wzj8Ugr9mf.js\\\\\\\",\\\\\\\"atlaskit\\\\\\\":\\\\\\\"atlaskit~66e23772.TLWgAdVCqR.js\\\\\\\",\\\\\\\"afp\\\\\\\":\\\\\\\"afp~af75c846.AUE6CsV8kx.js\\\\\\\",\\\\\\\"static\\\\\\\":\\\\\\\"static~696a3ae4.ELuYAdpDWP.js\\\\\\\",\\\\\\\"vendors\\\\\\\":\\\\\\\"vendors~4134d62c.EYnj64oF7g.js\\\\\\\",\\\\\\\"app\\\\\\\":\\\\\\\"app~493df0b3.swma9sJ5wH.js\\\\\\\"}\\\"\"}]},\"query\":\"mutation SetUserPreferencesMutation($preferences: [SetUserPreferences!]!) {\\n  setUserPreferences(input: $preferences) {\\n    cloudId\\n    userId\\n    key\\n    value\\n    __typename\\n  }\\n}\\n\"}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=SetUserPreferencesMutation",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "SetUserPreferencesMutation"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
