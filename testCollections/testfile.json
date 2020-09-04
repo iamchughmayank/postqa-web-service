@@ -39363,6 +39363,198 @@
         "url": "https://postmanlabs.atlassian.net/rest/analytics/1.0/publish/bulk"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
+      "_postman_id": "f655244a-5689-4506-a1dd-4a26cb551df4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingComplete\",\"event\":{\"appKey\":\"zendesk_for_jira\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:03.776Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/field?_r=1599212703785",
+      "_postman_id": "05769b39-b104-47bb-aa17-294bb125d14f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "*/*"
+          },
+          {
+            "key": "AP-Client-Key",
+            "value": "zendesk_for_jira"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/api/2/field?_r=1599212703785",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "api",
+            "2",
+            "field"
+          ],
+          "query": [
+            {
+              "key": "_r",
+              "value": "1599212703785"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/issue/82612?_r=1599212703787",
+      "_postman_id": "161e815e-71b7-4e01-a2fa-bac7638ad3cf",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "*/*"
+          },
+          {
+            "key": "AP-Client-Key",
+            "value": "zendesk_for_jira"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/api/2/issue/82612?_r=1599212703787",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "api",
+            "2",
+            "issue",
+            "82612"
+          ],
+          "query": [
+            {
+              "key": "_r",
+              "value": "1599212703787"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
+      "_postman_id": "adb8299a-e85d-4c22-b369-ef573157549b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingComplete\",\"event\":{\"appKey\":\"zoom-servicedesk\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:03.895Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "32d5379b-df2b-469a-b542-b86abd14ab9f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:45:02Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"campaign\":{}},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"containerType\":\"project\",\"containerId\":\"13157\",\"source\":\"viewIssueModal\",\"objectType\":\"issue\",\"objectId\":\"82612\",\"actionSubject\":\"issue\",\"action\":\"viewed\",\"attributes\":{\"isSPA\":true,\"analyticsSource\":\"software-issue\",\"designVersion\":\"v2-bento\",\"projectId\":\"13157\",\"issueId\":\"82612\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"TODO\",\"statusCategoryId\":2,\"issueTypeId\":\"3\",\"boardType\":\"kanban\",\"boardId\":265,\"assigneeId\":null,\"numCharSummary\":33,\"numCharDescription\":0,\"numCustomMultilineFields\":0,\"numCharCustomMultilineFields\":0,\"visibleContextItems\":\"assignee,reporter,devSummary,labels,com.pyxis.greenhopper.jira:gh-epic-link,duedate\",\"numVisibleContextItems\":6,\"conditionallyVisibleContextItems\":\"fixVersions,com.atlassian.jira.plugin.system.customfieldtypes:storypoint,timeoriginalestimate,timetracking,components\",\"numConditionallyVisibleContextItems\":5,\"numFieldTabs\":0,\"hasSecurityLevel\":false,\"securityLevelAllowedValuesCount\":0,\"hasSecurityLevelEditPermissions\":false,\"issueHierarchyLevel\":null,\"namespaces\":\"viewIssueModal\"},\"eventType\":\"track\",\"tabId\":\"e28ffb9e-482c-42c4-a6c4-6fd9e13f64df\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"issue viewed\",\"messageId\":\"ajs-6762abee8da61df2d159484cf83da13c\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:45:03.921Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:45:03Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"campaign\":{}},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"containerType\":\"project\",\"source\":\"releasesGlanceScreen\",\"objectType\":\"issue\",\"objectId\":82612,\"actionSubject\":\"releasesData\",\"action\":\"fetched\",\"attributes\":{\"isSPA\":true,\"analyticsSource\":\"software-issue\",\"designVersion\":\"v2-bento\",\"projectId\":null,\"issueId\":\"82612\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"TODO\",\"statusCategoryId\":2,\"issueTypeId\":\"3\",\"boardType\":\"kanban\",\"boardId\":265,\"assigneeId\":null,\"numCharSummary\":33,\"numCharDescription\":0,\"numCustomMultilineFields\":0,\"numCharCustomMultilineFields\":0,\"visibleContextItems\":\"assignee,reporter,devSummary,labels,com.pyxis.greenhopper.jira:gh-epic-link,duedate\",\"numVisibleContextItems\":6,\"conditionallyVisibleContextItems\":\"fixVersions,com.atlassian.jira.plugin.system.customfieldtypes:storypoint,timeoriginalestimate,timetracking,components\",\"numConditionallyVisibleContextItems\":5,\"numFieldTabs\":0,\"hasSecurityLevel\":false,\"securityLevelAllowedValuesCount\":0,\"hasSecurityLevelEditPermissions\":false,\"issueHierarchyLevel\":null,\"hasFeatureFlags\":false,\"hasDeployments\":false,\"hasRemoteLinks\":true,\"hasErrors\":false,\"elapsed\":887,\"namespaces\":\"viewIssueModal.releasesGlanceScreen\"},\"eventType\":\"track\",\"tabId\":\"e28ffb9e-482c-42c4-a6c4-6fd9e13f64df\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"releasesData fetched\",\"messageId\":\"ajs-d1ce8211cd6d6329a100ba51e46bdaea\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:45:03.921Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:45:03Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"campaign\":{}},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"containerType\":\"project\",\"source\":\"viewIssueModal\",\"objectType\":\"issue\",\"objectId\":82612,\"actionSubject\":\"statusField\",\"action\":\"transitionsFetched\",\"actionSubjectId\":\"statusField\",\"attributes\":{\"isSPA\":true,\"analyticsSource\":\"software-issue\",\"designVersion\":\"v2-bento\",\"projectId\":null,\"issueId\":null,\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"TODO\",\"statusCategoryId\":2,\"issueTypeId\":\"3\",\"boardType\":\"kanban\",\"boardId\":265,\"assigneeId\":null,\"numCharSummary\":33,\"numCharDescription\":0,\"numCustomMultilineFields\":0,\"numCharCustomMultilineFields\":0,\"visibleContextItems\":\"assignee,reporter,devSummary,labels,com.pyxis.greenhopper.jira:gh-epic-link,duedate\",\"numVisibleContextItems\":6,\"conditionallyVisibleContextItems\":\"fixVersions,com.atlassian.jira.plugin.system.customfieldtypes:storypoint,timeoriginalestimate,timetracking,components\",\"numConditionallyVisibleContextItems\":5,\"numFieldTabs\":0,\"hasSecurityLevel\":false,\"securityLevelAllowedValuesCount\":0,\"hasSecurityLevelEditPermissions\":false,\"issueHierarchyLevel\":null,\"count\":3,\"namespaces\":\"viewIssueModal\"},\"eventType\":\"track\",\"tabId\":\"e28ffb9e-482c-42c4-a6c4-6fd9e13f64df\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"statusField transitionsFetched\",\"messageId\":\"ajs-581ded3117e7f1b6caa7954f1b520b54\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:45:03.921Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:45:03Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"campaign\":{}},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"title\":\"\",\"path\":\"\",\"url\":\"\",\"referrer\":\"\",\"search\":\"\",\"eventType\":\"screen\",\"attributes\":{\"isSPA\":true,\"analyticsSource\":\"software-issue\",\"designVersion\":\"v2-bento\",\"projectId\":\"13157\",\"issueId\":\"82612\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"TODO\",\"statusCategoryId\":2,\"issueTypeId\":\"3\",\"boardType\":\"kanban\",\"boardId\":265,\"assigneeId\":null,\"numCharSummary\":33,\"numCharDescription\":0,\"numCustomMultilineFields\":0,\"numCharCustomMultilineFields\":0,\"visibleContextItems\":\"assignee,reporter,devSummary,labels,com.pyxis.greenhopper.jira:gh-epic-link,duedate\",\"numVisibleContextItems\":6,\"conditionallyVisibleContextItems\":\"fixVersions,com.atlassian.jira.plugin.system.customfieldtypes:storypoint,timeoriginalestimate,timetracking,components\",\"numConditionallyVisibleContextItems\":5,\"numFieldTabs\":0,\"hasSecurityLevel\":false,\"securityLevelAllowedValuesCount\":0,\"hasSecurityLevelEditPermissions\":false,\"issueHierarchyLevel\":null,\"namespaces\":\"viewIssueModal.activityFeedScreen.activityFeedButtonsScreen\"},\"tabId\":\"e28ffb9e-482c-42c4-a6c4-6fd9e13f64df\",\"sessionId\":\"1599209536585\",\"taskSessions\":{},\"name\":\"activityFeedButtonsScreen\"},\"category\":null,\"name\":\"activityFeedButtonsScreen\",\"messageId\":\"ajs-d3b65050d7736dbe54edc2e175524930\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"page\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:45:03.921Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:45:03Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"campaign\":{}},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"viewIssueModal\",\"actionSubject\":\"breadcrumbsItem\",\"action\":\"clicked\",\"actionSubjectId\":\"navigateToCurrentIssueBreadcrumbsItem\",\"attributes\":{\"isSPA\":true,\"namespaces\":\"viewIssueModal\"},\"eventType\":\"ui\",\"tabId\":\"e28ffb9e-482c-42c4-a6c4-6fd9e13f64df\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"breadcrumbsItem clicked\",\"messageId\":\"ajs-4cc8c8e2a9385ee429bd47cd2d5b5494\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:45:03.921Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:45:03Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"campaign\":{}},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"task\":\"renderAttachmentPickers\",\"analyticsSource\":\"issue-view-non-jsd\",\"application\":\"jira-software\",\"edition\":\"premium\"},\"eventType\":\"operational\",\"tabId\":\"e28ffb9e-482c-42c4-a6c4-6fd9e13f64df\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-054f4216fb3f74c58aca94ec10ff9600\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:45:03.921Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:45:03Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"campaign\":{}},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"task\":\"viewIssue\",\"analyticsSource\":\"software-issue\",\"application\":\"jira-software\",\"edition\":\"premium\"},\"eventType\":\"operational\",\"tabId\":\"e28ffb9e-482c-42c4-a6c4-6fd9e13f64df\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-0a7d7f5548dcc9ee976e5ba052a7ff81\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:45:03.921Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:45:03.921Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
     }
   ],
   "event": [
