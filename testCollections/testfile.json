@@ -4654,6 +4654,72 @@
         "url": "https://calendar.google.com/calendar/u/1/check"
       },
       "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true&authuser=1",
+      "_postman_id": "91dcb9e0-e43a-4116-bf5f-b60950f85a1f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH 01d4f4bd1becf72aa5a91f31cf1353939dafb1f2"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\",null,\"calendar_200826.08_p0\"]],335,[[\"1599210924705\",null,[],null,null,null,null,\"[[[63,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[],null,[],null,[],null,null,null,null,null,null,null,null,null,\\\"32h66u44sn3akiq7tn2hmt9jdl\\\",172093600]],\\\"prod-d.web\\\",null,null,4]\",null,null,null,null,null,null,null,null,null,null,null,[],191,null,null,null,null,null,[]],[\"1599210924705\",null,[],null,null,null,null,\"[[[64,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[],null,[],null,[],null,null,null,null,null,null,null,null,null,\\\"32h66u44sn3akiq7tn2hmt9jdl\\\",172093600,null,83]],\\\"prod-d.web\\\",null,null,4]\",null,null,null,null,null,null,null,null,null,null,null,[],192,null,null,null,null,null,[]]],\"1599210934819\",[],null,null,null,null,null,null,null,null,0]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true&authuser=1",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            },
+            {
+              "key": "authuser",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
