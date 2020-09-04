@@ -4076,6 +4076,55 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://docs.google.com/offline/extension/frame?ouid=",
+      "_postman_id": "8eb07b44-6627-4f0e-8659-303cd2001eed",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "X-Chrome-Connected",
+            "value": "id=112175423944800645571,mode=0,enable_account_consistency=false,consistency_enabled_by_default=false"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/offline/extension/frame?ouid=",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "offline",
+            "extension",
+            "frame"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
