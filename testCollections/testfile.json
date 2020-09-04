@@ -3154,6 +3154,51 @@
         "url": "https://static.ada.support/images/7ce19ca8-b7d8-4a2f-860e-fe711fd55d7a.svg"
       },
       "response": []
+    },
+    {
+      "name": "https://zoom.ada.support/chat/connect/?embed=1",
+      "_postman_id": "93c402dc-40f5-4c07-be80-3536a90caa8b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": {
+          "raw": "https://zoom.ada.support/chat/connect/?embed=1",
+          "protocol": "https",
+          "host": [
+            "zoom",
+            "ada",
+            "support"
+          ],
+          "path": [
+            "chat",
+            "connect",
+            ""
+          ],
+          "query": [
+            {
+              "key": "embed",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
