@@ -42437,57 +42437,6 @@
         }
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/rest/internal/2/productsearch/search?counts=dashboards%3D5%2Cprojects%3D5%2Cfilters%3D5&type=dashboards%2Cprojects%2Cfilters",
-      "_postman_id": "c33c0694-acfb-4a85-90cc-95af88bef16d",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json,text/javascript,*/*"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "https://postmanlabs.atlassian.net/rest/internal/2/productsearch/search?counts=dashboards%3D5%2Cprojects%3D5%2Cfilters%3D5&type=dashboards%2Cprojects%2Cfilters",
-          "protocol": "https",
-          "host": [
-            "postmanlabs",
-            "atlassian",
-            "net"
-          ],
-          "path": [
-            "rest",
-            "internal",
-            "2",
-            "productsearch",
-            "search"
-          ],
-          "query": [
-            {
-              "key": "counts",
-              "value": "dashboards%3D5%2Cprojects%3D5%2Cfilters%3D5"
-            },
-            {
-              "key": "type",
-              "value": "dashboards%2Cprojects%2Cfilters"
-            }
-          ]
-        }
-      },
-      "response": []
     }
   ],
   "event": [
