@@ -45448,6 +45448,116 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://jiraplugin.zendesk.com/integrations/jira/app?issue_id=85636&issue_key=CFDTN-241&xdm_e=https%3A%2F%2Fpostmanlabs.atlassian.net&xdm_c=channel-zendesk_for_jira__zendesk-glance-9186747584706671450&cp=&xdm_deprecated_addon_key_do_not_use=zendesk_for_ji",
+      "_postman_id": "d9c66b34-9ca9-4698-acf4-5ed478be66d8",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": {
+          "raw": "https://jiraplugin.zendesk.com/integrations/jira/app?issue_id=85636&issue_key=CFDTN-241&xdm_e=https%3A%2F%2Fpostmanlabs.atlassian.net&xdm_c=channel-zendesk_for_jira__zendesk-glance-9186747584706671450&cp=&xdm_deprecated_addon_key_do_not_use=zendesk_for_jira&lic=none&cv=1001.0.0-SNAPSHOT&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjNhMDdhYmQwODg0ZjAwNDk5MzdlYjkiLCJxc2giOiI3MzI2YzRiNjQ1ZjQyNzJmNjdmNjg1ZWRlZjYzNmEzOGU3ZWNjNTIzOTNkZDlhYWViOGNkZWRiZTQyZTE2NDE2IiwiaXNzIjoiamlyYTpkNGFmNTU4Ni00YWUxLTRiYWQtYTVjNS1kNjNlYjI3ZDc2YjkiLCJjb250ZXh0Ijp7fSwiZXhwIjoxNTk5MjEzNjEzLCJpYXQiOjE1OTkyMTI3MTN9.dnFhf3C0qWzeshl0TMVwsX8fszCzBG3lPZy12acuZ2c",
+          "protocol": "https",
+          "host": [
+            "jiraplugin",
+            "zendesk",
+            "com"
+          ],
+          "path": [
+            "integrations",
+            "jira",
+            "app"
+          ],
+          "query": [
+            {
+              "key": "issue_id",
+              "value": "85636"
+            },
+            {
+              "key": "issue_key",
+              "value": "CFDTN-241"
+            },
+            {
+              "key": "xdm_e",
+              "value": "https%3A%2F%2Fpostmanlabs.atlassian.net"
+            },
+            {
+              "key": "xdm_c",
+              "value": "channel-zendesk_for_jira__zendesk-glance-9186747584706671450"
+            },
+            {
+              "key": "cp",
+              "value": ""
+            },
+            {
+              "key": "xdm_deprecated_addon_key_do_not_use",
+              "value": "zendesk_for_jira"
+            },
+            {
+              "key": "lic",
+              "value": "none"
+            },
+            {
+              "key": "cv",
+              "value": "1001.0.0-SNAPSHOT"
+            },
+            {
+              "key": "jwt",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjNhMDdhYmQwODg0ZjAwNDk5MzdlYjkiLCJxc2giOiI3MzI2YzRiNjQ1ZjQyNzJmNjdmNjg1ZWRlZjYzNmEzOGU3ZWNjNTIzOTNkZDlhYWViOGNkZWRiZTQyZTE2NDE2IiwiaXNzIjoiamlyYTpkNGFmNTU4Ni00YWUxLTRiYWQtYTVjNS1kNjNlYjI3ZDc2YjkiLCJjb250ZXh0Ijp7fSwiZXhwIjoxNTk5MjEzNjEzLCJpYXQiOjE1OTkyMTI3MTN9.dnFhf3C0qWzeshl0TMVwsX8fszCzBG3lPZy12acuZ2c"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
+      "_postman_id": "f3e94387-bfc6-4715-a703-99550cd23e37",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"getLoadingTimeoutMilliseconds\",\"event\":{\"appKey\":\"com.xpandit.plugins.xray\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:15.596Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
+      },
+      "response": []
     }
   ],
   "event": [
