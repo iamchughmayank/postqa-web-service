@@ -45302,6 +45302,84 @@
         "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
       },
       "response": []
+    },
+    {
+      "name": "https://automation.atlassian.com/pro/html/latest/view-issue-glance.html?pro=true&projectAdmin=false&xdm_e=https%3A%2F%2Fpostmanlabs.atlassian.net&xdm_c=channel-com.codebarrel.addons.automation__cb-automation-issue-glance-4157376520989759352&cp=&xdm_deprec",
+      "_postman_id": "fabfe0d7-ca6b-4dd3-9b48-bc32893679d5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": {
+          "raw": "https://automation.atlassian.com/pro/html/latest/view-issue-glance.html?pro=true&projectAdmin=false&xdm_e=https%3A%2F%2Fpostmanlabs.atlassian.net&xdm_c=channel-com.codebarrel.addons.automation__cb-automation-issue-glance-4157376520989759352&cp=&xdm_deprecated_addon_key_do_not_use=com.codebarrel.addons.automation&lic=none&cv=1001.0.0-SNAPSHOT&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjNhMDdhYmQwODg0ZjAwNDk5MzdlYjkiLCJxc2giOiJlYjBkZTI2MzI0YWQyODk1YWY5Y2U0MzFlNWRlMDBkNjIzNmQ1OTQ1YWRkZmE4MTRjY2M3ODdkNTQ3ZGIyMjA1IiwiaXNzIjoiamlyYTpkNGFmNTU4Ni00YWUxLTRiYWQtYTVjNS1kNjNlYjI3ZDc2YjkiLCJjb250ZXh0Ijp7ImNsb3VkSWQiOiIwZDEzYjEzNy0yOTM0LTRiNzQtYTkyMS02OTRhYjgzYzU0YzUifSwiZXhwIjoxNTk5MjEzNjEzLCJpYXQiOjE1OTkyMTI3MTN9.A85yXCO4FtYfB2P-XwWpxwGcwPxYyxY4fyj3Fz_Q7z4",
+          "protocol": "https",
+          "host": [
+            "automation",
+            "atlassian",
+            "com"
+          ],
+          "path": [
+            "pro",
+            "html",
+            "latest",
+            "view-issue-glance.html"
+          ],
+          "query": [
+            {
+              "key": "pro",
+              "value": "true"
+            },
+            {
+              "key": "projectAdmin",
+              "value": "false"
+            },
+            {
+              "key": "xdm_e",
+              "value": "https%3A%2F%2Fpostmanlabs.atlassian.net"
+            },
+            {
+              "key": "xdm_c",
+              "value": "channel-com.codebarrel.addons.automation__cb-automation-issue-glance-4157376520989759352"
+            },
+            {
+              "key": "cp",
+              "value": ""
+            },
+            {
+              "key": "xdm_deprecated_addon_key_do_not_use",
+              "value": "com.codebarrel.addons.automation"
+            },
+            {
+              "key": "lic",
+              "value": "none"
+            },
+            {
+              "key": "cv",
+              "value": "1001.0.0-SNAPSHOT"
+            },
+            {
+              "key": "jwt",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjNhMDdhYmQwODg0ZjAwNDk5MzdlYjkiLCJxc2giOiJlYjBkZTI2MzI0YWQyODk1YWY5Y2U0MzFlNWRlMDBkNjIzNmQ1OTQ1YWRkZmE4MTRjY2M3ODdkNTQ3ZGIyMjA1IiwiaXNzIjoiamlyYTpkNGFmNTU4Ni00YWUxLTRiYWQtYTVjNS1kNjNlYjI3ZDc2YjkiLCJjb250ZXh0Ijp7ImNsb3VkSWQiOiIwZDEzYjEzNy0yOTM0LTRiNzQtYTkyMS02OTRhYjgzYzU0YzUifSwiZXhwIjoxNTk5MjEzNjEzLCJpYXQiOjE1OTkyMTI3MTN9.A85yXCO4FtYfB2P-XwWpxwGcwPxYyxY4fyj3Fz_Q7z4"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
