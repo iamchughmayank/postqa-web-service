@@ -16660,28 +16660,6 @@
         }
       },
       "response": []
-    },
-    {
-      "name": "https://confluence-v1.prod.atl-paas.net/master/force-update.json",
-      "_postman_id": "d373ffec-a3c9-4c3a-8124-0b3ea3165c9f",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Accept",
-            "value": "*/*"
-          }
-        ],
-        "url": "https://confluence-v1.prod.atl-paas.net/master/force-update.json"
-      },
-      "response": []
     }
   ],
   "event": [
