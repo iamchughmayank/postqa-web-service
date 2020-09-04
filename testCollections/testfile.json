@@ -5309,6 +5309,32 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/wiki/spaces/INT/pages/1565590307/Testing+-+Postman+App+Interceptor",
+      "_postman_id": "8de1600a-a321-4ecc-98e6-3a27ff0dc26a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/wiki/spaces/INT/pages/1565590307/Testing+-+Postman+App+Interceptor"
+      },
+      "response": []
     }
   ],
   "event": [
