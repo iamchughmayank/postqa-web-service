@@ -12124,43 +12124,6 @@
         "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/wiki/rest/webResources/1.0/resources",
-      "_postman_id": "ac019d42-4c72-40ce-a498-ef975009f07c",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json, text/javascript, */*; q=0.01"
-          },
-          {
-            "key": "X-Requested-With",
-            "value": "XMLHttpRequest"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"r\":[\"com.atlassian.confluence.plugins.confluence-jira-content:confluence-jira-content-loader\",\"com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-resources\",\"confluence.web.resources:view-content\",\"com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles\",\"com.atlassian.confluence.plugins.sticky-table-headers:stickytableheaders-resources\"],\"c\":[],\"xc\":[\"_super\"],\"xr\":[\"com.atlassian.auiplugin:aui-reset\",\"com.atlassian.auiplugin:aui-page-typography\",\"com.atlassian.confluence.plugins.confluence-ui-components:blank-placeholder-box\",\"com.atlassian.confluence.plugins.confluence-inline-tasks:sortable-table-styles\",\"com.atlassian.confluence.plugins.confluence-inline-tasks:tasks-report-resources\",\"com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-content-byline-resources-v5\"]}",
-          "options": {
-            "raw": {}
-          }
-        },
-        "url": "https://postmanlabs.atlassian.net/wiki/rest/webResources/1.0/resources"
-      },
-      "response": []
     }
   ],
   "event": [
