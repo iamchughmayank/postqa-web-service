@@ -52883,6 +52883,72 @@
         "url": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/sd_segmented/sd_segmented_T7FApG9X0unR4dhcbDDKvQ.m3u8"
       },
       "response": []
+    },
+    {
+      "name": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/sd_segmented/sd_segmented_000.ts",
+      "_postman_id": "193716d3-42f3-452c-bfb6-17e74c033a42",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/sd_segmented/sd_segmented_000.ts"
+      },
+      "response": []
+    },
+    {
+      "name": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/hd_segmented/hd_segmented_dmFPq1I_LKAWYAN0gbiciQ.m3u8",
+      "_postman_id": "27050f6e-824b-4b2b-a668-360c0b296aba",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/hd_segmented/hd_segmented_dmFPq1I_LKAWYAN0gbiciQ.m3u8"
+      },
+      "response": []
+    },
+    {
+      "name": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/hd_segmented/hd_segmented_000.ts",
+      "_postman_id": "06ff5216-cb11-4e37-bf72-37f260eca026",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/hd_segmented/hd_segmented_000.ts"
+      },
+      "response": []
     }
   ],
   "event": [
