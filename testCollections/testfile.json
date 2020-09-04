@@ -6391,6 +6391,718 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "f7555ed5-fdbd-4dd9-8876-e25100291880",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:17:16.918Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"contentType\":\"page\",\"startTime\":0,\"timeout\":60000,\"task\":\"view-content\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-8513327a87c59c1ce41ba0b8406fe7a8\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.925Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"contentType\":\"page\",\"startTime\":0,\"timeout\":60000,\"task\":\"view-page\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-b50d12a6a8c9f96d0c1d20c93ef267ef\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.931Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":0,\"timeout\":60000,\"task\":\"view-page:complete\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-2ce38cba19ea542881d27874d7767398\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.937Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"title\":\"\",\"path\":\"\",\"url\":\"\",\"referrer\":\"\",\"search\":\"\",\"eventType\":\"screen\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{},\"name\":\"viewPageScreen\"},\"category\":null,\"name\":\"viewPageScreen\",\"messageId\":\"ajs-97b0bfc832fe425e834488ad40343fdc\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"page\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.942Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"@atlaskit/feature-flag-client\",\"actionSubject\":\"feature\",\"action\":\"exposed\",\"attributes\":{\"flagKey\":\"confluence.frontend.app-navigation\",\"reason\":\"RULE_MATCH\",\"ruleId\":\"845995f2-63c6-45ae-914d-1ece81ecaa93\",\"value\":\"home\"},\"eventType\":\"track\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"feature exposed\",\"messageId\":\"ajs-8a62b5d32ad2ceac27adb6bef0f23af7\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.948Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":1053.6949999950593,\"timeout\":30000,\"task\":\"navigation/app-nav-container-navigation\",\"taskId\":\"d97b7c13-02e1-46f6-83a6-55f049f8b745\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-51a0062eb4d1f70b17a016dde0ffafa6\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.956Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":1054.0749999927357,\"timeout\":30000,\"task\":\"navigation/app-nav-global-navigation\",\"taskId\":\"a39abb3f-a12e-45f9-bbdd-de7a4b9d207a\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-5e956f11bdd17b25b7e7df84fdf2840f\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:16.963Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:17:16.963Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/wiki/rest/api/space/INT/settings",
+      "_postman_id": "d338cf49-5dd1-4c23-a56c-0120f0b27ee9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/wiki/rest/api/space/INT/settings"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=SetUserPreferencesMutation",
+      "_postman_id": "a2671fdc-a619-438a-98e1-5bc3ba6b90e0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "SetUserPreferencesMutation"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"operationName\":\"SetUserPreferencesMutation\",\"variables\":{\"preferences\":[{\"cloudId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"key\":\"localStorage/atlassian.5f3a07abd0884f0049937eb9.frontend.confluence.cachedAssets\",\"value\":\"\\\"{\\\\\\\"translations.en-US\\\\\\\":\\\\\\\"translations.en-US~9d121199.GmTnGNLfFK.js\\\\\\\",\\\\\\\"runtime\\\\\\\":\\\\\\\"runtime~app.Wzj8Ugr9mf.js\\\\\\\",\\\\\\\"atlaskit\\\\\\\":\\\\\\\"atlaskit~66e23772.TLWgAdVCqR.js\\\\\\\",\\\\\\\"afp\\\\\\\":\\\\\\\"afp~af75c846.AUE6CsV8kx.js\\\\\\\",\\\\\\\"static\\\\\\\":\\\\\\\"static~696a3ae4.ELuYAdpDWP.js\\\\\\\",\\\\\\\"vendors\\\\\\\":\\\\\\\"vendors~4134d62c.EYnj64oF7g.js\\\\\\\",\\\\\\\"app\\\\\\\":\\\\\\\"app~493df0b3.swma9sJ5wH.js\\\\\\\"}\\\"\"}]},\"query\":\"mutation SetUserPreferencesMutation($preferences: [SetUserPreferences!]!) {\\n  setUserPreferences(input: $preferences) {\\n    cloudId\\n    userId\\n    key\\n    value\\n    __typename\\n  }\\n}\\n\"}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=SetUserPreferencesMutation",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "SetUserPreferencesMutation"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://mgas.prod.public.atl-paas.net/v1/event",
+      "_postman_id": "16cc4513-0e06-4202-8c85-cc96c81711f6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"engagement.inproduct.loaded\",\"properties\":{\"queueSize\":2,\"locale\":\"en-GB\"},\"cloud_id\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"user\":null,\"server\":null,\"product\":\"confluence\",\"user_id\":\"5f3a07abd0884f0049937eb9\",\"user_id_type\":\"atlassian_account\",\"serverTime\":1599211037191}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://mgas.prod.public.atl-paas.net/v1/event"
+      },
+      "response": []
+    },
+    {
+      "name": "https://mgas.prod.public.atl-paas.net/v1/event",
+      "_postman_id": "7cf09286-b254-4cb3-b069-96716203f865",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"engagement.inproduct.fetch.success\",\"properties\":{\"locale\":\"en-GB\",\"fetchTime\":629,\"messageLength\":3},\"cloud_id\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"user\":null,\"server\":null,\"product\":\"confluence\",\"user_id\":\"5f3a07abd0884f0049937eb9\",\"user_id_type\":\"atlassian_account\",\"serverTime\":1599211037193}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://mgas.prod.public.atl-paas.net/v1/event"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "f47b255d-ee8d-4afd-97ce-814f5992e129",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:17:16.971Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"@atlaskit/feature-flag-client\",\"actionSubject\":\"feature\",\"action\":\"exposed\",\"attributes\":{\"flagKey\":\"confluence.frontend.comments.inline.discoverability\",\"reason\":\"FALLTHROUGH\",\"ruleId\":null,\"value\":\"header-button\"},\"eventType\":\"track\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"feature exposed\",\"messageId\":\"ajs-385ad968ea458a867b3137d7cc3a18c6\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.290Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.983Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"confluence-frontend\",\"actionSubject\":\"navHomeTestCohort\",\"action\":\"identified\",\"attributes\":{\"description\":\"Nav test cohort with home (with home, Nav 3)\",\"homeFF\":\"cohort-off\",\"appNavigationFF\":\"home\"},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"navHomeTestCohort identified\",\"messageId\":\"ajs-ccd622190de22f46487e56fbdb920067\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.290Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:16.999Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"readyForUser\",\"attributes\":{\"contentId\":\"1565590307\",\"shard\":\"confluence-prod-eu-1-1.prod.atl-paas.net\",\"transitionId\":0,\"isNav2\":false,\"fallback\":false,\"fabric\":false,\"buildInfo\":{\"FRONTEND_VERSION\":\"CLASSIC-master-3439\",\"BRANCH_NAME\":\"master\",\"BUILD_NUMBER\":3439,\"BUILD_DATE\":1598900579784,\"PUBLIC_PATH\":\"https://confluence-v1.prod.atl-paas.net/master/\"},\"deviceInfo\":{\"networkEffectiveType\":\"4g\",\"hardwareConcurrency\":8,\"deviceMemory\":8},\"featureFlags\":{\"confluence.frontend-delete-own-permission-spotlight\":true,\"confluence.frontend-delete-own-permission-spotlight-delay-duration\":\"3000\",\"confluence.frontend.aa.mw.experiment\":\"control\",\"confluence.frontend.add-homepage-id-to-space-overview-url\":true,\"confluence.frontend.adg3.space.config\":true,\"confluence.frontend.adminkey.bxp.upgrade.enabled\":true,\"confluence.frontend.advanced-search.smart-contributor-filter\":true,\"confluence.frontend.advanced.search.xps.migration\":\"{\\\"ancestor\\\":true,\\\"ancestorIds\\\":true,\\\"customTypes\\\":true,\\\"empty\\\":true,\\\"includeArchivedSpaces\\\":true,\\\"labels\\\":true,\\\"queryOperators\\\":true,\\\"title\\\":true}\",\"confluence.frontend.apdex.after.paint\":true,\"confluence.frontend.app-nav-confluence-jira-evaluators\":\"not-enrolled\",\"confluence.frontend.app-navigation\":\"home\",\"confluence.frontend.app-navigation.new-layout\":true,\"confluence.frontend.app-navigation.use-user-preferences\":true,\"confluence.frontend.archive.and.delete.space\":true,\"confluence.frontend.archive.nested.pages\":true,\"confluence.frontend.archive.pages\":true,\"confluence.frontend.archive.recommendation.email\":true,\"confluence.frontend.atlaskit.pagetree.draggable\":true,\"confluence.frontend.avoid.premium.new.user.onboarding\":true,\"confluence.frontend.better.error.handling\":\"Cohort_B\",\"confluence.frontend.branch.deployment\":\"off\",\"confluence.frontend.burning.man.main.skeleton\":true,\"confluence.frontend.cache.service.worker\":true,\"confluence.frontend.cloud.media.picker\":true,\"confluence.frontend.cohort.stitching.demo\":\"not-enrolled\",\"confluence.frontend.comment.graphql.refactor\":true,\"confluence.frontend.comments.inline.discoverability\":\"header-button\",\"confluence.frontend.confluence.search.global-quick-search\":true,\"confluence.frontend.confluence.search.global-quick-search.aggregator\":true,\"confluence.frontend.confluence.search.global-quick-search.space-key-model-param\":true,\"confluence.frontend.connect.context-menu\":true,\"confluence.frontend.contextual-create\":true,\"confluence.frontend.contextual.create\":\"control\",\"confluence.frontend.cql.metadata\":true,\"confluence.frontend.create.page.experience.fail.error.attributes\":true,\"confluence.frontend.delay.nav.loading\":true,\"confluence.frontend.disable.intl.monkeypatch\":true,\"confluence.frontend.dummy.perms.segmentation\":\"Default\",\"confluence.frontend.editor.fabric.synchrony-jwt-expiration\":\"5000\",\"confluence.frontend.enable.archive.permission\":true,\"confluence.frontend.enable.atlassian.switcher.in.global.nav\":\"variation\",\"confluence.frontend.enable.force.update\":true,\"confluence.frontend.enable.invite.teammate.people.menu.dropdown\":true,\"confluence.frontend.enable.joinable-sites\":\"not-enrolled\",\"confluence.frontend.enable.people.menu.dropdown.nav.3\":true,\"confluence.frontend.enable.urlShortener.on.share\":true,\"confluence.frontend.engage-platform.engagekit\":true,\"confluence.frontend.experiment.anon.cohort\":\"not-enrolled\",\"confluence.frontend.external-share\":\"not-enrolled\",\"confluence.frontend.fabric-editor.private-collab-api\":true,\"confluence.frontend.fabric.editor.adf.preload\":true,\"confluence.frontend.fabric.editor.allow.synchrony.recovery\":true,\"confluence.frontend.fabric.editor.autoformatting.provider\":true,\"confluence.frontend.fabric.editor.blank.blogpost\":true,\"confluence.frontend.fabric.editor.blank.page\":true,\"confluence.frontend.fabric.editor.breakout-layouts\":true,\"confluence.frontend.fabric.editor.change-url-if-required\":true,\"confluence.frontend.fabric.editor.chonboard-move-experiment\":true,\"confluence.frontend.fabric.editor.collab.edit.initialize.waiting\":true,\"confluence.frontend.fabric.editor.context-panel.items\":true,\"confluence.frontend.fabric.editor.dropbox.extension\":true,\"confluence.frontend.fabric.editor.enable.publish.hang.experience.error.flag\":true,\"confluence.frontend.fabric.editor.find-and-replace\":true,\"confluence.frontend.fabric.editor.fix-get-macro-methods\":true,\"confluence.frontend.fabric.editor.force.publish.on.synchrony.failure\":true,\"confluence.frontend.fabric.editor.full-width-help-center\":true,\"confluence.frontend.fabric.editor.help.center\":true,\"confluence.frontend.fabric.editor.image.alt-text\":true,\"confluence.frontend.fabric.editor.inline.comments\":\"fabric\",\"confluence.frontend.fabric.editor.layouts.sidebar\":true,\"confluence.frontend.fabric.editor.media.table.resizing\":true,\"confluence.frontend.fabric.editor.more-colors-experiment\":true,\"confluence.frontend.fabric.editor.native.expands.insert\":true,\"confluence.frontend.fabric.editor.native.expands.render\":true,\"confluence.frontend.fabric.editor.nested-tasks\":true,\"confluence.frontend.fabric.editor.only.placeholder.text.option.11\":true,\"confluence.frontend.fabric.editor.preload.method\":\"hover\",\"confluence.frontend.fabric.editor.rollback.message\":\"none\",\"confluence.frontend.fabric.editor.rollout.date\":\"2019-3-15\",\"confluence.frontend.fabric.editor.rollout.featurekey\":\"fabric-editor-tryit-notice\",\"confluence.frontend.fabric.editor.rollout.message\":\"none\",\"confluence.frontend.fabric.editor.satisfaction.survey\":true,\"confluence.frontend.fabric.editor.satisfaction.survey.delay\":\"28\",\"confluence.frontend.fabric.editor.skip-legacy-content\":true,\"confluence.frontend.fabric.editor.smartcards\":true,\"confluence.frontend.fabric.editor.smartcards.block\":true,\"confluence.frontend.fabric.editor.smartcards.embed\":true,\"confluence.frontend.fabric.editor.smartcards.macro-override\":\"jira,jiraroadmap\",\"confluence.frontend.fabric.editor.spa-new-page\":true,\"confluence.frontend.fabric.editor.sticky-headers\":true,\"confluence.frontend.fabric.editor.synchrony.diff-optimisation-enum\":\"webworker\",\"confluence.frontend.fabric.editor.synchrony.long-polling\":true,\"confluence.frontend.fabric.editor.template.variables\":true,\"confluence.frontend.fabric.editor.transaction-tracking.options\":\"{\\\"samplingRate\\\":1000}\",\"confluence.frontend.fabric.editor.userteam.mention\":true,\"confluence.frontend.fabric.fire-event-media\":true,\"confluence.frontend.fabric.full-width-mode\":true,\"confluence.frontend.fabric.mvng.android.v3\":true,\"confluence.frontend.fabric.page.comment\":true,\"confluence.frontend.fabric.page.optin.migration\":true,\"confluence.frontend.fabric.renderer.heading.anchor\":true,\"confluence.frontend.fabric.renderer.inline.comments\":\"fabric\",\"confluence.frontend.fabric.renderer.sticky-headers\":true,\"confluence.frontend.fabric.renderer.table.sorting\":true,\"confluence.frontend.fabric.share.edit.page\":true,\"confluence.frontend.fabric.share.published\":true,\"confluence.frontend.feed-migration.all-updates\":true,\"confluence.frontend.feed-migration.popular-feed\":true,\"confluence.frontend.feed-migration.popular-feed.comments-metadata\":true,\"confluence.frontend.find.my.space\":\"not-enrolled\",\"confluence.frontend.fix-nav-version-flag\":true,\"confluence.frontend.forge.allow.config\":true,\"confluence.frontend.forge.editor.manifest\":true,\"confluence.frontend.forge.extension-point.byline\":true,\"confluence.frontend.forge.extension-point.content-action\":true,\"confluence.frontend.forge.extension-point.context-menu\":true,\"confluence.frontend.forge.extension-point.global-settings\":true,\"confluence.frontend.forge.extension-point.homepage-feed\":true,\"confluence.frontend.forge.extension-point.space-settings\":true,\"confluence.frontend.generic.comment.editor\":true,\"confluence.frontend.generic.comment.renderer\":true,\"confluence.frontend.global-invite.experiment\":\"not-enrolled\",\"confluence.frontend.global-quick-search.cpus\":true,\"confluence.frontend.global-quick-search.pre-fetching\":true,\"confluence.frontend.growth.experiments.engaged.billing\":\"control\",\"confluence.frontend.growth.experiments.engaged.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.experiments.enhanced.feature.gates\":\"not-enrolled\",\"confluence.frontend.growth.experiments.incontext.modal.upgrade\":\"experiment\",\"confluence.frontend.growth.experiments.persistent.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.experiments.request.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.middy.cohort\":\"control\",\"confluence.frontend.growth.progressive.rollout.example\":\"not enrolled\",\"confluence.frontend.header.v2\":true,\"confluence.frontend.home\":\"cohort-off\",\"confluence.frontend.home-preloader\":true,\"confluence.frontend.in-editor-templates.phase-1\":\"not-enrolled\",\"confluence.frontend.in-editor-templates.preview\":\"not-enrolled\",\"confluence.frontend.individual.pagination.links\":true,\"confluence.frontend.infrequent-quick-reload\":true,\"confluence.frontend.inline.comments.discoverability\":\"not-enrolled\",\"confluence.frontend.inline.comments.nudge\":\"not-enrolled\",\"confluence.frontend.inspect.permissions.enabled\":true,\"confluence.frontend.labels.v2\":true,\"confluence.frontend.likes.v2\":true,\"confluence.frontend.live-pages-spaces\":\"_NO_SPACES_\",\"confluence.frontend.macro.analytics.tracker\":true,\"confluence.frontend.measured.free.rollout.aa\":\"not-enrolled\",\"confluence.frontend.measured.free.rollout.aa.not.exposed.wac\":\"not-enrolled\",\"confluence.frontend.mobile-app-banner\":true,\"confluence.frontend.mobile.react.viewpage\":true,\"confluence.frontend.mobile.web.modal\":true,\"confluence.frontend.nav.forced.opt.in.reminder.flag\":\"off\",\"confluence.frontend.navigation.delay.duration\":\"750\",\"confluence.frontend.new-space-suggestion\":\"experiment\",\"confluence.frontend.nux.onboarding.v1\":\"control\",\"confluence.frontend.onboarding.animation-step\":\"enrolled\",\"confluence.frontend.onboarding.autoshow.nudges\":\"not-enrolled\",\"confluence.frontend.onboarding.checklist\":\"not-enrolled\",\"confluence.frontend.onboarding.core.actions\":\"not-enrolled\",\"confluence.frontend.onboarding.experience\":true,\"confluence.frontend.onboarding.find-teammates\":\"not-enrolled\",\"confluence.frontend.onboarding.nudges\":\"not-enrolled\",\"confluence.frontend.onboarding.origin-tracing.enabled\":true,\"confluence.frontend.onboarding.quickstart\":\"not-enrolled\",\"confluence.frontend.onboarding.quickstart.nudge\":\"not-enrolled\",\"confluence.frontend.onboarding.sample.experiment\":\"not-enrolled\",\"confluence.frontend.onboarding.segment\":\"control\",\"confluence.frontend.onboarding.segment.en-only\":true,\"confluence.frontend.onboarding.space-cards\":\"enrolled\",\"confluence.frontend.onboarding.spotlights\":\"enrolled\",\"confluence.frontend.onboarding.spotlights.modal.animation\":true,\"confluence.frontend.onboarding.state.update\":true,\"confluence.frontend.onboarding.v3.request-access.enabled\":true,\"confluence.frontend.onboarding.v3.skip-invite-teammate-button.enabled\":true,\"confluence.frontend.onclick.spa.transitions\":true,\"confluence.frontend.origin-tracing-next\":\"experiment\",\"confluence.frontend.page-header-icons-rearrange\":true,\"confluence.frontend.page-header-improv-icon-loading\":true,\"confluence.frontend.page-history.from.classic\":true,\"confluence.frontend.page.comment.top.editor\":\"not-enrolled\",\"confluence.frontend.page.comments.pagination\":\"0\",\"confluence.frontend.page.comments.sticky.editor\":\"sticky-editor\",\"confluence.frontend.page.dynamic.content\":true,\"confluence.frontend.page.history.version\":\"v2\",\"confluence.frontend.paginated.likes\":true,\"confluence.frontend.people.directory\":true,\"confluence.frontend.personal.space\":\"not-enrolled\",\"confluence.frontend.popular.feed.styles\":true,\"confluence.frontend.preload-components-on-transition\":true,\"confluence.frontend.preload-queries-on-transition\":true,\"confluence.frontend.preload-route-on-mousedown\":true,\"confluence.frontend.pubsub.integration\":true,\"confluence.frontend.queued.loadable\":true,\"confluence.frontend.quick.reload.v2\":true,\"confluence.frontend.react.inline.comments\":\"backbone\",\"confluence.frontend.read-time.render\":true,\"confluence.frontend.recent.drawer\":true,\"confluence.frontend.recent.drawer.api\":\"activity\",\"confluence.frontend.remove.invite.team.n2e\":\"not-enrolled\",\"confluence.frontend.resolved-inline-comments-dialog.v2\":true,\"confluence.frontend.retry.graphql\":true,\"confluence.frontend.revert.page-migrated.reload.tinymce\":true,\"confluence.frontend.search-filters-nav-v-3\":true,\"confluence.frontend.search.advanced.next\":true,\"confluence.frontend.search.advanced.next.additional.filters\":true,\"confluence.frontend.search.advanced.next.quick\":true,\"confluence.frontend.search.terms.ugc.sending\":true,\"confluence.frontend.sentry.logging\":\"none\",\"confluence.frontend.show.email.placeholder\":\"not-enrolled\",\"confluence.frontend.show.standard.upsell\":true,\"confluence.frontend.support.unsupported.fabric.migration\":true,\"confluence.frontend.tools-menu.v2\":true,\"confluence.frontend.unwrap-shortcuts-provider\":true,\"confluence.frontend.xbl-showcase.cohort\":\"not-enrolled\"},\"cfp63Durations\":{\"CFP-63.html\":326,\"CFP-63.query-preloader\":375,\"CFP-63.preloadContent\":692,\"CFP-63.app\":575,\"CFP-63.view-page.classic.lazyspace.load\":588,\"CFP-63.translations-ready\":747,\"CFP-63.session-data-ready\":959,\"CFP-63.root-component-render\":969,\"CFP-63.app-component-render\":989,\"CFP-63.route-manager-initialized\":1012,\"CFP-63.route-component-render\":1014,\"CFP-63.preloadContentEnd\":1078,\"CFP-63.switcher-component-render\":1138,\"CFP-63.view-page.classic.rendered\":1159,\"CFP-63.view.page.classic.contentbody\":1244},\"pageLoadedFromCache\":true,\"sw\":{},\"ssr\":false,\"ssrDurations\":{},\"cacheStatus\":{\"criticalChunks\":{\"translations.en-US\":{\"cached\":true,\"duration\":18.17500000470318},\"runtime\":{\"cached\":false,\"duration\":50.97999999998137},\"atlaskit\":{\"cached\":false,\"duration\":56.875000009313226},\"afp\":{\"cached\":false,\"duration\":58.04000000352971},\"static\":{\"cached\":true,\"duration\":25.76499999850057},\"vendors\":{\"cached\":true,\"duration\":95.3799999988405},\"app\":{\"cached\":false,\"duration\":68.93499998841435}},\"totalChunkCount\":62},\"task\":\"confluence.page.view\",\"taskId\":\"page\",\"type\":\"initialLoad\",\"threshold\":1000,\"apdex\":0.5,\"startTime\":1599211035581.814,\"stopTime\":1599211036991.859,\"duration\":1410.044921875,\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui readyForUser\",\"messageId\":\"ajs-9bccc78263542723b0c12e417ad49366\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.290Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.010Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"contentType\":\"page\",\"startTime\":0,\"duration\":1258,\"activeDuration\":1258,\"adjustedDuration\":1258,\"task\":\"view-content\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-bd5cbad0bb1afca1a35dfeafadf28040\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.290Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.016Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"contentType\":\"page\",\"startTime\":0,\"duration\":1259,\"activeDuration\":1259,\"adjustedDuration\":1259,\"task\":\"view-page\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-b4e32b59421eca7aec25455fae2c4d95\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.290Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.021Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"confluence-frontend\",\"actionSubject\":\"main-layout\",\"action\":\"done\",\"actionSubjectId\":\"\",\"attributes\":{\"featureFlags\":{},\"duration\":2.4249999987659976},\"tags\":[\"performance\"],\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"main-layout done\",\"messageId\":\"ajs-944b0dc697f3364931ec2b24ed49ca2f\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.290Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.136Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":1552.045000004,\"task\":\"view-page/title\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-7a42c4ca742ab14ef59fac58b839c239\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.290Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:17:17.290Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/wiki/rest/create-dialog/1.0/spaces?promotedSpacesLimit=1&otherSpacesLimit=1&promotedSpaceKey=INT",
+      "_postman_id": "1c88e1a1-dd6c-4eaf-b17a-3a43150f88be",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/wiki/rest/create-dialog/1.0/spaces?promotedSpacesLimit=1&otherSpacesLimit=1&promotedSpaceKey=INT",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "wiki",
+            "rest",
+            "create-dialog",
+            "1.0",
+            "spaces"
+          ],
+          "query": [
+            {
+              "key": "promotedSpacesLimit",
+              "value": "1"
+            },
+            {
+              "key": "otherSpacesLimit",
+              "value": "1"
+            },
+            {
+              "key": "promotedSpaceKey",
+              "value": "INT"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=RolloutAnnouncementBannerQuery",
+      "_postman_id": "dbef7682-0840-4e7b-94b4-4672f8642e59",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "RolloutAnnouncementBannerQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"operationName\":\"RolloutAnnouncementBannerQuery\",\"variables\":{},\"query\":\"query RolloutAnnouncementBannerQuery {\\n  user(current: true) {\\n    id\\n    displayName\\n    confluence {\\n      space {\\n        id\\n        key\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=RolloutAnnouncementBannerQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "RolloutAnnouncementBannerQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/graphql",
+      "_postman_id": "7957fe25-0c82-41a3-a82c-a9e953403994",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"extensionList\",\"variables\":{\"contextIds\":[\"ari:cloud:confluence::site/0d13b137-2934-4b74-a921-694ab83c54c5\"],\"type\":\"confluence:contextMenu\"},\"query\":\"query extensionList($contextIds: [ID!]!, $type: String!) {\\n  extensionContexts(contextIds: $contextIds) {\\n    id\\n    extensionsByType(type: $type) {\\n      id\\n      environmentType\\n      properties\\n      type\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/graphql"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/join-site-service/site/0d13b137-2934-4b74-a921-694ab83c54c5/domainRestrictedSignupPromotion",
+      "_postman_id": "37a4bf9e-cadd-4575-a3cd-bc30c9e5a9cf",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/gateway/api/join-site-service/site/0d13b137-2934-4b74-a921-694ab83c54c5/domainRestrictedSignupPromotion"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/wiki/rest/onboarding/1/store",
+      "_postman_id": "3b766a0f-4f1e-4204-bb33-86aeefce7291",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"key\":\"quickstart-state:createSpaceCompleted\",\"value\":\"true\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/wiki/rest/onboarding/1/store"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "891a5343-360a-47f0-8050-6df7b729f108",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:17:17.169Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"startTime\":1552.045000004,\"duration\":34,\"activeDuration\":34,\"adjustedDuration\":34,\"task\":\"view-page/title\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-138325d4cdd9cc0072754614d4fc1cb4\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.683Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.217Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"confluence-frontend\",\"actionSubject\":\"forceUpdateSPA\",\"action\":\"checked\",\"attributes\":{\"navigationStart\":1599211035581,\"buildDate\":1598900579784,\"forceUpdateTimestamp\":1598330109301},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"forceUpdateSPA checked\",\"messageId\":\"ajs-9ca7bbe65a0bd283aa3bd5850c93fdae\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.683Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.240Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskStart\",\"attributes\":{\"startTime\":1655.7650000031572,\"task\":\"view-page/byline\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskStart\",\"messageId\":\"ajs-a86bd1f841374813cc23f45ce84a21de\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.683Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.272Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"startTime\":1655.7650000031572,\"duration\":28,\"activeDuration\":28,\"adjustedDuration\":28,\"task\":\"view-page/byline\",\"taskId\":\"1565590307\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-68926fd93c69e560ab3bf6230ff54c49\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.683Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.622Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"startTime\":1054.0749999927357,\"duration\":977,\"activeDuration\":977,\"adjustedDuration\":977,\"task\":\"navigation/app-nav-global-navigation\",\"taskId\":\"a39abb3f-a12e-45f9-bbdd-de7a4b9d207a\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-524de91bd531c02e8fe3994d5fc84aae\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.683Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.630Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"confluence-frontend\",\"actionSubject\":\"Navigation\",\"action\":\"done\",\"actionSubjectId\":\"NavigationLoading\",\"attributes\":{\"featureFlags\":{\"confluence.frontend-delete-own-permission-spotlight\":true,\"confluence.frontend-delete-own-permission-spotlight-delay-duration\":\"3000\",\"confluence.frontend.aa.mw.experiment\":\"control\",\"confluence.frontend.add-homepage-id-to-space-overview-url\":true,\"confluence.frontend.adg3.space.config\":true,\"confluence.frontend.adminkey.bxp.upgrade.enabled\":true,\"confluence.frontend.advanced-search.smart-contributor-filter\":true,\"confluence.frontend.advanced.search.xps.migration\":\"{\\\"ancestor\\\":true,\\\"ancestorIds\\\":true,\\\"customTypes\\\":true,\\\"empty\\\":true,\\\"includeArchivedSpaces\\\":true,\\\"labels\\\":true,\\\"queryOperators\\\":true,\\\"title\\\":true}\",\"confluence.frontend.apdex.after.paint\":true,\"confluence.frontend.app-nav-confluence-jira-evaluators\":\"not-enrolled\",\"confluence.frontend.app-navigation\":\"home\",\"confluence.frontend.app-navigation.new-layout\":true,\"confluence.frontend.app-navigation.use-user-preferences\":true,\"confluence.frontend.archive.and.delete.space\":true,\"confluence.frontend.archive.nested.pages\":true,\"confluence.frontend.archive.pages\":true,\"confluence.frontend.archive.recommendation.email\":true,\"confluence.frontend.atlaskit.pagetree.draggable\":true,\"confluence.frontend.avoid.premium.new.user.onboarding\":true,\"confluence.frontend.better.error.handling\":\"Cohort_B\",\"confluence.frontend.branch.deployment\":\"off\",\"confluence.frontend.burning.man.main.skeleton\":true,\"confluence.frontend.cache.service.worker\":true,\"confluence.frontend.cloud.media.picker\":true,\"confluence.frontend.cohort.stitching.demo\":\"not-enrolled\",\"confluence.frontend.comment.graphql.refactor\":true,\"confluence.frontend.comments.inline.discoverability\":\"header-button\",\"confluence.frontend.confluence.search.global-quick-search\":true,\"confluence.frontend.confluence.search.global-quick-search.aggregator\":true,\"confluence.frontend.confluence.search.global-quick-search.space-key-model-param\":true,\"confluence.frontend.connect.context-menu\":true,\"confluence.frontend.contextual-create\":true,\"confluence.frontend.contextual.create\":\"control\",\"confluence.frontend.cql.metadata\":true,\"confluence.frontend.create.page.experience.fail.error.attributes\":true,\"confluence.frontend.delay.nav.loading\":true,\"confluence.frontend.disable.intl.monkeypatch\":true,\"confluence.frontend.dummy.perms.segmentation\":\"Default\",\"confluence.frontend.editor.fabric.synchrony-jwt-expiration\":\"5000\",\"confluence.frontend.enable.archive.permission\":true,\"confluence.frontend.enable.atlassian.switcher.in.global.nav\":\"variation\",\"confluence.frontend.enable.force.update\":true,\"confluence.frontend.enable.invite.teammate.people.menu.dropdown\":true,\"confluence.frontend.enable.joinable-sites\":\"not-enrolled\",\"confluence.frontend.enable.people.menu.dropdown.nav.3\":true,\"confluence.frontend.enable.urlShortener.on.share\":true,\"confluence.frontend.engage-platform.engagekit\":true,\"confluence.frontend.experiment.anon.cohort\":\"not-enrolled\",\"confluence.frontend.external-share\":\"not-enrolled\",\"confluence.frontend.fabric-editor.private-collab-api\":true,\"confluence.frontend.fabric.editor.adf.preload\":true,\"confluence.frontend.fabric.editor.allow.synchrony.recovery\":true,\"confluence.frontend.fabric.editor.autoformatting.provider\":true,\"confluence.frontend.fabric.editor.blank.blogpost\":true,\"confluence.frontend.fabric.editor.blank.page\":true,\"confluence.frontend.fabric.editor.breakout-layouts\":true,\"confluence.frontend.fabric.editor.change-url-if-required\":true,\"confluence.frontend.fabric.editor.chonboard-move-experiment\":true,\"confluence.frontend.fabric.editor.collab.edit.initialize.waiting\":true,\"confluence.frontend.fabric.editor.context-panel.items\":true,\"confluence.frontend.fabric.editor.dropbox.extension\":true,\"confluence.frontend.fabric.editor.enable.publish.hang.experience.error.flag\":true,\"confluence.frontend.fabric.editor.find-and-replace\":true,\"confluence.frontend.fabric.editor.fix-get-macro-methods\":true,\"confluence.frontend.fabric.editor.force.publish.on.synchrony.failure\":true,\"confluence.frontend.fabric.editor.full-width-help-center\":true,\"confluence.frontend.fabric.editor.help.center\":true,\"confluence.frontend.fabric.editor.image.alt-text\":true,\"confluence.frontend.fabric.editor.inline.comments\":\"fabric\",\"confluence.frontend.fabric.editor.layouts.sidebar\":true,\"confluence.frontend.fabric.editor.media.table.resizing\":true,\"confluence.frontend.fabric.editor.more-colors-experiment\":true,\"confluence.frontend.fabric.editor.native.expands.insert\":true,\"confluence.frontend.fabric.editor.native.expands.render\":true,\"confluence.frontend.fabric.editor.nested-tasks\":true,\"confluence.frontend.fabric.editor.only.placeholder.text.option.11\":true,\"confluence.frontend.fabric.editor.preload.method\":\"hover\",\"confluence.frontend.fabric.editor.rollback.message\":\"none\",\"confluence.frontend.fabric.editor.rollout.date\":\"2019-3-15\",\"confluence.frontend.fabric.editor.rollout.featurekey\":\"fabric-editor-tryit-notice\",\"confluence.frontend.fabric.editor.rollout.message\":\"none\",\"confluence.frontend.fabric.editor.satisfaction.survey\":true,\"confluence.frontend.fabric.editor.satisfaction.survey.delay\":\"28\",\"confluence.frontend.fabric.editor.skip-legacy-content\":true,\"confluence.frontend.fabric.editor.smartcards\":true,\"confluence.frontend.fabric.editor.smartcards.block\":true,\"confluence.frontend.fabric.editor.smartcards.embed\":true,\"confluence.frontend.fabric.editor.smartcards.macro-override\":\"jira,jiraroadmap\",\"confluence.frontend.fabric.editor.spa-new-page\":true,\"confluence.frontend.fabric.editor.sticky-headers\":true,\"confluence.frontend.fabric.editor.synchrony.diff-optimisation-enum\":\"webworker\",\"confluence.frontend.fabric.editor.synchrony.long-polling\":true,\"confluence.frontend.fabric.editor.template.variables\":true,\"confluence.frontend.fabric.editor.transaction-tracking.options\":\"{\\\"samplingRate\\\":1000}\",\"confluence.frontend.fabric.editor.userteam.mention\":true,\"confluence.frontend.fabric.fire-event-media\":true,\"confluence.frontend.fabric.full-width-mode\":true,\"confluence.frontend.fabric.mvng.android.v3\":true,\"confluence.frontend.fabric.page.comment\":true,\"confluence.frontend.fabric.page.optin.migration\":true,\"confluence.frontend.fabric.renderer.heading.anchor\":true,\"confluence.frontend.fabric.renderer.inline.comments\":\"fabric\",\"confluence.frontend.fabric.renderer.sticky-headers\":true,\"confluence.frontend.fabric.renderer.table.sorting\":true,\"confluence.frontend.fabric.share.edit.page\":true,\"confluence.frontend.fabric.share.published\":true,\"confluence.frontend.feed-migration.all-updates\":true,\"confluence.frontend.feed-migration.popular-feed\":true,\"confluence.frontend.feed-migration.popular-feed.comments-metadata\":true,\"confluence.frontend.find.my.space\":\"not-enrolled\",\"confluence.frontend.fix-nav-version-flag\":true,\"confluence.frontend.forge.allow.config\":true,\"confluence.frontend.forge.editor.manifest\":true,\"confluence.frontend.forge.extension-point.byline\":true,\"confluence.frontend.forge.extension-point.content-action\":true,\"confluence.frontend.forge.extension-point.context-menu\":true,\"confluence.frontend.forge.extension-point.global-settings\":true,\"confluence.frontend.forge.extension-point.homepage-feed\":true,\"confluence.frontend.forge.extension-point.space-settings\":true,\"confluence.frontend.generic.comment.editor\":true,\"confluence.frontend.generic.comment.renderer\":true,\"confluence.frontend.global-invite.experiment\":\"not-enrolled\",\"confluence.frontend.global-quick-search.cpus\":true,\"confluence.frontend.global-quick-search.pre-fetching\":true,\"confluence.frontend.growth.experiments.engaged.billing\":\"control\",\"confluence.frontend.growth.experiments.engaged.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.experiments.enhanced.feature.gates\":\"not-enrolled\",\"confluence.frontend.growth.experiments.incontext.modal.upgrade\":\"experiment\",\"confluence.frontend.growth.experiments.persistent.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.experiments.request.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.middy.cohort\":\"control\",\"confluence.frontend.growth.progressive.rollout.example\":\"not enrolled\",\"confluence.frontend.header.v2\":true,\"confluence.frontend.home\":\"cohort-off\",\"confluence.frontend.home-preloader\":true,\"confluence.frontend.in-editor-templates.phase-1\":\"not-enrolled\",\"confluence.frontend.in-editor-templates.preview\":\"not-enrolled\",\"confluence.frontend.individual.pagination.links\":true,\"confluence.frontend.infrequent-quick-reload\":true,\"confluence.frontend.inline.comments.discoverability\":\"not-enrolled\",\"confluence.frontend.inline.comments.nudge\":\"not-enrolled\",\"confluence.frontend.inspect.permissions.enabled\":true,\"confluence.frontend.labels.v2\":true,\"confluence.frontend.likes.v2\":true,\"confluence.frontend.live-pages-spaces\":\"_NO_SPACES_\",\"confluence.frontend.macro.analytics.tracker\":true,\"confluence.frontend.measured.free.rollout.aa\":\"not-enrolled\",\"confluence.frontend.measured.free.rollout.aa.not.exposed.wac\":\"not-enrolled\",\"confluence.frontend.mobile-app-banner\":true,\"confluence.frontend.mobile.react.viewpage\":true,\"confluence.frontend.mobile.web.modal\":true,\"confluence.frontend.nav.forced.opt.in.reminder.flag\":\"off\",\"confluence.frontend.navigation.delay.duration\":\"750\",\"confluence.frontend.new-space-suggestion\":\"experiment\",\"confluence.frontend.nux.onboarding.v1\":\"control\",\"confluence.frontend.onboarding.animation-step\":\"enrolled\",\"confluence.frontend.onboarding.autoshow.nudges\":\"not-enrolled\",\"confluence.frontend.onboarding.checklist\":\"not-enrolled\",\"confluence.frontend.onboarding.core.actions\":\"not-enrolled\",\"confluence.frontend.onboarding.experience\":true,\"confluence.frontend.onboarding.find-teammates\":\"not-enrolled\",\"confluence.frontend.onboarding.nudges\":\"not-enrolled\",\"confluence.frontend.onboarding.origin-tracing.enabled\":true,\"confluence.frontend.onboarding.quickstart\":\"not-enrolled\",\"confluence.frontend.onboarding.quickstart.nudge\":\"not-enrolled\",\"confluence.frontend.onboarding.sample.experiment\":\"not-enrolled\",\"confluence.frontend.onboarding.segment\":\"control\",\"confluence.frontend.onboarding.segment.en-only\":true,\"confluence.frontend.onboarding.space-cards\":\"enrolled\",\"confluence.frontend.onboarding.spotlights\":\"enrolled\",\"confluence.frontend.onboarding.spotlights.modal.animation\":true,\"confluence.frontend.onboarding.state.update\":true,\"confluence.frontend.onboarding.v3.request-access.enabled\":true,\"confluence.frontend.onboarding.v3.skip-invite-teammate-button.enabled\":true,\"confluence.frontend.onclick.spa.transitions\":true,\"confluence.frontend.origin-tracing-next\":\"experiment\",\"confluence.frontend.page-header-icons-rearrange\":true,\"confluence.frontend.page-header-improv-icon-loading\":true,\"confluence.frontend.page-history.from.classic\":true,\"confluence.frontend.page.comment.top.editor\":\"not-enrolled\",\"confluence.frontend.page.comments.pagination\":\"0\",\"confluence.frontend.page.comments.sticky.editor\":\"sticky-editor\",\"confluence.frontend.page.dynamic.content\":true,\"confluence.frontend.page.history.version\":\"v2\",\"confluence.frontend.paginated.likes\":true,\"confluence.frontend.people.directory\":true,\"confluence.frontend.personal.space\":\"not-enrolled\",\"confluence.frontend.popular.feed.styles\":true,\"confluence.frontend.preload-components-on-transition\":true,\"confluence.frontend.preload-queries-on-transition\":true,\"confluence.frontend.preload-route-on-mousedown\":true,\"confluence.frontend.pubsub.integration\":true,\"confluence.frontend.queued.loadable\":true,\"confluence.frontend.quick.reload.v2\":true,\"confluence.frontend.react.inline.comments\":\"backbone\",\"confluence.frontend.read-time.render\":true,\"confluence.frontend.recent.drawer\":true,\"confluence.frontend.recent.drawer.api\":\"activity\",\"confluence.frontend.remove.invite.team.n2e\":\"not-enrolled\",\"confluence.frontend.resolved-inline-comments-dialog.v2\":true,\"confluence.frontend.retry.graphql\":true,\"confluence.frontend.revert.page-migrated.reload.tinymce\":true,\"confluence.frontend.search-filters-nav-v-3\":true,\"confluence.frontend.search.advanced.next\":true,\"confluence.frontend.search.advanced.next.additional.filters\":true,\"confluence.frontend.search.advanced.next.quick\":true,\"confluence.frontend.search.terms.ugc.sending\":true,\"confluence.frontend.sentry.logging\":\"none\",\"confluence.frontend.show.email.placeholder\":\"not-enrolled\",\"confluence.frontend.show.standard.upsell\":true,\"confluence.frontend.support.unsupported.fabric.migration\":true,\"confluence.frontend.tools-menu.v2\":true,\"confluence.frontend.unwrap-shortcuts-provider\":true,\"confluence.frontend.xbl-showcase.cohort\":\"not-enrolled\"},\"duration\":976.7500000016298,\"navVersion\":\"3\"},\"tags\":[\"performance\"],\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"Navigation done\",\"messageId\":\"ajs-c6cd483f96141927f723f3a9509591fc\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.683Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:17:17.641Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"confluence-frontend\",\"actionSubject\":\"navigation-fmp\",\"action\":\"done\",\"actionSubjectId\":\"NavigationFMP\",\"attributes\":{\"featureFlags\":{\"confluence.frontend-delete-own-permission-spotlight\":true,\"confluence.frontend-delete-own-permission-spotlight-delay-duration\":\"3000\",\"confluence.frontend.aa.mw.experiment\":\"control\",\"confluence.frontend.add-homepage-id-to-space-overview-url\":true,\"confluence.frontend.adg3.space.config\":true,\"confluence.frontend.adminkey.bxp.upgrade.enabled\":true,\"confluence.frontend.advanced-search.smart-contributor-filter\":true,\"confluence.frontend.advanced.search.xps.migration\":\"{\\\"ancestor\\\":true,\\\"ancestorIds\\\":true,\\\"customTypes\\\":true,\\\"empty\\\":true,\\\"includeArchivedSpaces\\\":true,\\\"labels\\\":true,\\\"queryOperators\\\":true,\\\"title\\\":true}\",\"confluence.frontend.apdex.after.paint\":true,\"confluence.frontend.app-nav-confluence-jira-evaluators\":\"not-enrolled\",\"confluence.frontend.app-navigation\":\"home\",\"confluence.frontend.app-navigation.new-layout\":true,\"confluence.frontend.app-navigation.use-user-preferences\":true,\"confluence.frontend.archive.and.delete.space\":true,\"confluence.frontend.archive.nested.pages\":true,\"confluence.frontend.archive.pages\":true,\"confluence.frontend.archive.recommendation.email\":true,\"confluence.frontend.atlaskit.pagetree.draggable\":true,\"confluence.frontend.avoid.premium.new.user.onboarding\":true,\"confluence.frontend.better.error.handling\":\"Cohort_B\",\"confluence.frontend.branch.deployment\":\"off\",\"confluence.frontend.burning.man.main.skeleton\":true,\"confluence.frontend.cache.service.worker\":true,\"confluence.frontend.cloud.media.picker\":true,\"confluence.frontend.cohort.stitching.demo\":\"not-enrolled\",\"confluence.frontend.comment.graphql.refactor\":true,\"confluence.frontend.comments.inline.discoverability\":\"header-button\",\"confluence.frontend.confluence.search.global-quick-search\":true,\"confluence.frontend.confluence.search.global-quick-search.aggregator\":true,\"confluence.frontend.confluence.search.global-quick-search.space-key-model-param\":true,\"confluence.frontend.connect.context-menu\":true,\"confluence.frontend.contextual-create\":true,\"confluence.frontend.contextual.create\":\"control\",\"confluence.frontend.cql.metadata\":true,\"confluence.frontend.create.page.experience.fail.error.attributes\":true,\"confluence.frontend.delay.nav.loading\":true,\"confluence.frontend.disable.intl.monkeypatch\":true,\"confluence.frontend.dummy.perms.segmentation\":\"Default\",\"confluence.frontend.editor.fabric.synchrony-jwt-expiration\":\"5000\",\"confluence.frontend.enable.archive.permission\":true,\"confluence.frontend.enable.atlassian.switcher.in.global.nav\":\"variation\",\"confluence.frontend.enable.force.update\":true,\"confluence.frontend.enable.invite.teammate.people.menu.dropdown\":true,\"confluence.frontend.enable.joinable-sites\":\"not-enrolled\",\"confluence.frontend.enable.people.menu.dropdown.nav.3\":true,\"confluence.frontend.enable.urlShortener.on.share\":true,\"confluence.frontend.engage-platform.engagekit\":true,\"confluence.frontend.experiment.anon.cohort\":\"not-enrolled\",\"confluence.frontend.external-share\":\"not-enrolled\",\"confluence.frontend.fabric-editor.private-collab-api\":true,\"confluence.frontend.fabric.editor.adf.preload\":true,\"confluence.frontend.fabric.editor.allow.synchrony.recovery\":true,\"confluence.frontend.fabric.editor.autoformatting.provider\":true,\"confluence.frontend.fabric.editor.blank.blogpost\":true,\"confluence.frontend.fabric.editor.blank.page\":true,\"confluence.frontend.fabric.editor.breakout-layouts\":true,\"confluence.frontend.fabric.editor.change-url-if-required\":true,\"confluence.frontend.fabric.editor.chonboard-move-experiment\":true,\"confluence.frontend.fabric.editor.collab.edit.initialize.waiting\":true,\"confluence.frontend.fabric.editor.context-panel.items\":true,\"confluence.frontend.fabric.editor.dropbox.extension\":true,\"confluence.frontend.fabric.editor.enable.publish.hang.experience.error.flag\":true,\"confluence.frontend.fabric.editor.find-and-replace\":true,\"confluence.frontend.fabric.editor.fix-get-macro-methods\":true,\"confluence.frontend.fabric.editor.force.publish.on.synchrony.failure\":true,\"confluence.frontend.fabric.editor.full-width-help-center\":true,\"confluence.frontend.fabric.editor.help.center\":true,\"confluence.frontend.fabric.editor.image.alt-text\":true,\"confluence.frontend.fabric.editor.inline.comments\":\"fabric\",\"confluence.frontend.fabric.editor.layouts.sidebar\":true,\"confluence.frontend.fabric.editor.media.table.resizing\":true,\"confluence.frontend.fabric.editor.more-colors-experiment\":true,\"confluence.frontend.fabric.editor.native.expands.insert\":true,\"confluence.frontend.fabric.editor.native.expands.render\":true,\"confluence.frontend.fabric.editor.nested-tasks\":true,\"confluence.frontend.fabric.editor.only.placeholder.text.option.11\":true,\"confluence.frontend.fabric.editor.preload.method\":\"hover\",\"confluence.frontend.fabric.editor.rollback.message\":\"none\",\"confluence.frontend.fabric.editor.rollout.date\":\"2019-3-15\",\"confluence.frontend.fabric.editor.rollout.featurekey\":\"fabric-editor-tryit-notice\",\"confluence.frontend.fabric.editor.rollout.message\":\"none\",\"confluence.frontend.fabric.editor.satisfaction.survey\":true,\"confluence.frontend.fabric.editor.satisfaction.survey.delay\":\"28\",\"confluence.frontend.fabric.editor.skip-legacy-content\":true,\"confluence.frontend.fabric.editor.smartcards\":true,\"confluence.frontend.fabric.editor.smartcards.block\":true,\"confluence.frontend.fabric.editor.smartcards.embed\":true,\"confluence.frontend.fabric.editor.smartcards.macro-override\":\"jira,jiraroadmap\",\"confluence.frontend.fabric.editor.spa-new-page\":true,\"confluence.frontend.fabric.editor.sticky-headers\":true,\"confluence.frontend.fabric.editor.synchrony.diff-optimisation-enum\":\"webworker\",\"confluence.frontend.fabric.editor.synchrony.long-polling\":true,\"confluence.frontend.fabric.editor.template.variables\":true,\"confluence.frontend.fabric.editor.transaction-tracking.options\":\"{\\\"samplingRate\\\":1000}\",\"confluence.frontend.fabric.editor.userteam.mention\":true,\"confluence.frontend.fabric.fire-event-media\":true,\"confluence.frontend.fabric.full-width-mode\":true,\"confluence.frontend.fabric.mvng.android.v3\":true,\"confluence.frontend.fabric.page.comment\":true,\"confluence.frontend.fabric.page.optin.migration\":true,\"confluence.frontend.fabric.renderer.heading.anchor\":true,\"confluence.frontend.fabric.renderer.inline.comments\":\"fabric\",\"confluence.frontend.fabric.renderer.sticky-headers\":true,\"confluence.frontend.fabric.renderer.table.sorting\":true,\"confluence.frontend.fabric.share.edit.page\":true,\"confluence.frontend.fabric.share.published\":true,\"confluence.frontend.feed-migration.all-updates\":true,\"confluence.frontend.feed-migration.popular-feed\":true,\"confluence.frontend.feed-migration.popular-feed.comments-metadata\":true,\"confluence.frontend.find.my.space\":\"not-enrolled\",\"confluence.frontend.fix-nav-version-flag\":true,\"confluence.frontend.forge.allow.config\":true,\"confluence.frontend.forge.editor.manifest\":true,\"confluence.frontend.forge.extension-point.byline\":true,\"confluence.frontend.forge.extension-point.content-action\":true,\"confluence.frontend.forge.extension-point.context-menu\":true,\"confluence.frontend.forge.extension-point.global-settings\":true,\"confluence.frontend.forge.extension-point.homepage-feed\":true,\"confluence.frontend.forge.extension-point.space-settings\":true,\"confluence.frontend.generic.comment.editor\":true,\"confluence.frontend.generic.comment.renderer\":true,\"confluence.frontend.global-invite.experiment\":\"not-enrolled\",\"confluence.frontend.global-quick-search.cpus\":true,\"confluence.frontend.global-quick-search.pre-fetching\":true,\"confluence.frontend.growth.experiments.engaged.billing\":\"control\",\"confluence.frontend.growth.experiments.engaged.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.experiments.enhanced.feature.gates\":\"not-enrolled\",\"confluence.frontend.growth.experiments.incontext.modal.upgrade\":\"experiment\",\"confluence.frontend.growth.experiments.persistent.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.experiments.request.upgrade\":\"not-enrolled\",\"confluence.frontend.growth.middy.cohort\":\"control\",\"confluence.frontend.growth.progressive.rollout.example\":\"not enrolled\",\"confluence.frontend.header.v2\":true,\"confluence.frontend.home\":\"cohort-off\",\"confluence.frontend.home-preloader\":true,\"confluence.frontend.in-editor-templates.phase-1\":\"not-enrolled\",\"confluence.frontend.in-editor-templates.preview\":\"not-enrolled\",\"confluence.frontend.individual.pagination.links\":true,\"confluence.frontend.infrequent-quick-reload\":true,\"confluence.frontend.inline.comments.discoverability\":\"not-enrolled\",\"confluence.frontend.inline.comments.nudge\":\"not-enrolled\",\"confluence.frontend.inspect.permissions.enabled\":true,\"confluence.frontend.labels.v2\":true,\"confluence.frontend.likes.v2\":true,\"confluence.frontend.live-pages-spaces\":\"_NO_SPACES_\",\"confluence.frontend.macro.analytics.tracker\":true,\"confluence.frontend.measured.free.rollout.aa\":\"not-enrolled\",\"confluence.frontend.measured.free.rollout.aa.not.exposed.wac\":\"not-enrolled\",\"confluence.frontend.mobile-app-banner\":true,\"confluence.frontend.mobile.react.viewpage\":true,\"confluence.frontend.mobile.web.modal\":true,\"confluence.frontend.nav.forced.opt.in.reminder.flag\":\"off\",\"confluence.frontend.navigation.delay.duration\":\"750\",\"confluence.frontend.new-space-suggestion\":\"experiment\",\"confluence.frontend.nux.onboarding.v1\":\"control\",\"confluence.frontend.onboarding.animation-step\":\"enrolled\",\"confluence.frontend.onboarding.autoshow.nudges\":\"not-enrolled\",\"confluence.frontend.onboarding.checklist\":\"not-enrolled\",\"confluence.frontend.onboarding.core.actions\":\"not-enrolled\",\"confluence.frontend.onboarding.experience\":true,\"confluence.frontend.onboarding.find-teammates\":\"not-enrolled\",\"confluence.frontend.onboarding.nudges\":\"not-enrolled\",\"confluence.frontend.onboarding.origin-tracing.enabled\":true,\"confluence.frontend.onboarding.quickstart\":\"not-enrolled\",\"confluence.frontend.onboarding.quickstart.nudge\":\"not-enrolled\",\"confluence.frontend.onboarding.sample.experiment\":\"not-enrolled\",\"confluence.frontend.onboarding.segment\":\"control\",\"confluence.frontend.onboarding.segment.en-only\":true,\"confluence.frontend.onboarding.space-cards\":\"enrolled\",\"confluence.frontend.onboarding.spotlights\":\"enrolled\",\"confluence.frontend.onboarding.spotlights.modal.animation\":true,\"confluence.frontend.onboarding.state.update\":true,\"confluence.frontend.onboarding.v3.request-access.enabled\":true,\"confluence.frontend.onboarding.v3.skip-invite-teammate-button.enabled\":true,\"confluence.frontend.onclick.spa.transitions\":true,\"confluence.frontend.origin-tracing-next\":\"experiment\",\"confluence.frontend.page-header-icons-rearrange\":true,\"confluence.frontend.page-header-improv-icon-loading\":true,\"confluence.frontend.page-history.from.classic\":true,\"confluence.frontend.page.comment.top.editor\":\"not-enrolled\",\"confluence.frontend.page.comments.pagination\":\"0\",\"confluence.frontend.page.comments.sticky.editor\":\"sticky-editor\",\"confluence.frontend.page.dynamic.content\":true,\"confluence.frontend.page.history.version\":\"v2\",\"confluence.frontend.paginated.likes\":true,\"confluence.frontend.people.directory\":true,\"confluence.frontend.personal.space\":\"not-enrolled\",\"confluence.frontend.popular.feed.styles\":true,\"confluence.frontend.preload-components-on-transition\":true,\"confluence.frontend.preload-queries-on-transition\":true,\"confluence.frontend.preload-route-on-mousedown\":true,\"confluence.frontend.pubsub.integration\":true,\"confluence.frontend.queued.loadable\":true,\"confluence.frontend.quick.reload.v2\":true,\"confluence.frontend.react.inline.comments\":\"backbone\",\"confluence.frontend.read-time.render\":true,\"confluence.frontend.recent.drawer\":true,\"confluence.frontend.recent.drawer.api\":\"activity\",\"confluence.frontend.remove.invite.team.n2e\":\"not-enrolled\",\"confluence.frontend.resolved-inline-comments-dialog.v2\":true,\"confluence.frontend.retry.graphql\":true,\"confluence.frontend.revert.page-migrated.reload.tinymce\":true,\"confluence.frontend.search-filters-nav-v-3\":true,\"confluence.frontend.search.advanced.next\":true,\"confluence.frontend.search.advanced.next.additional.filters\":true,\"confluence.frontend.search.advanced.next.quick\":true,\"confluence.frontend.search.terms.ugc.sending\":true,\"confluence.frontend.sentry.logging\":\"none\",\"confluence.frontend.show.email.placeholder\":\"not-enrolled\",\"confluence.frontend.show.standard.upsell\":true,\"confluence.frontend.support.unsupported.fabric.migration\":true,\"confluence.frontend.tools-menu.v2\":true,\"confluence.frontend.unwrap-shortcuts-provider\":true,\"confluence.frontend.xbl-showcase.cohort\":\"not-enrolled\"},\"duration\":1453.974999996717},\"tags\":[\"performance\"],\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"navigation-fmp done\",\"messageId\":\"ajs-3f25f6449cf0c6841fc0e70a4731cc02\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:17:17.683Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:17:17.683Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=SideNavigationSpaceLinksQuery,SideNavigationShortcutLinksQuery,SideNavigationSpaceOperationsQuery",
+      "_postman_id": "f0c3fba4-0711-43c9-98b8-47c08ad225e6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "SideNavigationSpaceLinksQuery,SideNavigationShortcutLinksQuery,SideNavigationSpaceOperationsQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"operationName\":\"SideNavigationSpaceLinksQuery\",\"variables\":{\"spaceKey\":\"INT\"},\"query\":\"query SideNavigationSpaceLinksQuery($spaceKey: String) {\\n  spaceSidebarLinks(spaceKey: $spaceKey) {\\n    main(includeHidden: true) {\\n      id\\n      webItemKey\\n      webItemCompleteKey\\n      title\\n      url\\n      position\\n      styleClass\\n      icon {\\n        path\\n        width\\n        height\\n        isDefault\\n        __typename\\n      }\\n      iconClass\\n      hidden\\n      canHide\\n      tooltip\\n      __typename\\n    }\\n    __typename\\n  }\\n  space(key: $spaceKey) {\\n    ...SpaceFragment\\n    homepage {\\n      id\\n      __typename\\n    }\\n    __typename\\n  }\\n  recentSpaces {\\n    ...SpaceFragment\\n    __typename\\n  }\\n}\\n\\nfragment SpaceFragment on Space {\\n  id\\n  key\\n  name\\n  icon {\\n    path(type: ABSOLUTE)\\n    __typename\\n  }\\n  __typename\\n}\\n\"},{\"operationName\":\"SideNavigationShortcutLinksQuery\",\"variables\":{\"spaceKey\":\"INT\"},\"query\":\"query SideNavigationShortcutLinksQuery($spaceKey: String!) {\\n  spaceSidebarLinks(spaceKey: $spaceKey) {\\n    quick {\\n      id\\n      url\\n      position\\n      title\\n      styleClass\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"},{\"operationName\":\"SideNavigationSpaceOperationsQuery\",\"variables\":{\"spaceKey\":\"INT\"},\"query\":\"query SideNavigationSpaceOperationsQuery($spaceKey: String) {\\n  space(key: $spaceKey) {\\n    operations {\\n      operation\\n      __typename\\n    }\\n    id\\n    __typename\\n  }\\n}\\n\"}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=SideNavigationSpaceLinksQuery,SideNavigationShortcutLinksQuery,SideNavigationSpaceOperationsQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "SideNavigationSpaceLinksQuery,SideNavigationShortcutLinksQuery,SideNavigationSpaceOperationsQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/notification-log/api/2/notifications/count/unseen?cloudId=0d13b137-2934-4b74-a921-694ab83c54c5&source=atlaskitNotificationLogClient&currentCount=0",
+      "_postman_id": "f365d7bd-8f8c-4444-9cb3-16466c594ed0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "x-app-version",
+            "value": "5.0.0-atlaskitNotificationLogClient"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/notification-log/api/2/notifications/count/unseen?cloudId=0d13b137-2934-4b74-a921-694ab83c54c5&source=atlaskitNotificationLogClient&currentCount=0",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "notification-log",
+            "api",
+            "2",
+            "notifications",
+            "count",
+            "unseen"
+          ],
+          "query": [
+            {
+              "key": "cloudId",
+              "value": "0d13b137-2934-4b74-a921-694ab83c54c5"
+            },
+            {
+              "key": "source",
+              "value": "atlaskitNotificationLogClient"
+            },
+            {
+              "key": "currentCount",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=WebItemLocationQuery",
+      "_postman_id": "d8dcbd65-8456-4854-a7c2-c0101314ad71",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "WebItemLocationQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"WebItemLocationQuery\",\"variables\":{\"location\":\"system.help/pages\",\"locations\":[],\"contentId\":null,\"spaceKey\":null,\"version\":null},\"query\":\"query WebItemLocationQuery($location: String, $locations: [String], $contentId: ID, $spaceKey: String, $version: Int) {\\n  webItemSections(location: $location, locations: $locations, contentId: $contentId, key: $spaceKey, version: $version) {\\n    id\\n    label\\n    styleClass\\n    items {\\n      accessKey\\n      completeKey\\n      hasCondition\\n      id\\n      icon {\\n        path\\n        __typename\\n      }\\n      params {\\n        key\\n        value\\n        __typename\\n      }\\n      label\\n      moduleKey\\n      section\\n      styleClass\\n      tooltip\\n      url\\n      urlWithoutContextPath\\n      weight\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=WebItemLocationQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "WebItemLocationQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=WebItemLocationQuery",
+      "_postman_id": "548a49d2-b1dc-49aa-864f-882d5b7e77a0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "WebItemLocationQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"WebItemLocationQuery\",\"variables\":{\"location\":\"system.user\",\"locations\":[],\"contentId\":null,\"spaceKey\":null,\"version\":null},\"query\":\"query WebItemLocationQuery($location: String, $locations: [String], $contentId: ID, $spaceKey: String, $version: Int) {\\n  webItemSections(location: $location, locations: $locations, contentId: $contentId, key: $spaceKey, version: $version) {\\n    id\\n    label\\n    styleClass\\n    items {\\n      accessKey\\n      completeKey\\n      hasCondition\\n      id\\n      icon {\\n        path\\n        __typename\\n      }\\n      params {\\n        key\\n        value\\n        __typename\\n      }\\n      label\\n      moduleKey\\n      section\\n      styleClass\\n      tooltip\\n      url\\n      urlWithoutContextPath\\n      weight\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=WebItemLocationQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "WebItemLocationQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=SettingsComponentQuery,UserEmailQuery,ProfileQuery",
+      "_postman_id": "46f32ca5-d433-4f60-b3c0-612403679de4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "SettingsComponentQuery,UserEmailQuery,ProfileQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"operationName\":\"SettingsComponentQuery\",\"variables\":{},\"query\":\"query SettingsComponentQuery {\\n  user(current: true) {\\n    id\\n    confluence {\\n      operations {\\n        operation\\n        targetType\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"},{\"operationName\":\"UserEmailQuery\",\"variables\":{},\"query\":\"query UserEmailQuery {\\n  user(current: true) {\\n    id\\n    emails {\\n      value\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"},{\"operationName\":\"ProfileQuery\",\"variables\":{},\"query\":\"query ProfileQuery {\\n  user(current: true) {\\n    id\\n    displayName\\n    photos {\\n      value\\n      isPrimary\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=SettingsComponentQuery,UserEmailQuery,ProfileQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "SettingsComponentQuery,UserEmailQuery,ProfileQuery"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
