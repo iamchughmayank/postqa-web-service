@@ -702,6 +702,102 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j85&tid=UA-43979731-4&cid=616124604.1597646637&jid=101829048&gjid=941224945&_gid=1121327637.1598848652&_u=SCEACEABBAAAAC~&z=1229209838",
+      "_postman_id": "6e70acb3-3a34-4715-a7ab-7ac22db14b48",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j85&tid=UA-43979731-4&cid=616124604.1597646637&jid=101829048&gjid=941224945&_gid=1121327637.1598848652&_u=SCEACEABBAAAAC~&z=1229209838",
+          "protocol": "https",
+          "host": [
+            "stats",
+            "g",
+            "doubleclick",
+            "net"
+          ],
+          "path": [
+            "j",
+            "collect"
+          ],
+          "query": [
+            {
+              "key": "t",
+              "value": "dc"
+            },
+            {
+              "key": "aip",
+              "value": "1"
+            },
+            {
+              "key": "_r",
+              "value": "3"
+            },
+            {
+              "key": "v",
+              "value": "1"
+            },
+            {
+              "key": "_v",
+              "value": "j85"
+            },
+            {
+              "key": "tid",
+              "value": "UA-43979731-4"
+            },
+            {
+              "key": "cid",
+              "value": "616124604.1597646637"
+            },
+            {
+              "key": "jid",
+              "value": "101829048"
+            },
+            {
+              "key": "gjid",
+              "value": "941224945"
+            },
+            {
+              "key": "_gid",
+              "value": "1121327637.1598848652"
+            },
+            {
+              "key": "_u",
+              "value": "SCEACEABBAAAAC~"
+            },
+            {
+              "key": "z",
+              "value": "1229209838"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
