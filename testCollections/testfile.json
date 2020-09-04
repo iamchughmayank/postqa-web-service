@@ -5393,6 +5393,114 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_SPAViewContextQuery",
+      "_postman_id": "f5c057fd-63c5-4180-af5b-feb69496c958",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "SPAViewContextQuery"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"query SPAViewContextQuery{spaViewContext{__typename userCanCreateContent welcomeMessageEditUrl welcomeMessageHtml resourceKeys resourceContexts showWelcomeMessageEditHint showEditButton isAnonymous homepageUri homepageTitle}siteConfiguration{__typename tenantId siteLogoUrl siteTitle showSiteTitle}isNewUser isSiteAdmin abTestCohorts experimentFeatures}\",\"variables\":{}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_SPAViewContextQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "QueryPreloader_SPAViewContextQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_WebItemLocationQuery",
+      "_postman_id": "a76f2100-ac44-4320-ba9b-af5af8826910",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "WebItemLocationQuery"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"query WebItemLocationQuery($location:String$locations:[String]$contentId:ID$spaceKey:String$version:Int){webItemSections(location:$location locations:$locations contentId:$contentId key:$spaceKey version:$version){__typename id label styleClass items{__typename accessKey completeKey hasCondition id icon{__typename path}params{__typename key value}label moduleKey section styleClass tooltip url urlWithoutContextPath weight}}}\",\"variables\":{\"location\":\"system.header/left\",\"locations\":[],\"contentId\":null,\"spaceKey\":null,\"version\":null}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_WebItemLocationQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "QueryPreloader_WebItemLocationQuery"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
