@@ -40823,39 +40823,6 @@
         "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
-      "_postman_id": "ef0a1f24-2f26-488b-8e5b-c7c4542c4b60",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json,text/javascript,*/*"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingStarted\",\"event\":{\"appKey\":\"com.gebsun.plugins.jira.issuechecklist\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:06.903Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
-          "options": {
-            "raw": {}
-          }
-        },
-        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
-      },
-      "response": []
     }
   ],
   "event": [
