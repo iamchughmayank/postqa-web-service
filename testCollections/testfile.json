@@ -20893,6 +20893,65 @@
         "url": "https://mgas.prod.public.atl-paas.net/v1/event"
       },
       "response": []
+    },
+    {
+      "name": "https://mgas.prod.public.atl-paas.net/v1/event",
+      "_postman_id": "0305b4f2-162e-4cdd-b2fd-98edb1cf0fec",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"engagement.inproduct.fetch.success\",\"properties\":{\"locale\":\"en-GB\",\"fetchTime\":2098,\"messageLength\":11},\"cloud_id\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"user\":null,\"server\":null,\"product\":\"jira\",\"user_id\":\"5f3a07abd0884f0049937eb9\",\"user_id_type\":\"atlassian_account\",\"serverTime\":1599212492085}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://mgas.prod.public.atl-paas.net/v1/event"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/12500",
+      "_postman_id": "d5a28b08-0877-4b21-9be0-f4e57dc43de6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/12500"
+      },
+      "response": []
     }
   ],
   "event": [
