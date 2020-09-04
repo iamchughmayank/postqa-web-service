@@ -3004,6 +3004,50 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://us02web.zoom.us/j/83512079777?pwd=RW4rTStzZk9YeFlSbVZwTS9pT2x3UT09",
+      "_postman_id": "f04c1dd9-f29f-4d6d-adbb-a825d22a50b3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": {
+          "raw": "https://us02web.zoom.us/j/83512079777?pwd=RW4rTStzZk9YeFlSbVZwTS9pT2x3UT09",
+          "protocol": "https",
+          "host": [
+            "us02web",
+            "zoom",
+            "us"
+          ],
+          "path": [
+            "j",
+            "83512079777"
+          ],
+          "query": [
+            {
+              "key": "pwd",
+              "value": "RW4rTStzZk9YeFlSbVZwTS9pT2x3UT09"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
