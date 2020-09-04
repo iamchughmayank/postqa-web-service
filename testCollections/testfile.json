@@ -5147,6 +5147,60 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=StarredSpacesQuery",
+      "_postman_id": "b52a2c5d-da25-486d-98a9-24f0eb9506b2",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "StarredSpacesQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"StarredSpacesQuery\",\"variables\":{},\"query\":\"query StarredSpacesQuery {\\n  spaces(favourite: true, first: 99) {\\n    nodes {\\n      ...SpaceFragment\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment SpaceFragment on Space {\\n  id\\n  name\\n  key\\n  icon {\\n    path\\n    __typename\\n  }\\n  __typename\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=StarredSpacesQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "StarredSpacesQuery"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
