@@ -48496,6 +48496,39 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/gira/latest/",
+      "_postman_id": "a440f54d-09c5-4c86-b18b-696b953afdb1",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"\\n    query nextGenViewWorkflowQuery {\\n        permissions(issueKey:\\\"IS-397\\\", keys:[\\\"VIEW_READONLY_WORKFLOW\\\", \\\"ADMINISTER\\\"]) {\\n            key\\n            havePermission\\n        }\\n        viewIssue(issueKey: \\\"IS-397\\\") {\\n            fields {\\n                ... on IssueTypeField {\\n                    fieldKey\\n                    id\\n                }\\n            }\\n        }\\n        \\n    }\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/gira/latest/"
+      },
+      "response": []
     }
   ],
   "event": [
