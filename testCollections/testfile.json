@@ -4720,6 +4720,69 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://ps8.pndsn.com/v2/subscribe/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/351c40b2a69d363554033b6bdf6029fc/0?heartbeat=300&tt=15992089237741369&tr=7&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca2",
+      "_postman_id": "b82363e2-4ffb-447e-a3d6-d761cf1ce83d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://ps8.pndsn.com/v2/subscribe/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/351c40b2a69d363554033b6bdf6029fc/0?heartbeat=300&tt=15992089237741369&tr=7&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca294b97",
+          "protocol": "https",
+          "host": [
+            "ps8",
+            "pndsn",
+            "com"
+          ],
+          "path": [
+            "v2",
+            "subscribe",
+            "sub-c-0e078d3e-1d09-11e8-a183-761142583d66",
+            "351c40b2a69d363554033b6bdf6029fc",
+            "0"
+          ],
+          "query": [
+            {
+              "key": "heartbeat",
+              "value": "300"
+            },
+            {
+              "key": "tt",
+              "value": "15992089237741369"
+            },
+            {
+              "key": "tr",
+              "value": "7"
+            },
+            {
+              "key": "uuid",
+              "value": "5f3a07abd0884f0049937eb9%3AJIRA"
+            },
+            {
+              "key": "pnsdk",
+              "value": "PubNub-JS-Web%2F4.21.6"
+            },
+            {
+              "key": "auth",
+              "value": "77703fad-4de8-4046-b5c9-a49eca294b97"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
