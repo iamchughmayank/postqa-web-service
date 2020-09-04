@@ -7103,6 +7103,28 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/engage-targeting/api/v2/user/0d13b137-2934-4b74-a921-694ab83c54c5/messages/EXT-167/start",
+      "_postman_id": "029c82e1-3817-412e-a2c0-c6634d3036ff",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/gateway/api/engage-targeting/api/v2/user/0d13b137-2934-4b74-a921-694ab83c54c5/messages/EXT-167/start"
+      },
+      "response": []
     }
   ],
   "event": [
