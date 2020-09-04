@@ -40528,6 +40528,216 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5f3a07abd0884f0049937eb9&expand=applicationRoles",
+      "_postman_id": "f359b60b-da3c-4fac-9397-05b0e6a81e3c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5f3a07abd0884f0049937eb9&expand=applicationRoles",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "api",
+            "2",
+            "user"
+          ],
+          "query": [
+            {
+              "key": "accountId",
+              "value": "5f3a07abd0884f0049937eb9"
+            },
+            {
+              "key": "expand",
+              "value": "applicationRoles"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/gira/1/",
+      "_postman_id": "483c3c50-eb2e-4375-b23d-c249f9e6c315",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"\\n    query issueViewRemoteDataQuery($issueKey: String!) {\\n        bentoViewIssue_remote_data: viewIssue(issueKey: $issueKey) {\\n            \\n    issueId\\n    remoteLinks {\\n       isLinkingEnabled\\n       \\n       confluencePages {\\n            linkedPages {\\n                \\n    pageCount\\n    \\n    pages {\\n        ... on ConfluencePage {\\n            id\\n            globalId\\n            href\\n            title\\n            type\\n            lastUpdatedContext {\\n                \\n    user {\\n        key\\n        accountId\\n        emailAddress\\n        avatarUrl\\n        displayName\\n        active\\n    }\\n\\n            }\\n        }\\n        ... on FailedRemoteLink {\\n            id\\n            error\\n            link {\\n                id\\n                globalId\\n                href\\n            }\\n            repairLink { href }\\n        }\\n    }\\n\\n\\n            }\\n            mentionedPages {\\n                \\n    pageCount\\n    \\n    pages {\\n        ... on ConfluencePage {\\n            id\\n            globalId\\n            href\\n            title\\n            type\\n            lastUpdatedContext {\\n                \\n    user {\\n        key\\n        accountId\\n        emailAddress\\n        avatarUrl\\n        displayName\\n        active\\n    }\\n\\n            }\\n        }\\n        ... on FailedRemoteLink {\\n            id\\n            error\\n            link {\\n                id\\n                globalId\\n                href\\n            }\\n            repairLink { href }\\n        }\\n    }\\n\\n\\n            }\\n        }\\n        \\n        webLinks {\\n            linkCount\\n            links {\\n                id\\n                href\\n                linkText\\n                iconUrl\\n            }\\n        }\\n        \\n    }\\n\\n        }\\n    }\\n\",\"variables\":{\"issueKey\":\"CFDTN-133\"}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/standard?altScale=XHDPI",
+      "_postman_id": "dbf747dc-59a0-40ba-8402-7003a5bc5ee5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/standard?altScale=XHDPI",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "emoji",
+            "standard"
+          ],
+          "query": [
+            {
+              "key": "altScale",
+              "value": "XHDPI"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/atlassian?altScale=XHDPI",
+      "_postman_id": "9b75f159-783c-442c-a6c7-6d72304d0145",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/atlassian?altScale=XHDPI",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "emoji",
+            "atlassian"
+          ],
+          "query": [
+            {
+              "key": "altScale",
+              "value": "XHDPI"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site?altScale=XHDPI",
+      "_postman_id": "eb52731a-c9c5-4f65-b425-02b989dc1e5f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site?altScale=XHDPI",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "emoji",
+            "0d13b137-2934-4b74-a921-694ab83c54c5",
+            "site"
+          ],
+          "query": [
+            {
+              "key": "altScale",
+              "value": "XHDPI"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
