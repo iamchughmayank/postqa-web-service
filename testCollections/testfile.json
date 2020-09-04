@@ -53560,6 +53560,108 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://13.client-channel.google.com/client-channel/channel/bind?authuser=1&ctype=hangouts&prop=gmail&appver=babel-chat.frontend_20200831.06_p0&gsessionid=JofUWkqJ7G-FcWn9EatwMemuq_1Ycf-piSBnTb9Dhgo&VER=8&RID=rpc&SID=17B5E1400932EFB4&CI=0&AID=188&TYPE=xml",
+      "_postman_id": "7aea50a6-cf28-43f3-b6d7-d7610f6ef26f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-Origin",
+            "value": "https://hangouts.google.com"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH 1599208580_0b91ddc4ba67e99dc7fc929e473426020a33a44c"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://13.client-channel.google.com/client-channel/channel/bind?authuser=1&ctype=hangouts&prop=gmail&appver=babel-chat.frontend_20200831.06_p0&gsessionid=JofUWkqJ7G-FcWn9EatwMemuq_1Ycf-piSBnTb9Dhgo&VER=8&RID=rpc&SID=17B5E1400932EFB4&CI=0&AID=188&TYPE=xmlhttp&zx=j724emncv0zh&t=1",
+          "protocol": "https",
+          "host": [
+            "13",
+            "client-channel",
+            "google",
+            "com"
+          ],
+          "path": [
+            "client-channel",
+            "channel",
+            "bind"
+          ],
+          "query": [
+            {
+              "key": "authuser",
+              "value": "1"
+            },
+            {
+              "key": "ctype",
+              "value": "hangouts"
+            },
+            {
+              "key": "prop",
+              "value": "gmail"
+            },
+            {
+              "key": "appver",
+              "value": "babel-chat.frontend_20200831.06_p0"
+            },
+            {
+              "key": "gsessionid",
+              "value": "JofUWkqJ7G-FcWn9EatwMemuq_1Ycf-piSBnTb9Dhgo"
+            },
+            {
+              "key": "VER",
+              "value": "8"
+            },
+            {
+              "key": "RID",
+              "value": "rpc"
+            },
+            {
+              "key": "SID",
+              "value": "17B5E1400932EFB4"
+            },
+            {
+              "key": "CI",
+              "value": "0"
+            },
+            {
+              "key": "AID",
+              "value": "188"
+            },
+            {
+              "key": "TYPE",
+              "value": "xmlhttp"
+            },
+            {
+              "key": "zx",
+              "value": "j724emncv0zh"
+            },
+            {
+              "key": "t",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
