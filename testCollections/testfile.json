@@ -44485,6 +44485,43 @@
         "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/webResources/1.0/resources",
+      "_postman_id": "d12b0922-ea5e-44d0-ae6c-6b0db83f5c1c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json, text/javascript, */*; q=0.01"
+          },
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"r\":[],\"c\":[\"browser-metrics-plugin.contrib\"],\"xc\":[\"jira.heritage\"],\"xr\":[]}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/webResources/1.0/resources"
+      },
+      "response": []
     }
   ],
   "event": [
