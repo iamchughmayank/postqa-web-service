@@ -2820,6 +2820,190 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://docs.google.com/spreadsheets/d/1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI/bind?id=1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI&sid=666e2a42a20931e9&token=AC4w5VgtkLF96UWUjj19aE1NZfx3svaNvQ%3A1599119120797&includes_info_params=true&VER=8&lsq=1599",
+      "_postman_id": "c0b9910e-7786-4811-8687-b8fadda853ed",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-Same-Domain",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/spreadsheets/d/1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI/bind?id=1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI&sid=666e2a42a20931e9&token=AC4w5VgtkLF96UWUjj19aE1NZfx3svaNvQ%3A1599119120797&includes_info_params=true&VER=8&lsq=1599208402282&u=13381190309689858470&vc=1&c=1&w=1&flr=0&gsi=0&ssfi=91602&smv=92&cimpl=1&RID=rpc&SID=953375586CAB8305&CI=0&AID=117&TYPE=xmlhttp&zx=pcch38xqoxpi&t=1",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "spreadsheets",
+            "d",
+            "1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI",
+            "bind"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI"
+            },
+            {
+              "key": "sid",
+              "value": "666e2a42a20931e9"
+            },
+            {
+              "key": "token",
+              "value": "AC4w5VgtkLF96UWUjj19aE1NZfx3svaNvQ%3A1599119120797"
+            },
+            {
+              "key": "includes_info_params",
+              "value": "true"
+            },
+            {
+              "key": "VER",
+              "value": "8"
+            },
+            {
+              "key": "lsq",
+              "value": "1599208402282"
+            },
+            {
+              "key": "u",
+              "value": "13381190309689858470"
+            },
+            {
+              "key": "vc",
+              "value": "1"
+            },
+            {
+              "key": "c",
+              "value": "1"
+            },
+            {
+              "key": "w",
+              "value": "1"
+            },
+            {
+              "key": "flr",
+              "value": "0"
+            },
+            {
+              "key": "gsi",
+              "value": "0"
+            },
+            {
+              "key": "ssfi",
+              "value": "91602"
+            },
+            {
+              "key": "smv",
+              "value": "92"
+            },
+            {
+              "key": "cimpl",
+              "value": "1"
+            },
+            {
+              "key": "RID",
+              "value": "rpc"
+            },
+            {
+              "key": "SID",
+              "value": "953375586CAB8305"
+            },
+            {
+              "key": "CI",
+              "value": "0"
+            },
+            {
+              "key": "AID",
+              "value": "117"
+            },
+            {
+              "key": "TYPE",
+              "value": "xmlhttp"
+            },
+            {
+              "key": "zx",
+              "value": "pcch38xqoxpi"
+            },
+            {
+              "key": "t",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://applications.zoom.us/event/callback/slack/83512079777?startUrl=VkVSU046MDAwrrMOcy87TnCkKTfAuclE0Z2sTDJiwAMbb9sk8CnBaHaRnvJLfmMYl6eUzd_OZof9MzRJRcHBH0E3V_vQ8-gVmQL5xo4IYhIaeNErHurC_oGPuDr1YCRqZnSPHwWu2mNYVnxUxTVO&state=VkVSU046MDAwmPrHNg6uQWeFqdLwN",
+      "_postman_id": "d7522744-a58d-4fa4-9234-47c2f1a3ef66",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": {
+          "raw": "https://applications.zoom.us/event/callback/slack/83512079777?startUrl=VkVSU046MDAwrrMOcy87TnCkKTfAuclE0Z2sTDJiwAMbb9sk8CnBaHaRnvJLfmMYl6eUzd_OZof9MzRJRcHBH0E3V_vQ8-gVmQL5xo4IYhIaeNErHurC_oGPuDr1YCRqZnSPHwWu2mNYVnxUxTVO&state=VkVSU046MDAwmPrHNg6uQWeFqdLwNoE89MWXmuGIk_3KnvJi5353BGvnYLyNwAJoeYjb4AVGzU0rAQh3fP2r-uu-5tIZbgWx8ZH2qh3Rk_AEGLYcjpr0lgydDXodyNiUN7titbC5TXtQ8Xq7r1IRrEPO9JBkMFLlBSqzQNVSubhn6Iw7uT3IZ3hH_z1omSVYmaC5D34k2t2YryohZAm2lmsTOBBISU7ozJIzL4kedlL0LE88nxtQmZ2n3ekp-9AIK9UP7Oa9K1w-vMP60o14oOinTxAzxUMx3PaKaw&sig=99b77315f2fceb5f363820ec10436c7badb9d6cb9973bdc282b76b39861f6ec2",
+          "protocol": "https",
+          "host": [
+            "applications",
+            "zoom",
+            "us"
+          ],
+          "path": [
+            "event",
+            "callback",
+            "slack",
+            "83512079777"
+          ],
+          "query": [
+            {
+              "key": "startUrl",
+              "value": "VkVSU046MDAwrrMOcy87TnCkKTfAuclE0Z2sTDJiwAMbb9sk8CnBaHaRnvJLfmMYl6eUzd_OZof9MzRJRcHBH0E3V_vQ8-gVmQL5xo4IYhIaeNErHurC_oGPuDr1YCRqZnSPHwWu2mNYVnxUxTVO"
+            },
+            {
+              "key": "state",
+              "value": "VkVSU046MDAwmPrHNg6uQWeFqdLwNoE89MWXmuGIk_3KnvJi5353BGvnYLyNwAJoeYjb4AVGzU0rAQh3fP2r-uu-5tIZbgWx8ZH2qh3Rk_AEGLYcjpr0lgydDXodyNiUN7titbC5TXtQ8Xq7r1IRrEPO9JBkMFLlBSqzQNVSubhn6Iw7uT3IZ3hH_z1omSVYmaC5D34k2t2YryohZAm2lmsTOBBISU7ozJIzL4kedlL0LE88nxtQmZ2n3ekp-9AIK9UP7Oa9K1w-vMP60o14oOinTxAzxUMx3PaKaw"
+            },
+            {
+              "key": "sig",
+              "value": "99b77315f2fceb5f363820ec10436c7badb9d6cb9973bdc282b76b39861f6ec2"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
