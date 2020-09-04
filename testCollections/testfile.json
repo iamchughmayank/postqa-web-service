@@ -11891,39 +11891,6 @@
         "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/gateway/api/graphql",
-      "_postman_id": "256fd9f6-05e2-4374-996d-cb202f5be39d",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "accept",
-            "value": "*/*"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "content-type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"operationName\":\"extensionList\",\"variables\":{\"contextIds\":[\"ari:cloud:confluence::site/0d13b137-2934-4b74-a921-694ab83c54c5\"],\"type\":\"confluence:contextMenu\"},\"query\":\"query extensionList($contextIds: [ID!]!, $type: String!) {\\n  extensionContexts(contextIds: $contextIds) {\\n    id\\n    extensionsByType(type: $type) {\\n      id\\n      environmentType\\n      properties\\n      type\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}",
-          "options": {
-            "raw": {}
-          }
-        },
-        "url": "https://postmanlabs.atlassian.net/gateway/api/graphql"
-      },
-      "response": []
     }
   ],
   "event": [
