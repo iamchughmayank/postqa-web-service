@@ -8054,6 +8054,60 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=InlineCommentCurrentUserData",
+      "_postman_id": "8942e7c0-613a-453b-895d-1bbc1d7b20a5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "InlineCommentCurrentUserData"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"\\n          query {\\n            user(current: true) {\\n              id\\n              displayName\\n              photos {\\n                value\\n                isPrimary\\n              }\\n            }\\n          }\\n        \",\"variables\":null}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=InlineCommentCurrentUserData",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "InlineCommentCurrentUserData"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
