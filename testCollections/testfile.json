@@ -19343,6 +19343,1178 @@
         "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/wiki/rest/analytics/1.0/publish/bulk",
+      "_postman_id": "4d6edd58-0035-4aab-aa0c-5a2361a1ac1c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "atl_token",
+            "value": "b8970ee1c448391257983222bc6385849059f0fd"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"name\":\"confluence.spa.viewpage.dwell\",\"properties\":{\"currentSection\":\"/spaces/INT/pages/1565590307/:contentSlug\",\"dwellTime\":59437,\"finalDwellEvent\":true,\"searchReferrerId\":\"\",\"contentId\":\"1565590307\"},\"timeDelta\":-8683},{\"name\":\"confluence.editor.quickedit.loading.times\",\"properties\":{\"confluence.editor.synchrony.jsLoad.startTime\":6320.2649999875575,\"confluence.editor.synchrony.jsLoad.duration\":0.15500000154133886,\"confluence.editor.preload.startTime\":6644.229999990785,\"confluence.editor.preload.duration\":703.7850000051549},\"timeDelta\":-8673},{\"name\":\"confluence.viewpage.src.empty\",\"properties\":{\"userKey\":\"8a7f808973ee14e10173faae204506f5\",\"pageID\":\"1565590307\"},\"timeDelta\":-3148}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/wiki/rest/analytics/1.0/publish/bulk"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "9edddda8-b740-438a-a565-6400e5eba57f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:40:36Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"containerType\":\"space\",\"containerId\":\"1554251782\",\"source\":\"page\",\"objectType\":\"page\",\"objectId\":\"1565590307\",\"actionSubject\":\"page\",\"action\":\"dwelled\",\"actionSubjectId\":\"1565590307\",\"attributes\":{\"dwellTime\":59437,\"searchReferrer\":null,\"finalDwellEvent\":true},\"eventType\":\"track\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"page dwelled\",\"messageId\":\"ajs-e5c0c1cb3d88a61e5a36b164f1de197a\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:40:49.126Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:40:37Z\",\"context\":{\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"confluence\",\"version\":\"CLASSIC-master-3439\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskFail\",\"attributes\":{\"startTime\":0,\"duration\":1256126,\"activeDuration\":1256126,\"adjustedDuration\":297904.8600000059,\"task\":\"view-page:complete\",\"taskId\":\"1565590307\",\"errorName\":\"ExperienceTimeoutError\",\"errorMessage\":\"view-page:complete failed to complete in 60000ms\",\"browserInfo\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\",\"isActiveTab\":true},\"eventType\":\"operational\",\"tabId\":\"e08727be-345e-46e4-bd39-e7c5d6a900a4\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskFail\",\"messageId\":\"ajs-9fdafb96cbf8fa59d0bfbcbeb6e8e44c\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:40:49.126Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:40:49.126Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true&u=1&authuser=1",
+      "_postman_id": "8856f85d-3846-4b08-8a9c-74e570e7e3ec",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH ca2bbefec59a9aae5ca221c88778d0e00d507054"
+          },
+          {
+            "key": "Content-Encoding",
+            "value": "gzip"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/binary"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\u001f\u008b\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u00b5\u00d1A\n\u00c40\b\u0005\u00d0\u00bbd\u00ed\u00a2Z\u00a3\u00cdY\u00c4\u001b\u0094\u00eez\u00ff\u00c9@\u0003\u0085iB\u0084\u00e9\u00c6EL\u008c\u008fo\u0086p\u009c\u00fb>]\u00ac\u00d7q\u0087\u00bc\u0080Y\u00c2\\\n!\u00d1\u00b6\u00b2H\u00ba^\u00f9\u00e3\u00b0d\u00ddq\u00f7/Q3\u00fa\u00cf\u0084\u00b6ym\u00a5\u00db\u00f1\u00f7\u00f2\u00bc\u00c6\u0081\u00b9\u008c\u00fa\u000e/\u0089(\"\u00a2\u0090\u00a8\u00e60-R\u00e5?\u0089T\u0002\"\u0095\u0098h\u0010\u00e9\u008b\"\u008d\u00884&\u001aDZE\u000eM\u00c4\u00b2*WQ\u0007\u00f3T\u0016\u00ff\u0000\u008ed!g\u00d7\u0003\u0000\u0000",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true&u=1&authuser=1",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            },
+            {
+              "key": "u",
+              "value": "1"
+            },
+            {
+              "key": "authuser",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
+      "_postman_id": "d8712d90-25b6-4e0c-8b8a-70a6d6b7f711",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH fbeed541ff6d02097fa0d9c8398047abdf050b36"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "0"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\"]],407,[[\"1599212480084\",null,[],null,null,null,null,\"[283,1599212480084000,\\\"!s7ClsJFCmQgXBiJr9LZYPHecAFUihCQCAAADrlIAAAAUCgF42tBG6LlWVAiXPg4fN5NTKeLFpbCXoqWzE6A2gOrUTr3HSm3BsHd98AeQY5FqhlpqohQmes43lqLu_RXXiGparqDTsoP8o7xwxSj1p2QJg17FDtPsZT7P8Mwu988Fs4zXhRXqn5JvU2CI-U-cMKuJ1NBTsYbdDpFfsUBb4vUdVxvrznVa10oi5qAVyfaUmLAvxQa4ilo3orIrbrXRK61vnROZUjt9WJU1t4SJKSOiE6Tv5Y0XJuyMT_rdKrsLqet0bHbIgVaiG90rIUaf98VpBOr0bIBuIQocse1JphmexK3CERSRouOFCZ2LXsibuyv2dNZen0XDafHW8TBQomOI1DbHmj3N6Imo4CqLPCxNDZwApe2vfJOc8SUZl3oSmTI2UT5SHcuxSvcF7d5mFKow04QmSg4mNjIHJrPCN9uUBopp0mJNKM43UiDElTd9HmV-MYPWzs1f5nMOCIoKQgm910czuUhlitAsaRkPz8V40j_zfinvh7BjIZkBr7aYj4z2AinUJ0VMuzoCgCxAMx4LNseh9CAlCOTS7cOICeyWKj8PP6hg71MYjzawHqjSOcNcnM7dXE_LCd3OGO_eNj2ga2N250O3p3pqNij_NySP9H6npGUZlOHhSUq4qNXftZNRmXaAHcPqYHDE8I3qhqCV9DnVhsttIuGyStLcWSHXMZmE_OIjwmn93CLDJI5gs-Ylzi7oLc9l7uhZ9zLGhIp4jXY6K4lx_G6C0o8BqJ66vaE4fERYtMhHvsTyexJF85To6jOeAP2fOwL1vsPiwasz9xfPPTLfTHopxHPdU9UGbC0V1zJnYvkcHTM6LCkoTX7vHeJNjwsR3VYvERgSM-oAfkpcCipSu9fxGgGSIDCtdvf8HXZLW6oK3IAlLa5QgpCG_x8n9Fk8iY6vRxTxih2F8nb_3OAeOL4be78KAH9Ia2WXwpNNxXb0vKnzyEXRQI8jG-J5jAkSiJjwB3m76c9RFbmY3r-eQN5HbMFNr1UQxCaw5YNknDCNWmBDcZt0mDeMSa4vbXDZLFZ4YTL1_vM3JoVNN66m-UHa7Csm648kR3iUZkK_8QxP03cE\\\",1997341517,true]\",null,null,null,null,null,null,null,null,null,null,null,[],169,null,null,null,null,null,[]]],\"1599212480084\",[],null,null,null,null,null,null,null,null,0]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            },
+            {
+              "key": "authuser",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/browse/INTERCEPT-119",
+      "_postman_id": "e2de1934-9b0a-4b0b-9a04-09f93126aa81",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/browse/INTERCEPT-119"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/graphql/1/",
+      "_postman_id": "e7873000-1ee6-47cd-aeb2-e172f31ca9fb",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"query {\\n        issue(issueIdOrKey: \\\"INTERCEPT-119\\\", latestVersion: true, screen: \\\"view\\\") {\\n            id\\n            fields {\\n                key\\n                title\\n                editable\\n                required\\n                autoCompleteUrl\\n                allowedValues\\n                content\\n                renderedContent\\n                schema {\\n                    custom\\n                    system\\n                    configuration {\\n        key\\n        value\\n    }\\n    \\n                    items\\n                    type\\n                    renderer\\n                }\\n            }\\n            expandAssigneeInSubtasks\\n            expandAssigneeInIssuelinks\\n            \\n            systemFields {\\n                descriptionAdf {\\n                    value\\n                }\\n                environmentAdf {\\n        value\\n    }\\n            }\\n            customFields {\\n                textareaAdf {\\n                    key\\n                    value\\n                }\\n            }            \\n            tabs {\\n        id\\n        name\\n        items {\\n            id\\n            type\\n        }\\n    }\\n            \\n    isHybridAgilityProject\\n    \\n            \\n    agile {\\n        epic {\\n          key\\n        },\\n    }\\n        }\\n        project(projectIdOrKey: \\\"INTERCEPT\\\") {\\n            id\\n            name\\n            key\\n            projectTypeKey\\n            simplified\\n            avatarUrls {\\n                key\\n                value\\n            }\\n            issueTypeHierarchy {\\n                baseLevelId\\n                levels {\\n                    id\\n                    aboveLevelId\\n                    belowLevelId\\n                }\\n            }\\n        }\\n    }\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/graphql/1/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/gira/1/",
+      "_postman_id": "978be7a1-b94e-4093-b8e1-eb5e3befdfa7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"\\nquery issueViewInteractiveQuery($issueKey: String!, $projectKey: String)  {\\n        viewIssue(issueKey: $issueKey) {\\n            \\n        comments (first: 0, maxResults: 5, orderBy: \\\"-created\\\", ) {\\n            nodes {\\n                id\\n                author {\\n                    accountId\\n                    displayName\\n                    avatarUrl\\n                }\\n                updateAuthor {\\n                    accountId\\n                    displayName\\n                    avatarUrl\\n                }\\n                visibility {\\n                    type\\n                    value\\n                }\\n                created\\n                updated\\n                renderedBody\\n                jsdPublic\\n                bodyAdf\\n            }\\n            totalCount\\n            startIndex\\n        }\\n    \\n              \\n            \\n    ecosystem {\\n      operations {\\n        name\\n        url: href\\n        icon {\\n          url\\n        }\\n        tooltip\\n        styleClass\\n      }\\n      contentPanels {\\n        name\\n        iframe {\\n          addonKey\\n          moduleKey\\n          options\\n        }\\n        icon {\\n          url\\n        }\\n        tooltip\\n        type\\n        showByDefault\\n        manuallyAddedToIssue\\n      }\\n      activityPanels {\\n        name\\n        iframe {\\n          addonKey\\n          moduleKey\\n          options\\n        }\\n      }\\n      backgroundScripts {\\n        iframe {\\n          addonKey\\n          moduleKey\\n          options\\n        }\\n        shouldReloadOnRefresh\\n      }\\n      ecoSystemOnDate\\n      contentPanelsCustomised\\n      \\n    }\\n\\n            fields {\\n                __typename \\n        ... on AttachmentsField {\\n          fieldKey\\n          value {\\n            id\\n            mediaApiFileId\\n            createdDate\\n            accountId\\n            mimetype\\n            filename\\n          }\\n        }\\n      \\n                \\n      ... on GlancesField {\\n        fieldKey\\n        value {\\n          name\\n          status\\n          iframe {\\n            addonKey\\n            moduleKey\\n            options\\n          }\\n          icon {\\n            url\\n          }\\n          content\\n          type\\n        }\\n      }\\n\\n            }\\n            \\n            \\n    layoutItems {\\n        location\\n        category\\n        items {\\n        itemId\\n        type\\n        }\\n    }\\n\\n        }\\n        \\n    licensedProducts {\\n        name\\n        status\\n    }\\n\\n        \\n    jiraSettings {\\n      \\n      timeTracking {\\n        isTimeTrackingEnabled\\n        hoursPerDay\\n        daysPerWeek\\n        defaultUnit\\n      }\\n\\n      \\n      subtasks {\\n        enabled\\n      }\\n\\n      issueLinkTypes {\\n        id\\n        name\\n        inward\\n        outward\\n      }\\n    }\\n\\n        \\n    permissions(issueKey:$issueKey, keys:[\\\"ADMINISTER\\\",\\\"ADMINISTER_PROJECTS\\\",\\\"ASSIGN_ISSUES\\\",\\\"EDIT_ISSUES\\\",\\\"SCHEDULE_ISSUES\\\",\\\"ADD_COMMENTS\\\",\\\"DELETE_ALL_COMMENTS\\\",\\\"DELETE_OWN_COMMENTS\\\",\\\"EDIT_ALL_COMMENTS\\\",\\\"EDIT_OWN_COMMENTS\\\",\\\"CREATE_ISSUES\\\",\\\"DELETE_ISSUES\\\",\\\"MOVE_ISSUES\\\",\\\"CREATE_ATTACHMENTS\\\",\\\"DELETE_ALL_ATTACHMENTS\\\",\\\"DELETE_OWN_ATTACHMENTS\\\",\\\"WORK_ON_ISSUES\\\",\\\"ASSIGNABLE_USER\\\",\\\"LINK_ISSUES\\\",\\\"VIEW_VOTERS_AND_WATCHERS\\\",\\\"MANAGE_WATCHERS\\\",\\\"EDIT_ALL_WORKLOGS\\\",\\\"EDIT_OWN_WORKLOGS\\\",\\\"DELETE_ALL_WORKLOGS\\\",\\\"DELETE_OWN_WORKLOGS\\\",\\\"USER_PICKER\\\",\\\"VIEW_DEV_TOOLS\\\",\\\"SERVICEDESK_AGENT\\\"]) {\\n        key\\n        havePermission\\n    }\\n\\n        \\n    myPreferences(keys: [\\n        \\\"jira.user.issue.changeboarding.lastinteracted\\\",\\n        \\\"jira.user.issue.clickthrough-banner.lastinteracted\\\",\\n        \\\"jira.user.issue.changeboarding.isOptInBackToNewIssueView\\\",\\n        \\\"jira.user.issue.attachment.view\\\",\\n        \\\"jira.user.issue.details.pinned-fields.INTERCEPT\\\"\\n    ])\\n\\n        \\n    project(projectKey: $projectKey) {\\n        id\\n        newIssueViewLockedIn\\n        issueTypes {\\n            id\\n            name\\n            iconUrl\\n            subtask\\n        }\\n    }\\n\\n    }\\n\",\"variables\":{\"issueKey\":\"INTERCEPT-119\",\"projectKey\":\"INTERCEPT\"}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/media/user/credentials",
+      "_postman_id": "f207bd51-30e7-4da6-88ac-3dea7c7a3f40",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/media/user/credentials"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/attachment/upload/issue/INTERCEPT-119/credentials",
+      "_postman_id": "06e2066a-1b8a-4dcb-996a-2420e6a746a0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/api/2/attachment/upload/issue/INTERCEPT-119/credentials"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/attachment/read/issue/INTERCEPT-119/credentials?maxTokenLength=65536",
+      "_postman_id": "e9cb60f1-be00-40d5-9fac-78b80a533265",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/api/2/attachment/read/issue/INTERCEPT-119/credentials?maxTokenLength=65536",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "api",
+            "2",
+            "attachment",
+            "read",
+            "issue",
+            "INTERCEPT-119",
+            "credentials"
+          ],
+          "query": [
+            {
+              "key": "maxTokenLength",
+              "value": "65536"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://docs.google.com/spreadsheets/d/1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI/bind?id=1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI&sid=666e2a42a20931e9&token=AC4w5VgtkLF96UWUjj19aE1NZfx3svaNvQ%3A1599119120797&includes_info_params=true&VER=8&lsq=1599",
+      "_postman_id": "5ae0bc3d-b06a-46fa-8dbb-37862f157469",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-Same-Domain",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/spreadsheets/d/1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI/bind?id=1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI&sid=666e2a42a20931e9&token=AC4w5VgtkLF96UWUjj19aE1NZfx3svaNvQ%3A1599119120797&includes_info_params=true&VER=8&lsq=1599208402282&u=13381190309689858470&vc=1&c=1&w=1&flr=0&gsi=0&ssfi=93367&smv=92&cimpl=1&RID=rpc&SID=953375586CAB8305&CI=0&AID=213&TYPE=xmlhttp&zx=ynrjzfamdw0n&t=1",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "spreadsheets",
+            "d",
+            "1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI",
+            "bind"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1Rm0yaGIGSiVEd5gNXEnDAESBz4ftx3LAAth4jDi0zeI"
+            },
+            {
+              "key": "sid",
+              "value": "666e2a42a20931e9"
+            },
+            {
+              "key": "token",
+              "value": "AC4w5VgtkLF96UWUjj19aE1NZfx3svaNvQ%3A1599119120797"
+            },
+            {
+              "key": "includes_info_params",
+              "value": "true"
+            },
+            {
+              "key": "VER",
+              "value": "8"
+            },
+            {
+              "key": "lsq",
+              "value": "1599208402282"
+            },
+            {
+              "key": "u",
+              "value": "13381190309689858470"
+            },
+            {
+              "key": "vc",
+              "value": "1"
+            },
+            {
+              "key": "c",
+              "value": "1"
+            },
+            {
+              "key": "w",
+              "value": "1"
+            },
+            {
+              "key": "flr",
+              "value": "0"
+            },
+            {
+              "key": "gsi",
+              "value": "0"
+            },
+            {
+              "key": "ssfi",
+              "value": "93367"
+            },
+            {
+              "key": "smv",
+              "value": "92"
+            },
+            {
+              "key": "cimpl",
+              "value": "1"
+            },
+            {
+              "key": "RID",
+              "value": "rpc"
+            },
+            {
+              "key": "SID",
+              "value": "953375586CAB8305"
+            },
+            {
+              "key": "CI",
+              "value": "0"
+            },
+            {
+              "key": "AID",
+              "value": "213"
+            },
+            {
+              "key": "TYPE",
+              "value": "xmlhttp"
+            },
+            {
+              "key": "zx",
+              "value": "ynrjzfamdw0n"
+            },
+            {
+              "key": "t",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/navigation/2/project/INTERCEPT?exclude=webItems.reports,webItems.home,webItems.gin&isCacheEnabledView=true",
+      "_postman_id": "6b2ea57b-b295-491a-9e98-8e33db374d48",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/navigation/2/project/INTERCEPT?exclude=webItems.reports,webItems.home,webItems.gin&isCacheEnabledView=true",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "navigation",
+            "2",
+            "project",
+            "INTERCEPT"
+          ],
+          "query": [
+            {
+              "key": "exclude",
+              "value": "webItems.reports,webItems.home,webItems.gin"
+            },
+            {
+              "key": "isCacheEnabledView",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/engage-targeting/api/v2/user/0d13b137-2934-4b74-a921-694ab83c54c5/in-product-messages?product=jira&schema=2&locale=en-GB",
+      "_postman_id": "67344fde-1d5d-4160-bf93-edf0fe393485",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/engage-targeting/api/v2/user/0d13b137-2934-4b74-a921-694ab83c54c5/in-product-messages?product=jira&schema=2&locale=en-GB",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "engage-targeting",
+            "api",
+            "v2",
+            "user",
+            "0d13b137-2934-4b74-a921-694ab83c54c5",
+            "in-product-messages"
+          ],
+          "query": [
+            {
+              "key": "product",
+              "value": "jira"
+            },
+            {
+              "key": "schema",
+              "value": "2"
+            },
+            {
+              "key": "locale",
+              "value": "en-GB"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/12500",
+      "_postman_id": "87b05a0e-195f-4808-addf-a08e86fc8e09",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/12500"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/mauTag/software",
+      "_postman_id": "7fc0b57e-4db4-42f8-a6a3-34816306183a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/mauTag/software"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/warn",
+      "_postman_id": "0951715f-8838-4b11-b3aa-c5a5a6e28754",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.global-loading-bar\",\"message\":\"Loading bar failed to initialise in SSR. This may be because SSR failed or a bug in the loading bar code.\",\"event\":{},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:41:30.095Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/warn"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/latest/project/INTERCEPT/tracking/recent",
+      "_postman_id": "c424c728-f461-45b2-9f2d-9ebc80999595",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/api/latest/project/INTERCEPT/tracking/recent"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "cd0d1434-be5e-4dc3-b310-5dcf7924fb7a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:41:30.087Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"unknown\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"navigationNextScreen\",\"actionSubject\":\"projectContainer\",\"action\":\"entered\",\"actionSubjectId\":\"projectContainer\",\"attributes\":{\"isSPA\":true,\"projectId\":12500,\"projectType\":\"software\",\"nextGenProject\":false,\"namespaces\":\"navigationNextScreen\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"projectContainer entered\",\"messageId\":\"ajs-e9ece129409c94f4a578faf000ae0184\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:30.218Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.128Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"unknown\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"navigationNextScreen\",\"actionSubject\":\"fetchSucceeded\",\"action\":\"resource\",\"actionSubjectId\":\"NAVIGATION_UI\",\"attributes\":{\"isSPA\":true,\"duration\":0,\"isCacheHit\":true,\"start\":1599212490096,\"end\":1599212490096,\"routeName\":\"issue\",\"namespaces\":\"navigationNextScreen\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"fetchSucceeded resource\",\"messageId\":\"ajs-da4cec9ce6324f427446bf9d8623e717\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:30.218Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.135Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"unknown\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"navigationNextScreen\",\"actionSubject\":\"fetchSucceeded\",\"action\":\"resource\",\"actionSubjectId\":\"NAVIGATION_SIDEBAR\",\"attributes\":{\"isSPA\":true,\"duration\":0,\"isCacheHit\":true,\"start\":1599212490097,\"end\":1599212490097,\"routeName\":\"issue\",\"namespaces\":\"navigationNextScreen\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"fetchSucceeded resource\",\"messageId\":\"ajs-5206fe53da169c5fe519940862abc847\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:30.218Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.142Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"unknown\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"navigationNextScreen\",\"actionSubject\":\"fetchSucceeded\",\"action\":\"resource\",\"actionSubjectId\":\"NAVIGATION_PLANS_VISIBILITY\",\"attributes\":{\"isSPA\":true,\"duration\":0,\"isCacheHit\":true,\"start\":1599212490097,\"end\":1599212490097,\"routeName\":\"issue\",\"namespaces\":\"navigationNextScreen\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"fetchSucceeded resource\",\"messageId\":\"ajs-ec23e110930d03aabc1fc065c661949b\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:30.218Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.151Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"unknown\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"navigationNextScreen\",\"actionSubject\":\"fetchSucceeded\",\"action\":\"resource\",\"actionSubjectId\":\"NAV_V3_ROLLOUT\",\"attributes\":{\"isSPA\":true,\"duration\":0,\"isCacheHit\":true,\"start\":1599212490097,\"end\":1599212490097,\"routeName\":\"issue\",\"namespaces\":\"navigationNextScreen\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"fetchSucceeded resource\",\"messageId\":\"ajs-e8c22f5327799e447b3a392e5e963480\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:30.218Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.171Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"unknown\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"navigationNextScreen\",\"actionSubject\":\"fetchSucceeded\",\"action\":\"resource\",\"actionSubjectId\":\"SERVICEDESK_QUEUES_NAVIGATION_ITEMS\",\"attributes\":{\"isSPA\":true,\"duration\":0,\"isCacheHit\":true,\"start\":1599212490097,\"end\":1599212490097,\"routeName\":\"issue\",\"namespaces\":\"navigationNextScreen\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"fetchSucceeded resource\",\"messageId\":\"ajs-45d434229aa789f3d09572ab34244ffe\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:30.218Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.213Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"unknownSource\",\"actionSubject\":\"jiraForgeUi.fetchModulesInitialization\",\"action\":\"started\",\"attributes\":{\"isSynthetic\":false},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"jiraForgeUi.fetchModulesInitialization started\",\"messageId\":\"ajs-f9b99a806772c84630cd8895537f5e58\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:30.218Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:41:30.218Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/jpo/1.0/navigation",
+      "_postman_id": "edcff7fd-07f0-426a-b06c-aac7ff64ff08",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/jpo/1.0/navigation"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/navigation/3/global/addons",
+      "_postman_id": "b6f549bf-e2f0-4aea-9c74-5ded96c377e7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/navigation/3/global/addons"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5f3a07abd0884f0049937eb9",
+      "_postman_id": "d6a1671f-9f0c-4302-9fe8-a79595c302a3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5f3a07abd0884f0049937eb9",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "api",
+            "2",
+            "user"
+          ],
+          "query": [
+            {
+              "key": "accountId",
+              "value": "5f3a07abd0884f0049937eb9"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5f3a07abd0884f0049937eb9&expand=applicationRoles",
+      "_postman_id": "a87e2a42-5e91-4748-87f7-e59f457bf087",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5f3a07abd0884f0049937eb9&expand=applicationRoles",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "api",
+            "2",
+            "user"
+          ],
+          "query": [
+            {
+              "key": "accountId",
+              "value": "5f3a07abd0884f0049937eb9"
+            },
+            {
+              "key": "expand",
+              "value": "applicationRoles"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/gira/1/",
+      "_postman_id": "0e3df18b-d010-4fd4-92e1-da902f347255",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"\\n    query issueViewRemoteDataQuery($issueKey: String!) {\\n        bentoViewIssue_remote_data: viewIssue(issueKey: $issueKey) {\\n            \\n    issueId\\n    remoteLinks {\\n       isLinkingEnabled\\n       \\n       confluencePages {\\n            linkedPages {\\n                \\n    pageCount\\n    \\n    pages {\\n        ... on ConfluencePage {\\n            id\\n            globalId\\n            href\\n            title\\n            type\\n            lastUpdatedContext {\\n                \\n    user {\\n        key\\n        accountId\\n        emailAddress\\n        avatarUrl\\n        displayName\\n        active\\n    }\\n\\n            }\\n        }\\n        ... on FailedRemoteLink {\\n            id\\n            error\\n            link {\\n                id\\n                globalId\\n                href\\n            }\\n            repairLink { href }\\n        }\\n    }\\n\\n\\n            }\\n            mentionedPages {\\n                \\n    pageCount\\n    \\n    pages {\\n        ... on ConfluencePage {\\n            id\\n            globalId\\n            href\\n            title\\n            type\\n            lastUpdatedContext {\\n                \\n    user {\\n        key\\n        accountId\\n        emailAddress\\n        avatarUrl\\n        displayName\\n        active\\n    }\\n\\n            }\\n        }\\n        ... on FailedRemoteLink {\\n            id\\n            error\\n            link {\\n                id\\n                globalId\\n                href\\n            }\\n            repairLink { href }\\n        }\\n    }\\n\\n\\n            }\\n        }\\n        \\n        webLinks {\\n            linkCount\\n            links {\\n                id\\n                href\\n                linkText\\n                iconUrl\\n            }\\n        }\\n        \\n    }\\n\\n        }\\n    }\\n\",\"variables\":{\"issueKey\":\"INTERCEPT-119\"}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/standard?altScale=XHDPI",
+      "_postman_id": "f251b93c-df2e-455a-85fc-44d4e365a610",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/standard?altScale=XHDPI",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "emoji",
+            "standard"
+          ],
+          "query": [
+            {
+              "key": "altScale",
+              "value": "XHDPI"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/atlassian?altScale=XHDPI",
+      "_postman_id": "21b84de6-f273-4784-8ff4-ad6218e6ce39",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/atlassian?altScale=XHDPI",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "emoji",
+            "atlassian"
+          ],
+          "query": [
+            {
+              "key": "altScale",
+              "value": "XHDPI"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site?altScale=XHDPI",
+      "_postman_id": "700ac124-d0e8-4dfa-8207-2bc8c463ec13",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site?altScale=XHDPI",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "emoji",
+            "0d13b137-2934-4b74-a921-694ab83c54c5",
+            "site"
+          ],
+          "query": [
+            {
+              "key": "altScale",
+              "value": "XHDPI"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/project/12500/hasValidatorsOnSubtasks",
+      "_postman_id": "c8a5cd96-d8fe-4140-89bc-0d47bce0ce56",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/project/12500/hasValidatorsOnSubtasks"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/confluenceIssueLink/1/confluence/applink",
+      "_postman_id": "70944ab2-120d-4b2d-96f9-914ee4fbf748",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/confluenceIssueLink/1/confluence/applink"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/gira/1/",
+      "_postman_id": "ffce3535-91ec-4348-a629-e5f102ab848d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"\\nquery CommentVisibilitiesQuery($issueKey: String!) {\\n    viewIssue(issueKey: $issueKey) {\\n        commentVisibilities {\\n            type\\n            value\\n        }\\n    }\\n}\\n\",\"variables\":{\"issueKey\":\"INTERCEPT-119\"}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
+      },
+      "response": []
     }
   ],
   "event": [
