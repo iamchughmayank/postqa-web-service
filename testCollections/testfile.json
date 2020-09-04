@@ -1129,6 +1129,188 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://docs.google.com/offline/cacheupdate?ouid=u98371d2e499ee6de",
+      "_postman_id": "184203fa-5f0c-47e5-b7b7-f3f8b39291b5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "X-Chrome-Connected",
+            "value": "id=112175423944800645571,mode=0,enable_account_consistency=false,consistency_enabled_by_default=false"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/offline/cacheupdate?ouid=u98371d2e499ee6de",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "offline",
+            "cacheupdate"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://docs.google.com/document/offline/cacheupdate?ouid=u98371d2e499ee6de&uc=en&jobset=prod&ftrack=1&al=1",
+      "_postman_id": "15395ef2-f340-42f9-bfba-d75e451ddb86",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "X-Chrome-Connected",
+            "value": "id=112175423944800645571,mode=0,enable_account_consistency=false,consistency_enabled_by_default=false"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/document/offline/cacheupdate?ouid=u98371d2e499ee6de&uc=en&jobset=prod&ftrack=1&al=1",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "document",
+            "offline",
+            "cacheupdate"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            },
+            {
+              "key": "uc",
+              "value": "en"
+            },
+            {
+              "key": "jobset",
+              "value": "prod"
+            },
+            {
+              "key": "ftrack",
+              "value": "1"
+            },
+            {
+              "key": "al",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://docs.google.com/spreadsheets/offline/cacheupdate?ouid=u98371d2e499ee6de&uc=en&jobset=prod&ftrack=1&docosJobset=prod&al=1",
+      "_postman_id": "a0cad1c3-a26a-415a-b980-c1362174fb4c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "X-Chrome-Connected",
+            "value": "id=112175423944800645571,mode=0,enable_account_consistency=false,consistency_enabled_by_default=false"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/spreadsheets/offline/cacheupdate?ouid=u98371d2e499ee6de&uc=en&jobset=prod&ftrack=1&docosJobset=prod&al=1",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "spreadsheets",
+            "offline",
+            "cacheupdate"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            },
+            {
+              "key": "uc",
+              "value": "en"
+            },
+            {
+              "key": "jobset",
+              "value": "prod"
+            },
+            {
+              "key": "ftrack",
+              "value": "1"
+            },
+            {
+              "key": "docosJobset",
+              "value": "prod"
+            },
+            {
+              "key": "al",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
