@@ -40165,6 +40165,65 @@
         "url": "https://postmanlabs.atlassian.net/rest/internal/2/mauTag/software"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/warn",
+      "_postman_id": "e82c2b72-692b-4c31-9f25-f30d5a2f20f7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.global-loading-bar\",\"message\":\"Loading bar failed to initialise in SSR. This may be because SSR failed or a bug in the loading bar code.\",\"event\":{},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:05.517Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/warn"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/latest/project/CFDTN/tracking/recent",
+      "_postman_id": "a41745fc-1056-4bf3-9348-7ae47e66ad32",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/api/latest/project/CFDTN/tracking/recent"
+      },
+      "response": []
     }
   ],
   "event": [
