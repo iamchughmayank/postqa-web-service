@@ -42219,6 +42219,72 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
+      "_postman_id": "3b0f0fc5-0f8e-4820-b4a3-efa0055b65e0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingComplete\",\"event\":{\"appKey\":\"zoom-servicedesk\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:08.106Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
+      "_postman_id": "dce880b5-027c-40e4-90bf-656d5c34aba3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingComplete\",\"event\":{\"appKey\":\"com.gtmhub.jira.addon\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:08.159Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
+      },
+      "response": []
     }
   ],
   "event": [
