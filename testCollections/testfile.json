@@ -5609,6 +5609,114 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_UserPreferencesQuery",
+      "_postman_id": "d0e9e374-ef08-4baa-8d04-0741e4203d82",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "UserPreferencesQuery"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"query UserPreferencesQuery{userPreferences{__typename topNavigationOptedOut}}\",\"variables\":{}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_UserPreferencesQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "QueryPreloader_UserPreferencesQuery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_GlobalOperationsQuery",
+      "_postman_id": "3dd7b802-24b5-4250-b883-6cc3d902985d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "GlobalOperationsQuery"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"query GlobalOperationsQuery{globalOperations{__typename operation targetType}}\",\"variables\":{}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=QueryPreloader_GlobalOperationsQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "QueryPreloader_GlobalOperationsQuery"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
