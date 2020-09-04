@@ -47165,32 +47165,6 @@
         "url": "https://postmanlabs.atlassian.net/rest/webResources/1.0/resources"
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/rest/internal/2/issue/CFDTN-241/history",
-      "_postman_id": "feaa1e52-f726-41f7-9943-c4793b7abb78",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json,text/javascript,*/*"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": "https://postmanlabs.atlassian.net/rest/internal/2/issue/CFDTN-241/history"
-      },
-      "response": []
     }
   ],
   "event": [
