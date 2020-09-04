@@ -3470,6 +3470,72 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://chat-pa.clients6.google.com/chat/v1/presence/setpresence?key=AIzaSyD7InnYR3VKdb4j2rMUEbTCIr2VyEazl6k&alt=protojson",
+      "_postman_id": "99973e9c-85d9-44c3-8fce-17c210b0d2f0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH 1599210803_bc2d15cd27b6f884cd3f1e17eb4645eedbc0eb68"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json+protobuf"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[[[6,3,\"babel-chat.frontend_20200831.06_p0\",1598901564],[\"lcsw_hangouts_55E95084\",\"6342D0411B0FA9C9\"],null,\"en\"],[737,30]]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://chat-pa.clients6.google.com/chat/v1/presence/setpresence?key=AIzaSyD7InnYR3VKdb4j2rMUEbTCIr2VyEazl6k&alt=protojson",
+          "protocol": "https",
+          "host": [
+            "chat-pa",
+            "clients6",
+            "google",
+            "com"
+          ],
+          "path": [
+            "chat",
+            "v1",
+            "presence",
+            "setpresence"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyD7InnYR3VKdb4j2rMUEbTCIr2VyEazl6k"
+            },
+            {
+              "key": "alt",
+              "value": "protojson"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
