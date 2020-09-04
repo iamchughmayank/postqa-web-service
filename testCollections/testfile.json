@@ -39865,6 +39865,339 @@
         "url": "https://postmanlabs.atlassian.net/rest/internal/2/issue/CFDTN-133/history"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/atlassian-connect/1/addons/com.gtmhub.jira.addon/properties/gtmhub-accountId?_r=1599212704743",
+      "_postman_id": "52250f53-c1cb-4019-a5fe-cef17708429a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "*/*"
+          },
+          {
+            "key": "AP-Client-Key",
+            "value": "com.gtmhub.jira.addon"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/atlassian-connect/1/addons/com.gtmhub.jira.addon/properties/gtmhub-accountId?_r=1599212704743",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "atlassian-connect",
+            "1",
+            "addons",
+            "com.gtmhub.jira.addon",
+            "properties",
+            "gtmhub-accountId"
+          ],
+          "query": [
+            {
+              "key": "_r",
+              "value": "1599212704743"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/atlassian-connect/1/addons/com.gtmhub.jira.addon/properties/gtmhub-token?_r=1599212704744",
+      "_postman_id": "7e8055ba-a567-42bb-a62d-ec20f0e9c717",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "*/*"
+          },
+          {
+            "key": "AP-Client-Key",
+            "value": "com.gtmhub.jira.addon"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/atlassian-connect/1/addons/com.gtmhub.jira.addon/properties/gtmhub-token?_r=1599212704744",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "atlassian-connect",
+            "1",
+            "addons",
+            "com.gtmhub.jira.addon",
+            "properties",
+            "gtmhub-token"
+          ],
+          "query": [
+            {
+              "key": "_r",
+              "value": "1599212704744"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://ps10.pndsn.com/v2/subscribe/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/bbfb79d8dc1a5064bc1010257f417a10/0?heartbeat=300&tt=15992127046856854&tr=7&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca",
+      "_postman_id": "130ac2fe-79fa-4381-a9df-97efe41239c5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://ps10.pndsn.com/v2/subscribe/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/bbfb79d8dc1a5064bc1010257f417a10/0?heartbeat=300&tt=15992127046856854&tr=7&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca294b97",
+          "protocol": "https",
+          "host": [
+            "ps10",
+            "pndsn",
+            "com"
+          ],
+          "path": [
+            "v2",
+            "subscribe",
+            "sub-c-0e078d3e-1d09-11e8-a183-761142583d66",
+            "bbfb79d8dc1a5064bc1010257f417a10",
+            "0"
+          ],
+          "query": [
+            {
+              "key": "heartbeat",
+              "value": "300"
+            },
+            {
+              "key": "tt",
+              "value": "15992127046856854"
+            },
+            {
+              "key": "tr",
+              "value": "7"
+            },
+            {
+              "key": "uuid",
+              "value": "5f3a07abd0884f0049937eb9%3AJIRA"
+            },
+            {
+              "key": "pnsdk",
+              "value": "PubNub-JS-Web%2F4.21.6"
+            },
+            {
+              "key": "auth",
+              "value": "77703fad-4de8-4046-b5c9-a49eca294b97"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
+      "_postman_id": "26029ee2-1c23-40bd-aaf0-80eb1ab4bbb6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingComplete\",\"event\":{\"appKey\":\"com.gebsun.plugins.jira.issuechecklist\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:04.974Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/engage-targeting/api/v2/user/0d13b137-2934-4b74-a921-694ab83c54c5/in-product-messages?product=jira&schema=2&locale=en-GB",
+      "_postman_id": "09680080-e521-42f5-8348-97d740c72e9b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/engage-targeting/api/v2/user/0d13b137-2934-4b74-a921-694ab83c54c5/in-product-messages?product=jira&schema=2&locale=en-GB",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "engage-targeting",
+            "api",
+            "v2",
+            "user",
+            "0d13b137-2934-4b74-a921-694ab83c54c5",
+            "in-product-messages"
+          ],
+          "query": [
+            {
+              "key": "product",
+              "value": "jira"
+            },
+            {
+              "key": "schema",
+              "value": "2"
+            },
+            {
+              "key": "locale",
+              "value": "en-GB"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/13157",
+      "_postman_id": "62b6f6c7-d7a7-41c7-ba24-c6af586377e2",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/13157"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/mauTag/software",
+      "_postman_id": "97df7d31-2dec-4d07-8469-86adfa1d2667",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/mauTag/software"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/warn",
+      "_postman_id": "e82c2b72-692b-4c31-9f25-f30d5a2f20f7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.global-loading-bar\",\"message\":\"Loading bar failed to initialise in SSR. This may be because SSR failed or a bug in the loading bar code.\",\"event\":{},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:05.517Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/warn"
+      },
+      "response": []
     }
   ],
   "event": [
