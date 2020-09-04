@@ -3416,6 +3416,60 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true",
+      "_postman_id": "93c4acd4-0814-4df4-8dd6-ab12851abcd5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\",null,\"boq_onegooglehttpserver_20200831.06_p0\"]],241,[[\"1599210800243\",null,[],null,null,null,null,\"[1599210800242,[[\\\"4950535922500196698\\\",null,[[4096,1]]],[\\\"1757184925777806825\\\",null,[[14,1]]],[\\\"3079121564595244695\\\",null,[[11,1]]],[\\\"14113926844082461540\\\",null,[[61,1]]]],null,null,\\\"[2,\\\\\\\"WMove_MS\\\\\\\"]\\\"]\",null,null,null,146208686,null,null,null,[null,[],null,\"[[],[],[1763433,1772879],[]]\"],null,null,null,[],4,null,null,null,null,null,[]]],\"1599210800243\",[],null,null,null,null,null,null,null,null,0]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
