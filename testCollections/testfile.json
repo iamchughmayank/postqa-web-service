@@ -20695,6 +20695,559 @@
         "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/graphql/1/",
+      "_postman_id": "d082cff7-211c-4c18-8ced-5599099b6571",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"query {\\n            issue(issueIdOrKey: \\\"INTERCEPT-119\\\", latestVersion: true, screen: \\\"view\\\") {\\n                id\\n                viewScreenId\\n            }\\n        }\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/graphql/1/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/fields/v2/prefetch",
+      "_postman_id": "63d16743-84be-4cff-a3e1-b54ab74a4dfd",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"context\":{\"product\":\"jira\",\"sessionId\":\"6be6e2ab-e900-40ec-9d98-f884c8a5a887\",\"containerId\":\"12500\",\"objectId\":\"85161\",\"principalId\":\"5f3a07abd0884f0049937eb9\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"additionalContext\":{\"properties\":{\"issuetype\":{\"value\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issuetype/1\",\"id\":\"1\",\"description\":\"A problem or error.\",\"iconUrl\":\"https://postmanlabs.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype\",\"name\":\"Bug\",\"subtask\":false,\"avatarId\":10303},\"renderedValue\":null,\"key\":\"issuetype\",\"title\":\"Issue Type\",\"editable\":true,\"required\":true,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issuetype/1\",\"id\":\"1\",\"description\":\"A problem or error.\",\"iconUrl\":\"https://postmanlabs.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype\",\"name\":\"Bug\",\"subtask\":false,\"avatarId\":10303}],\"schema\":{\"custom\":null,\"system\":\"issuetype\",\"configuration\":null,\"items\":null,\"type\":\"issuetype\",\"renderer\":\"jira-text-renderer\"}},\"components\":{\"value\":[],\"renderedValue\":null,\"key\":\"components\",\"title\":\"Components\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"components\",\"configuration\":null,\"items\":\"component\",\"type\":\"array\",\"renderer\":\"frother-control-renderer\"}},\"timeoriginalestimate\":{\"value\":null,\"renderedValue\":null,\"key\":\"timeoriginalestimate\",\"title\":\"Original Estimate\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"timeoriginalestimate\",\"configuration\":null,\"items\":null,\"type\":\"number\",\"renderer\":null}},\"customfield_12011\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_12011\",\"title\":\"Review Date\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:datepicker\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"date\",\"renderer\":\"jira-text-renderer\"}},\"description\":{\"value\":\"h2. Summary\\n\\n\\\\[Identify what the problem is, the area it occurs and what it\u00e2\u0080\u0099s impacting on. If possible, you should outline the bug from the perspective of the user.]\\n\\nh2. Scenario\\n\\n\\\\[This section should be a roadmap for recreating the bug, a step-by-step account of exactly what was done to find it.]\\n\\nh2. Expected Result\\n\\n\\\\[What SHOULD happen after the steps outlined in the scenario are followed]\\n\\nh2. Actual Result\\n\\n\\\\[An \u00e2\u0080\u0098actual\u00e2\u0080\u0099 result is what IS happening after the steps outlined in the scenario are followed.]\\n\\n{panel:bgColor=#deebff}\\nTriaged by <tag yourself here>\\nUser reported issue: [https://github.com/postmanlabs/postman-app-support/issues/8371|https://github.com/postmanlabs/postman-app-support/issues/8371|smart-link]\\n{panel}\\n\\n{quote}Original Issue: Describe the bug\\nNative Postman app cookies are not being updated when they change in Chrome (using Interceptor extension for Chrome)\\nTo Reproduce\\nSteps to reproduce the behavior:\\n\\nTurn on interceptor and add localhost as a domain to track cookies for\\nLog in to web app on localhost in Chrome\\nCheck that cookie has been tracked by Interceptor in Postman app\\nLog out of web app on localhost in Chrome\\nLog in to web app on localhost in Chrome\\nCookie value has not been updated in Postman app, regardless of the fact that it has changed in Chrome\\n\\nExpected behavior\\nAccording to the docs, Postman and Interceptor should keep the cookies in sync for the selected domains between Chrome and Postman.\\n\\nInterceptor keeps cookies for a fixed set of domains in sync, updating Postman from the browser when cookies update, including deletions.\\nsource\\n\\nScreenshots\\nN/A\\nApp information (please complete the following information):\\n\\nApp Type: Native App and Chrome Interceptor extension\\nPostman Version: 7.22.1\\nInterceptor Version: 1.0.2\\nOS: macOS Catalina 10.15.4\\n\\nAdditional context\\nN/A{quote}\",\"renderedValue\":\"<h2><a name=\\\"Summary\\\"></a>Summary</h2>\\n\\n<p>[Identify what the problem is, the area it occurs and what it\u00e2\u0080\u0099s impacting on. If possible, you should outline the bug from the perspective of the user.]</p>\\n\\n<h2><a name=\\\"Scenario\\\"></a>Scenario</h2>\\n\\n<p>[This section should be a roadmap for recreating the bug, a step-by-step account of exactly what was done to find it.]</p>\\n\\n<h2><a name=\\\"ExpectedResult\\\"></a>Expected Result</h2>\\n\\n<p>[What SHOULD happen after the steps outlined in the scenario are followed]</p>\\n\\n<h2><a name=\\\"ActualResult\\\"></a>Actual Result</h2>\\n\\n<p>[An \u00e2\u0080\u0098actual\u00e2\u0080\u0099 result is what IS happening after the steps outlined in the scenario are followed.]</p>\\n\\n<div class=\\\"panel\\\" style=\\\"background-color: #deebff;border-width: 1px;\\\"><div class=\\\"panelContent\\\" style=\\\"background-color: #deebff;\\\">\\n<p>Triaged by &lt;tag yourself here&gt;<br/>\\nUser reported issue: <a href=\\\"https://github.com/postmanlabs/postman-app-support/issues/8371\\\" title=\\\"smart-link\\\" class=\\\"external-link\\\" rel=\\\"nofollow noreferrer\\\">https://github.com/postmanlabs/postman-app-support/issues/8371</a></p>\\n</div></div>\\n\\n<blockquote><p>Original Issue: Describe the bug<br/>\\nNative Postman app cookies are not being updated when they change in Chrome (using Interceptor extension for Chrome)<br/>\\nTo Reproduce<br/>\\nSteps to reproduce the behavior:</p>\\n\\n<p>Turn on interceptor and add localhost as a domain to track cookies for<br/>\\nLog in to web app on localhost in Chrome<br/>\\nCheck that cookie has been tracked by Interceptor in Postman app<br/>\\nLog out of web app on localhost in Chrome<br/>\\nLog in to web app on localhost in Chrome<br/>\\nCookie value has not been updated in Postman app, regardless of the fact that it has changed in Chrome</p>\\n\\n<p>Expected behavior<br/>\\nAccording to the docs, Postman and Interceptor should keep the cookies in sync for the selected domains between Chrome and Postman.</p>\\n\\n<p>Interceptor keeps cookies for a fixed set of domains in sync, updating Postman from the browser when cookies update, including deletions.<br/>\\nsource</p>\\n\\n<p>Screenshots<br/>\\nN/A<br/>\\nApp information (please complete the following information):</p>\\n\\n<p>App Type: Native App and Chrome Interceptor extension<br/>\\nPostman Version: 7.22.1<br/>\\nInterceptor Version: 1.0.2<br/>\\nOS: macOS Catalina 10.15.4</p>\\n\\n<p>Additional context<br/>\\nN/A</p></blockquote>\",\"key\":\"description\",\"title\":\"Description\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"description\",\"configuration\":null,\"items\":null,\"type\":\"string\",\"renderer\":\"atlassian-wiki-renderer\"},\"adfValue\":{\"type\":\"doc\",\"version\":1,\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Summary\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"[Identify what the problem is, the area it occurs and what it\u00e2\u0080\u0099s impacting on. If possible, you should outline the bug from the perspective of the user.]\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Scenario\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"[This section should be a roadmap for recreating the bug, a step-by-step account of exactly what was done to find it.]\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Expected Result\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"[What SHOULD happen after the steps outlined in the scenario are followed]\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Actual Result\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"[An \u00e2\u0080\u0098actual\u00e2\u0080\u0099 result is what IS happening after the steps outlined in the scenario are followed.]\"}]},{\"type\":\"panel\",\"attrs\":{\"panelType\":\"info\"},\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Triaged by \"},{\"type\":\"text\",\"text\":\"<tag yourself here>\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"User reported issue: \"},{\"type\":\"inlineCard\",\"attrs\":{\"url\":\"https://github.com/postmanlabs/postman-app-support/issues/8371\"}}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Original Issue: Describe the bug\\nNative Postman app cookies are not being updated when they change in Chrome (using Interceptor extension for Chrome)\\nTo Reproduce\\nSteps to reproduce the behavior:\\n\\nTurn on interceptor and add localhost as a domain to track cookies for\\nLog in to web app on localhost in Chrome\\nCheck that cookie has been tracked by Interceptor in Postman app\\nLog out of web app on localhost in Chrome\\nLog in to web app on localhost in Chrome\\nCookie value has not been updated in Postman app, regardless of the fact that it has changed in Chrome\\n\\nExpected behavior\\nAccording to the docs, Postman and Interceptor should keep the cookies in sync for the selected domains between Chrome and Postman.\\n\\nInterceptor keeps cookies for a fixed set of domains in sync, updating Postman from the browser when cookies update, including deletions.\\nsource\\n\\nScreenshots\\nN/A\\nApp information (please complete the following information):\\n\\nApp Type: Native App and Chrome Interceptor extension\\nPostman Version: 7.22.1\\nInterceptor Version: 1.0.2\\nOS: macOS Catalina 10.15.4\\n\\nAdditional context\\nN/A\"}]}]}]}},\"fixVersions\":{\"value\":[],\"renderedValue\":null,\"key\":\"fixVersions\",\"title\":\"Fix versions\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/version/21038\",\"id\":\"21038\",\"description\":\"<p>Native app support</p>\",\"name\":\"0.9\",\"archived\":false,\"released\":true,\"releaseDate\":\"2019-01-25\",\"userReleaseDate\":\"25/Jan/19\",\"projectId\":12500},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/version/21076\",\"id\":\"21076\",\"description\":\"<p>Request capturing + Multiuser<br/>Spec: <a href=\\\"https://paper.dropbox.com/doc/Interceptor-0.10--Ae57pAPMXRHN~pDtqXHceWWWAQ-eR9XZqRbKDp4avBW4tVr6\\\">https://paper.dropbox.com/doc/Interceptor-0.10--Ae57pAPMXRHN~pDtqXHceWWWAQ-eR9XZqRbKDp4avBW4tVr6</a></p>\",\"name\":\"0.10\",\"archived\":false,\"released\":true,\"startDate\":\"2019-06-12\",\"releaseDate\":\"2019-07-05\",\"userStartDate\":\"12/Jun/19\",\"userReleaseDate\":\"05/Jul/19\",\"projectId\":12500},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/version/21454\",\"id\":\"21454\",\"description\":\"<p></p>\",\"name\":\"0.11\",\"archived\":false,\"released\":true,\"startDate\":\"2019-08-08\",\"releaseDate\":\"2019-09-17\",\"userStartDate\":\"08/Aug/19\",\"userReleaseDate\":\"17/Sep/19\",\"projectId\":12500}],\"schema\":{\"custom\":null,\"system\":\"fixVersions\",\"configuration\":null,\"items\":\"version\",\"type\":\"array\",\"renderer\":\"frother-control-renderer\"}},\"customfield_11982\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_11982\",\"title\":\"Deployment Unit\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":\"https://postmanlabs.atlassian.net/rest/api/1.0/labels/85161/suggest?customFieldId=11982&query=\",\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:labels\",\"system\":null,\"configuration\":null,\"items\":\"string\",\"type\":\"array\",\"renderer\":\"jira-text-renderer\"}},\"resolution\":{\"value\":null,\"renderedValue\":null,\"key\":\"resolution\",\"title\":\"Resolution\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"resolution\",\"configuration\":null,\"items\":null,\"type\":\"resolution\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11984\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_11984\",\"title\":\"Root Cause Link\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:url\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"string\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11983\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_11983\",\"title\":\"Is Regression\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10468\",\"value\":\"No\",\"id\":\"10468\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10469\",\"value\":\"Yes\",\"id\":\"10469\"}],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:select\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"option\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11961\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_11961\",\"title\":\"Impact\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10366\",\"value\":\"Extensive / Widespread\",\"id\":\"10366\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10367\",\"value\":\"Significant / Large\",\"id\":\"10367\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10368\",\"value\":\"Moderate / Limited\",\"id\":\"10368\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10369\",\"value\":\"Minor / Localized\",\"id\":\"10369\"}],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:select\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"option\",\"renderer\":\"jira-text-renderer\"}},\"timetracking\":{\"value\":{},\"renderedValue\":{},\"key\":\"timetracking\",\"title\":\"Time tracking\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"timetracking\",\"configuration\":null,\"items\":null,\"type\":\"timetracking\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11400\":{\"value\":null,\"renderedValue\":\"\",\"key\":\"customfield_11400\",\"title\":\"Release Note\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:textarea\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"string\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11996\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_11996\",\"title\":\"GitHub Issue Link\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:url\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"string\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11930\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_11930\",\"title\":\"Start date\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:datepicker\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"date\",\"renderer\":\"jira-text-renderer\"}},\"customfield_10006\":{\"value\":[{\"id\":533,\"name\":\"Integrations Sprint 11\",\"state\":\"active\",\"boardId\":210,\"goal\":\"\",\"startDate\":\"2020-09-01T09:40:01.497Z\",\"endDate\":\"2020-09-14T09:26:00.000Z\"}],\"renderedValue\":null,\"key\":\"customfield_10006\",\"title\":\"Sprint\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.pyxis.greenhopper.jira:gh-sprint\",\"system\":null,\"configuration\":null,\"items\":\"json\",\"type\":\"array\",\"renderer\":\"jira-text-renderer\"}},\"customfield_10007\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_10007\",\"title\":\"Epic Link\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.pyxis.greenhopper.jira:gh-epic-link\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"any\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11956\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_11956\",\"title\":\"Affected Feature\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":\"https://postmanlabs.atlassian.net/rest/api/1.0/labels/85161/suggest?customFieldId=11956&query=\",\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:labels\",\"system\":null,\"configuration\":null,\"items\":\"string\",\"type\":\"array\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11937\":{\"value\":null,\"renderedValue\":\"\",\"key\":\"customfield_11937\",\"title\":\"Magnitude\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"string\",\"renderer\":\"jira-text-renderer\"}},\"summary\":{\"value\":\"Postman app cookies are not being updated when they change in Chrome\",\"renderedValue\":null,\"key\":\"summary\",\"title\":\"Summary\",\"editable\":true,\"required\":true,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"summary\",\"configuration\":null,\"items\":null,\"type\":\"string\",\"renderer\":\"jira-text-renderer\"}},\"watches\":{\"value\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issue/INTERCEPT-119/watchers\",\"watchCount\":3,\"isWatching\":false},\"renderedValue\":null,\"key\":\"watches\",\"title\":\"Watchers\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"watches\",\"configuration\":null,\"items\":null,\"type\":\"watches\",\"renderer\":null}},\"subtasks\":{\"value\":[],\"renderedValue\":null,\"key\":\"subtasks\",\"title\":\"Sub-tasks\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"subtasks\",\"configuration\":null,\"items\":\"issuelinks\",\"type\":\"array\",\"renderer\":null}},\"created\":{\"value\":\"2020-08-29T13:21:33.312+0530\",\"renderedValue\":\"Saturday 1:21 PM\",\"key\":\"created\",\"title\":\"Created\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"created\",\"configuration\":null,\"items\":null,\"type\":\"datetime\",\"renderer\":null}},\"reporter\":{\"value\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5c5aad7b2149cc4fbca0027d\",\"accountId\":\"5c5aad7b2149cc4fbca0027d\",\"avatarUrls\":{\"48x48\":\"https://secure.gravatar.com/avatar/2fd932e28b4b1ab95f0323262ad730cb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJB-5.png\",\"24x24\":\"https://secure.gravatar.com/avatar/2fd932e28b4b1ab95f0323262ad730cb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJB-5.png\",\"16x16\":\"https://secure.gravatar.com/avatar/2fd932e28b4b1ab95f0323262ad730cb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJB-5.png\",\"32x32\":\"https://secure.gravatar.com/avatar/2fd932e28b4b1ab95f0323262ad730cb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJB-5.png\"},\"displayName\":\"Jira Bot\",\"active\":true,\"timeZone\":\"Asia/Kolkata\",\"accountType\":\"atlassian\"},\"renderedValue\":null,\"key\":\"reporter\",\"title\":\"Reporter\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"reporter\",\"configuration\":null,\"items\":null,\"type\":\"user\",\"renderer\":\"jira-text-renderer\"}},\"customfield_12089\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_12089\",\"title\":\"Severity\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10784\",\"value\":\"Lowest\",\"id\":\"10784\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10785\",\"value\":\"Low\",\"id\":\"10785\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10786\",\"value\":\"Medium\",\"id\":\"10786\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10787\",\"value\":\"High\",\"id\":\"10787\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10788\",\"value\":\"Highest\",\"id\":\"10788\"}],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:select\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"option\",\"renderer\":\"jira-text-renderer\"}},\"priority\":{\"value\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/3\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/medium.svg\",\"name\":\"Medium\",\"id\":\"3\"},\"renderedValue\":null,\"key\":\"priority\",\"title\":\"Priority\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/1\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/highest.svg\",\"name\":\"Highest\",\"id\":\"1\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/2\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/high.svg\",\"name\":\"High\",\"id\":\"2\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/3\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/medium.svg\",\"name\":\"Medium\",\"id\":\"3\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/4\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/low.svg\",\"name\":\"Low\",\"id\":\"4\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/5\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/lowest.svg\",\"name\":\"Lowest\",\"id\":\"5\"}],\"schema\":{\"custom\":null,\"system\":\"priority\",\"configuration\":null,\"items\":null,\"type\":\"priority\",\"renderer\":\"jira-text-renderer\"}},\"customfield_10200\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_10200\",\"title\":\"Reviewer\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":\"https://postmanlabs.atlassian.net/rest/api/1.0/users/picker?fieldName=customfield_10200&fieldConfigId=10301&projectId=12500&showAvatar=true&query=\",\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:userpicker\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"user\",\"renderer\":\"jira-text-renderer\"}},\"customfield_10002\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_10002\",\"title\":\"Flagged\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:flagged\",\"system\":null,\"configuration\":null,\"items\":\"option\",\"type\":\"array\",\"renderer\":\"jira-text-renderer\"}},\"labels\":{\"value\":[],\"renderedValue\":null,\"key\":\"labels\",\"title\":\"Labels\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":\"https://postmanlabs.atlassian.net/rest/api/1.0/labels/85161/suggest?query=\",\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"labels\",\"configuration\":null,\"items\":\"string\",\"type\":\"array\",\"renderer\":\"jira-text-renderer\"}},\"customfield_10004\":{\"value\":null,\"renderedValue\":null,\"key\":\"customfield_10004\",\"title\":\"Story Points\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:storypoint\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"number\",\"renderer\":\"jira-text-renderer\"}},\"customfield_11942\":{\"value\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10347\",\"value\":\"Production\",\"id\":\"10347\"}],\"renderedValue\":null,\"key\":\"customfield_11942\",\"title\":\"System Environment\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10347\",\"value\":\"Production\",\"id\":\"10347\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10360\",\"value\":\"Stage\",\"id\":\"10360\"},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/customFieldOption/10346\",\"value\":\"Beta\",\"id\":\"10346\"}],\"schema\":{\"custom\":\"com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes\",\"system\":null,\"configuration\":null,\"items\":\"option\",\"type\":\"array\",\"renderer\":\"jira-text-renderer\"}},\"environment\":{\"value\":null,\"renderedValue\":\"\",\"key\":\"environment\",\"title\":\"Environment\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"environment\",\"configuration\":null,\"items\":null,\"type\":\"string\",\"renderer\":\"atlassian-wiki-renderer\"},\"adfValue\":{\"type\":\"doc\",\"version\":1,\"content\":[]}},\"versions\":{\"value\":[],\"renderedValue\":null,\"key\":\"versions\",\"title\":\"Affects versions\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/version/21038\",\"id\":\"21038\",\"description\":\"<p>Native app support</p>\",\"name\":\"0.9\",\"archived\":false,\"released\":true,\"releaseDate\":\"2019-01-25\",\"userReleaseDate\":\"25/Jan/19\",\"projectId\":12500},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/version/21076\",\"id\":\"21076\",\"description\":\"<p>Request capturing + Multiuser<br/>Spec: <a href=\\\"https://paper.dropbox.com/doc/Interceptor-0.10--Ae57pAPMXRHN~pDtqXHceWWWAQ-eR9XZqRbKDp4avBW4tVr6\\\">https://paper.dropbox.com/doc/Interceptor-0.10--Ae57pAPMXRHN~pDtqXHceWWWAQ-eR9XZqRbKDp4avBW4tVr6</a></p>\",\"name\":\"0.10\",\"archived\":false,\"released\":true,\"startDate\":\"2019-06-12\",\"releaseDate\":\"2019-07-05\",\"userStartDate\":\"12/Jun/19\",\"userReleaseDate\":\"05/Jul/19\",\"projectId\":12500},{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/version/21454\",\"id\":\"21454\",\"description\":\"<p></p>\",\"name\":\"0.11\",\"archived\":false,\"released\":true,\"startDate\":\"2019-08-08\",\"releaseDate\":\"2019-09-17\",\"userStartDate\":\"08/Aug/19\",\"userReleaseDate\":\"17/Sep/19\",\"projectId\":12500}],\"schema\":{\"custom\":null,\"system\":\"versions\",\"configuration\":null,\"items\":\"version\",\"type\":\"array\",\"renderer\":\"frother-control-renderer\"}},\"duedate\":{\"value\":null,\"renderedValue\":null,\"key\":\"duedate\",\"title\":\"Due date\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"duedate\",\"configuration\":null,\"items\":null,\"type\":\"date\",\"renderer\":\"jira-text-renderer\"}},\"votes\":{\"value\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issue/INTERCEPT-119/votes\",\"votes\":0,\"hasVoted\":false},\"renderedValue\":null,\"key\":\"votes\",\"title\":\"Votes\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"votes\",\"configuration\":null,\"items\":null,\"type\":\"votes\",\"renderer\":null}},\"issuelinks\":{\"value\":[{\"id\":\"64711\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issueLink/64711\",\"type\":{\"id\":\"10003\",\"name\":\"Relates\",\"inward\":\"relates to\",\"outward\":\"relates to\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issueLinkType/10003\"},\"outwardIssue\":{\"id\":\"72984\",\"key\":\"INTERCEPT-104\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issue/72984\",\"fields\":{\"summary\":\"Postman app cookies are not being updated when they change in Chrome\",\"status\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/status/10002\",\"description\":\"\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/statuses/closed.png\",\"name\":\"Done\",\"id\":\"10002\",\"statusCategory\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/statuscategory/3\",\"id\":3,\"key\":\"done\",\"colorName\":\"green\",\"name\":\"Done\"}},\"priority\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/3\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/medium.svg\",\"name\":\"Medium\",\"id\":\"3\"},\"assignee\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5c1737386158cb25b06f39aa\",\"accountId\":\"5c1737386158cb25b06f39aa\",\"emailAddress\":\"vinit.shahdeo@postman.com\",\"avatarUrls\":{\"48x48\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/48\",\"24x24\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/24\",\"16x16\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/16\",\"32x32\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/32\"},\"displayName\":\"Vinit Shahdeo\",\"active\":true,\"timeZone\":\"Asia/Kolkata\",\"accountType\":\"atlassian\"},\"issuetype\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issuetype/1\",\"id\":\"1\",\"description\":\"A problem or error.\",\"iconUrl\":\"https://postmanlabs.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype\",\"name\":\"Bug\",\"subtask\":false,\"avatarId\":10303}}}},{\"id\":\"64846\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issueLink/64846\",\"type\":{\"id\":\"10003\",\"name\":\"Relates\",\"inward\":\"relates to\",\"outward\":\"relates to\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issueLinkType/10003\"},\"outwardIssue\":{\"id\":\"85367\",\"key\":\"IS-397\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issue/85367\",\"fields\":{\"summary\":\"[ Electron upgrade ] Handling the breaking change due to change in IPC API\",\"status\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/status/10001\",\"description\":\"Primary actionable work on the issue is complete and is waiting for a peer review or verification from reviewer\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/statuses/information.png\",\"name\":\"In Review\",\"id\":\"10001\",\"statusCategory\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/statuscategory/4\",\"id\":4,\"key\":\"indeterminate\",\"colorName\":\"yellow\",\"name\":\"In Progress\"}},\"priority\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/3\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/medium.svg\",\"name\":\"Medium\",\"id\":\"3\"},\"assignee\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5f3a07abd0884f0049937eb9\",\"accountId\":\"5f3a07abd0884f0049937eb9\",\"emailAddress\":\"mayank.chugh@postman.com\",\"avatarUrls\":{\"48x48\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f3a07abd0884f0049937eb9/2441aa75-58ff-4c8e-810a-4bceffdf8fbc/48\",\"24x24\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f3a07abd0884f0049937eb9/2441aa75-58ff-4c8e-810a-4bceffdf8fbc/24\",\"16x16\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f3a07abd0884f0049937eb9/2441aa75-58ff-4c8e-810a-4bceffdf8fbc/16\",\"32x32\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f3a07abd0884f0049937eb9/2441aa75-58ff-4c8e-810a-4bceffdf8fbc/32\"},\"displayName\":\"Mayank Chugh\",\"active\":true,\"timeZone\":\"Asia/Kolkata\",\"accountType\":\"atlassian\"},\"issuetype\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issuetype/3\",\"id\":\"3\",\"description\":\"A small, distinct piece of work.\",\"iconUrl\":\"https://postmanlabs.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype\",\"name\":\"Task\",\"subtask\":false,\"avatarId\":10318}}}},{\"id\":\"64640\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issueLink/64640\",\"type\":{\"id\":\"10003\",\"name\":\"Relates\",\"inward\":\"relates to\",\"outward\":\"relates to\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issueLinkType/10003\"},\"inwardIssue\":{\"id\":\"73020\",\"key\":\"GITHUB-1972\",\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issue/73020\",\"fields\":{\"summary\":\"Postman app cookies are not being updated when they change in Chrome\",\"status\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/status/10677\",\"description\":\"\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/statuses/generic.png\",\"name\":\"Pending Triage\",\"id\":\"10677\",\"statusCategory\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/statuscategory/2\",\"id\":2,\"key\":\"new\",\"colorName\":\"blue-gray\",\"name\":\"To Do\"}},\"priority\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/priority/3\",\"iconUrl\":\"https://postmanlabs.atlassian.net/images/icons/priorities/medium.svg\",\"name\":\"Medium\",\"id\":\"3\"},\"assignee\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5c79b0b300a665752ca33fe2\",\"accountId\":\"5c79b0b300a665752ca33fe2\",\"emailAddress\":\"danny@postman.com\",\"avatarUrls\":{\"48x48\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c79b0b300a665752ca33fe2/1d2dbdbf-3072-4014-823a-664ee1074208/48\",\"24x24\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c79b0b300a665752ca33fe2/1d2dbdbf-3072-4014-823a-664ee1074208/24\",\"16x16\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c79b0b300a665752ca33fe2/1d2dbdbf-3072-4014-823a-664ee1074208/16\",\"32x32\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c79b0b300a665752ca33fe2/1d2dbdbf-3072-4014-823a-664ee1074208/32\"},\"displayName\":\"Danny Dainton\",\"active\":true,\"timeZone\":\"Europe/London\",\"accountType\":\"atlassian\"},\"issuetype\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/issuetype/1\",\"id\":\"1\",\"description\":\"A problem or error.\",\"iconUrl\":\"https://postmanlabs.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype\",\"name\":\"Bug\",\"subtask\":false,\"avatarId\":10303}}}}],\"renderedValue\":null,\"key\":\"issuelinks\",\"title\":\"Linked Issues\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":\"https://postmanlabs.atlassian.net/rest/api/2/issue/picker?currentProjectId=&showSubTaskParent=true&showSubTasks=true&currentIssueKey=INTERCEPT-119&query=\",\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"issuelinks\",\"configuration\":null,\"items\":\"issuelinks\",\"type\":\"array\",\"renderer\":\"jira-text-renderer\"}},\"assignee\":{\"value\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/user?accountId=5c1737386158cb25b06f39aa\",\"accountId\":\"5c1737386158cb25b06f39aa\",\"emailAddress\":\"vinit.shahdeo@postman.com\",\"avatarUrls\":{\"48x48\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/48\",\"24x24\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/24\",\"16x16\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/16\",\"32x32\":\"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c1737386158cb25b06f39aa/df37695f-5f03-4296-a7a0-b13e3954865f/32\"},\"displayName\":\"Vinit Shahdeo\",\"active\":true,\"timeZone\":\"Asia/Kolkata\",\"accountType\":\"atlassian\"},\"renderedValue\":null,\"key\":\"assignee\",\"title\":\"Assignee\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":\"https://postmanlabs.atlassian.net/rest/api/2/user/assignable/search?issueKey=INTERCEPT-119&query=\",\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"assignee\",\"configuration\":null,\"items\":null,\"type\":\"user\",\"renderer\":\"jira-text-renderer\"}},\"worklog\":{\"value\":{\"startAt\":0,\"maxResults\":20,\"total\":0,\"worklogs\":[]},\"renderedValue\":{\"startAt\":0,\"maxResults\":20,\"total\":0,\"worklogs\":[]},\"key\":\"worklog\",\"title\":\"Log Work\",\"editable\":true,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"worklog\",\"configuration\":null,\"items\":\"worklog\",\"type\":\"array\",\"renderer\":\"atlassian-wiki-renderer\"}},\"updated\":{\"value\":\"2020-09-04T00:10:30.716+0530\",\"renderedValue\":\"Today 12:10 AM\",\"key\":\"updated\",\"title\":\"Updated\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"updated\",\"configuration\":null,\"items\":null,\"type\":\"datetime\",\"renderer\":null}},\"status\":{\"value\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/status/10100\",\"description\":\"The issue is open and ready for the assignee to start work on it.\",\"iconUrl\":\"https://postmanlabs.atlassian.net/\",\"name\":\"Open\",\"id\":\"10100\",\"statusCategory\":{\"self\":\"https://postmanlabs.atlassian.net/rest/api/2/statuscategory/2\",\"id\":2,\"key\":\"new\",\"colorName\":\"blue-gray\",\"name\":\"To Do\"}},\"renderedValue\":null,\"key\":\"status\",\"title\":\"Status\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":null,\"system\":\"status\",\"configuration\":null,\"items\":null,\"type\":\"status\",\"renderer\":null}},\"portfolio-child-issues\":{\"value\":[],\"renderedValue\":null,\"key\":\"portfolio-child-issues\",\"title\":\"Child Issues\",\"editable\":false,\"required\":false,\"autoCompleteUrl\":null,\"allowedValues\":[],\"schema\":{\"custom\":\"com.atlassian.graphql:portfolio-child-issues\",\"system\":null,\"configuration\":null,\"items\":null,\"type\":\"portfolio-child-issues\",\"renderer\":null}}},\"type\":\"issue\",\"customPropertyMappings\":{\"epic\":\"customfield_10007\",\"sprint\":\"customfield_10006\",\"storyPointsField\":\"customfield_10004\"}}},\"prefetchFields\":[\"assignee\",\"labels\"]}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/fields/v2/prefetch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/gira/1/",
+      "_postman_id": "a7e7beee-a332-43cf-909c-2a730b5b81cb",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"\\n  query attachmentsQuery($issueKey: String) {\\n    viewIssue(issueKey: $issueKey) {\\n        attachments {\\n            totalCount\\n        }\\n    }\\n  }\",\"variables\":{\"issueKey\":\"INTERCEPT-119\"}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "baddea03-f711-464b-8918-ba1991cf5009",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:41:30.235Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"unknownSource\",\"actionSubject\":\"jiraForgeUi.fetchModulesInitialization\",\"action\":\"finished\",\"attributes\":{\"issueActionCount\":0,\"issueGlanceCount\":0,\"issuePanelCount\":0,\"issueActivityCount\":0,\"customFieldCount\":0,\"isSynthetic\":false},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"jiraForgeUi.fetchModulesInitialization finished\",\"messageId\":\"ajs-50cf4997351d8597aa170ad47940b6d2\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:31.822Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.248Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"@atlaskit/feature-flag-client\",\"actionSubject\":\"feature\",\"action\":\"exposed\",\"attributes\":{\"flagKey\":\"endeavour.nav-v3.rollout.trait-multi\",\"reason\":\"FALLTHROUGH\",\"value\":\"not-enrolled\"},\"eventType\":\"track\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"feature exposed\",\"messageId\":\"ajs-dd3b6ccba18c0aa9bb8286822e569688\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:31.822Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:30.818Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"experience\":\"viewAtlassianNavigation\",\"experienceId\":\"/browse/INTERCEPT-119\",\"userLocation\":\"issue:issue\",\"task\":\"viewAtlassianNavigation\",\"analyticsSource\":\"atlassian-navigation\",\"application\":\"unknown\",\"edition\":\"unknown\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-b065c72876b0caefda322918c4039754\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:31.822Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:31.482Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"title\":\"\",\"path\":\"\",\"url\":\"\",\"referrer\":\"\",\"search\":\"\",\"eventType\":\"screen\",\"attributes\":{\"isSPA\":true,\"analyticsSource\":\"full-issue\",\"designVersion\":\"v2-bento\",\"projectId\":\"12500\",\"issueId\":\"85161\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"TODO\",\"statusCategoryId\":2,\"issueTypeId\":\"1\",\"assigneeId\":\"5c1737386158cb25b06f39aa\",\"numCharSummary\":68,\"numCharDescription\":1625,\"numCustomMultilineFields\":1,\"numCharCustomMultilineFields\":0,\"visibleContextItems\":\"assignee,reporter,devSummary,labels,com.atlassian.jira.plugin.system.customfieldtypes:labels,com.atlassian.jira.plugin.system.customfieldtypes:url,com.atlassian.jira.plugin.system.customfieldtypes:select,com.atlassian.jira.plugin.system.customfieldtypes:select,com.atlassian.jira.plugin.system.customfieldtypes:url,com.atlassian.jira.plugin.system.customfieldtypes:labels,string,com.atlassian.jira.plugin.system.customfieldtypes:select,com.atlassian.jira.plugin.system.customfieldtypes:userpicker,com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes,TAB,TAB,com.pyxis.greenhopper.jira:gh-sprint,priority,worklog\",\"numVisibleContextItems\":19,\"conditionallyVisibleContextItems\":\"com.atlassian.jira.plugin.system.customfieldtypes:storypoint,timeoriginalestimate,timetracking,com.pyxis.greenhopper.jira:gh-epic-link,components\",\"numConditionallyVisibleContextItems\":5,\"numFieldTabs\":2,\"hasSecurityLevel\":false,\"securityLevelAllowedValuesCount\":0,\"hasSecurityLevelEditPermissions\":false,\"issueHierarchyLevel\":null,\"namespaces\":\"navigationNextScreen.fullIssueScreen\"},\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{},\"name\":\"fullIssueScreen\"},\"category\":null,\"name\":\"fullIssueScreen\",\"messageId\":\"ajs-acb339bc92eabfafb66448171cf18192\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"page\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:31.822Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:31.556Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"containerType\":\"project\",\"containerId\":\"12500\",\"source\":\"fullIssueScreen\",\"objectType\":\"issue\",\"objectId\":\"85161\",\"actionSubject\":\"renderer\",\"action\":\"started\",\"attributes\":{\"packageName\":\"@atlaskit/renderer\",\"packageVersion\":\"64.0.1\",\"componentName\":\"editorCore\",\"platform\":\"web\"},\"tags\":[\"editor\",\"fabricEditor\"],\"eventType\":\"ui\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"renderer started\",\"messageId\":\"ajs-bca77ecfd0fa757298a860774d1b11bb\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:31.822Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:31.623Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"containerType\":\"project\",\"containerId\":\"12500\",\"source\":\"fullIssueScreen\",\"objectType\":\"issue\",\"objectId\":\"85161\",\"actionSubject\":\"issue\",\"action\":\"viewed\",\"attributes\":{\"isSPA\":true,\"analyticsSource\":\"full-issue\",\"designVersion\":\"v2-bento\",\"projectId\":\"12500\",\"issueId\":\"85161\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"TODO\",\"statusCategoryId\":2,\"issueTypeId\":\"1\",\"assigneeId\":\"5c1737386158cb25b06f39aa\",\"numCharSummary\":68,\"numCharDescription\":1625,\"numCustomMultilineFields\":1,\"numCharCustomMultilineFields\":0,\"visibleContextItems\":\"assignee,reporter,devSummary,labels,com.atlassian.jira.plugin.system.customfieldtypes:labels,com.atlassian.jira.plugin.system.customfieldtypes:url,com.atlassian.jira.plugin.system.customfieldtypes:select,com.atlassian.jira.plugin.system.customfieldtypes:select,com.atlassian.jira.plugin.system.customfieldtypes:url,com.atlassian.jira.plugin.system.customfieldtypes:labels,string,com.atlassian.jira.plugin.system.customfieldtypes:select,com.atlassian.jira.plugin.system.customfieldtypes:userpicker,com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes,TAB,TAB,com.pyxis.greenhopper.jira:gh-sprint,priority,worklog\",\"numVisibleContextItems\":19,\"conditionallyVisibleContextItems\":\"com.atlassian.jira.plugin.system.customfieldtypes:storypoint,timeoriginalestimate,timetracking,com.pyxis.greenhopper.jira:gh-epic-link,components\",\"numConditionallyVisibleContextItems\":5,\"numFieldTabs\":2,\"hasSecurityLevel\":false,\"securityLevelAllowedValuesCount\":0,\"hasSecurityLevelEditPermissions\":false,\"issueHierarchyLevel\":null,\"namespaces\":\"navigationNextScreen.fullIssueScreen\"},\"eventType\":\"track\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"issue viewed\",\"messageId\":\"ajs-985374374bb33f18eb0bcfe1d24aa3a9\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:31.822Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:31.819Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"full-issue\",\"actionSubject\":\"jiraForgeUi.issueViewInitialization\",\"action\":\"started\",\"attributes\":{\"actionType\":\"fetch-forge\",\"isPrefetched\":true,\"isSynthetic\":false},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"jiraForgeUi.issueViewInitialization started\",\"messageId\":\"ajs-5644aed3ca28f34dbd15586ccaef3247\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:31.822Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:41:31.822Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/gira/1/",
+      "_postman_id": "183567ba-7341-4983-a8a0-3c33eca9de28",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"query issueViewBulkQuery($jql: String!, $limit: Int!) {\\n    bentoViewIssues_all: viewIssues(jql: $jql, first: $limit) {\\n        nodes {\\n            \\n        issueId\\n        fields {\\n            __typename\\n    \\n            ... on ProjectField {\\n                fieldKey\\n                type\\n                simplified\\n                name\\n            }\\n    \\n            ... on TextField {\\n                fieldKey\\n                title\\n                isEditable\\n                textValue\\n                adf\\n                renderer\\n            }\\n    \\n            ... on IssueTypeField {\\n              fieldKey\\n              id\\n              iconUrl\\n              name\\n            }\\n    \\n            ... on StatusField {\\n              fieldKey\\n              name\\n              statusCategoryId\\n            }\\n    \\n            ... on IssueKeyField {\\n              fieldKey\\n              stringValue\\n            }\\n    \\n            ... on PriorityField {\\n              fieldKey\\n              title\\n              isEditable\\n              iconUrl\\n              name\\n              id\\n            }\\n    \\n            ... on UserField {\\n              fieldKey\\n              title\\n              isEditable\\n              userValue {\\n                displayName\\n                avatarUrl\\n              }\\n            }\\n    \\n            ... on VersionsField {\\n              fieldKey\\n              title\\n              isEditable\\n              versions {\\n                id\\n                name\\n              }\\n            }\\n    \\n            ... on LabelsField {\\n              fieldKey\\n              title\\n              isEditable\\n              labels\\n            }\\n    \\n            ... on ProjectComponentsField {\\n              fieldKey\\n              title\\n              isEditable\\n              componentValues {\\n                id\\n                name\\n              }\\n            }\\n    \\n            ... on TimeTrackingField {\\n              fieldKey\\n              title\\n              isEditable\\n              originalEstimate {\\n                estimateSeconds\\n              }\\n              remainingEstimate {\\n                estimateSeconds\\n              }\\n              timeSpent {\\n                estimateSeconds\\n              }\\n            }\\n    \\n            ... on StoryPointsField {\\n              fieldKey\\n              title\\n              isEditable\\n              floatValue\\n            }\\n    \\n            ... on EpicLinkField {\\n              fieldKey\\n              title\\n              isEditable\\n              epic {\\n                id\\n                key\\n                name\\n                summary\\n                colorKey\\n                done\\n              }\\n            }\\n    \\n            ... on EpicNameField {\\n              fieldKey\\n              stringValue\\n              title\\n              isEditable\\n            }\\n    \\n            ... on SprintCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              values {\\n                id\\n                name\\n                goal\\n                state\\n                boardId\\n                startDate\\n                endDate\\n                completeDate\\n              }\\n            }\\n    \\n            ... on SelectCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              selectedValue {\\n                  optionId\\n                  value\\n              }\\n            }\\n\\n            ... on CascadingSelectCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              selectedValue {\\n                  optionId\\n                  value\\n                  child {\\n                    optionId\\n                    value\\n                  }\\n              }\\n            }\\n\\n            ... on UserPickerCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              selectedUser {\\n                displayName\\n                avatarUrl\\n              }\\n            }\\n    \\n            ... on TextAreaCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              wiki              \\n              adf\\n              renderer\\n              textValue\\n            }\\n    \\n            ... on FloatCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              floatValue\\n            }\\n    \\n            ... on DatePickerCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              stringValue\\n            }\\n    \\n            ... on DateTimeCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              dateTime\\n            }\\n    \\n            ... on TextFieldCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              wiki\\n            }\\n    \\n            ... on MultiSelectCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              selectedValues {\\n                  optionId\\n                  value\\n              }\\n            }\\n    \\n            ... on LabelsCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              labels\\n            }\\n    \\n            ... on MultiUserPickerCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              selectedUsers {\\n                accountId\\n                displayName\\n                avatarUrl\\n              }\\n            }\\n    \\n            ... on UrlCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              url\\n            }\\n    \\n            ... on VersionCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              version {\\n                  id\\n                  name\\n              }\\n            }\\n    \\n            ... on GroupPickerCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              group\\n            }\\n    \\n            ... on MultiVersionCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              versions {\\n                  id\\n                  name\\n              }\\n            }\\n    \\n            ... on MultiGroupPickerCustomField {\\n              fieldKey\\n              title\\n              isEditable\\n              groups\\n            }\\n    \\n            ... on DateField {\\n              fieldKey\\n              stringValue\\n              isEditable\\n              title\\n            }\\n    \\n            ... on CheckBoxesCustomField {\\n                fieldKey\\n                isEditable\\n                title\\n                selectedValues {\\n                    optionId\\n                    value\\n                }\\n            }\\n    \\n            ... on RadioButtonsCustomField {\\n                fieldKey\\n                isEditable\\n                title\\n                selectedValue {\\n                    optionId\\n                    value\\n                }\\n            }\\n    \\n            ... on ColorField {\\n                fieldKey\\n                isEditable\\n                title\\n                stringValue\\n            }\\n\\n            \\n                   ... on EpicColorField {\\n                      fieldKey\\n                      isEditable\\n                      title\\n                      stringValue\\n                    }\\n                  \\n            \\n        }\\n        \\n        layoutItems {\\n        location\\n        category\\n        items {\\n          itemId\\n          type\\n        }\\n    }\\n        remoteLinks {\\n       isLinkingEnabled\\n       confluencePages {\\n         linkedPages {\\n           pageCount\\n         }\\n         mentionedPages {\\n           pageCount\\n         }\\n       }\\n     }\\n        \\n    \\n        }\\n    }\\n}\",\"variables\":{\"jql\":\"issuekey in (GITHUB-1972,INTERCEPT-104,IS-397)\",\"limit\":3}}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://mgas.prod.public.atl-paas.net/v1/event",
+      "_postman_id": "2d1ac198-cb5d-4700-ba2c-04d50f8f3e83",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"engagement.inproduct.loaded\",\"properties\":{\"queueSize\":10,\"locale\":\"en-GB\"},\"cloud_id\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"user\":null,\"server\":null,\"product\":\"jira\",\"user_id\":\"5f3a07abd0884f0049937eb9\",\"user_id_type\":\"atlassian_account\",\"serverTime\":1599212492081}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://mgas.prod.public.atl-paas.net/v1/event"
+      },
+      "response": []
+    },
+    {
+      "name": "https://mgas.prod.public.atl-paas.net/v1/event",
+      "_postman_id": "0305b4f2-162e-4cdd-b2fd-98edb1cf0fec",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"engagement.inproduct.fetch.success\",\"properties\":{\"locale\":\"en-GB\",\"fetchTime\":2098,\"messageLength\":11},\"cloud_id\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"user\":null,\"server\":null,\"product\":\"jira\",\"user_id\":\"5f3a07abd0884f0049937eb9\",\"user_id_type\":\"atlassian_account\",\"serverTime\":1599212492085}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://mgas.prod.public.atl-paas.net/v1/event"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/12500",
+      "_postman_id": "d5a28b08-0877-4b21-9be0-f4e57dc43de6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/servicedesk/latest/analyticscontext/12500"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/latest/userPermission/browseUsersGroups",
+      "_postman_id": "2f201c29-3d40-434a-ab42-3b72fc96917b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/internal/latest/userPermission/browseUsersGroups"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/greenhopper/1.0/rapidviews/recent?maxResults=1&userBoard=true",
+      "_postman_id": "62cdac89-2118-4065-b490-dd18c2ca6545",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/greenhopper/1.0/rapidviews/recent?maxResults=1&userBoard=true",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "greenhopper",
+            "1.0",
+            "rapidviews",
+            "recent"
+          ],
+          "query": [
+            {
+              "key": "maxResults",
+              "value": "1"
+            },
+            {
+              "key": "userBoard",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/productsearch/search?counts=dashboards%3D5%2Cprojects%3D5%2Cfilters%3D5&type=dashboards%2Cprojects%2Cfilters",
+      "_postman_id": "92b37ba9-81ef-42c4-a6e6-e7dc0f4b29f8",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/internal/2/productsearch/search?counts=dashboards%3D5%2Cprojects%3D5%2Cfilters%3D5&type=dashboards%2Cprojects%2Cfilters",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "internal",
+            "2",
+            "productsearch",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "counts",
+              "value": "dashboards%3D5%2Cprojects%3D5%2Cfilters%3D5"
+            },
+            {
+              "key": "type",
+              "value": "dashboards%2Cprojects%2Cfilters"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/favourites?dashboards=15&filters=15&projects=15",
+      "_postman_id": "21e8db37-bed7-45c7-a312-5b127257804c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/internal/2/favourites?dashboards=15&filters=15&projects=15",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "internal",
+            "2",
+            "favourites"
+          ],
+          "query": [
+            {
+              "key": "dashboards",
+              "value": "15"
+            },
+            {
+              "key": "filters",
+              "value": "15"
+            },
+            {
+              "key": "projects",
+              "value": "15"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/projectpermissions",
+      "_postman_id": "92b036d4-7ed4-48cc-9b77-28b1072de524",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/projectpermissions"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch",
+      "_postman_id": "b6195048-fbe5-4057-a332-b8ae1e751e29",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"batch\":[{\"timestamp\":\"2020-09-04T09:41:31.877Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"full-issue\",\"actionSubject\":\"jiraForgeUi.issueViewInitialization\",\"action\":\"finished\",\"attributes\":{\"actionType\":\"fetch-forge\",\"isPrefetched\":false,\"isSynthetic\":false},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"jiraForgeUi.issueViewInitialization finished\",\"messageId\":\"ajs-132b79cdeb72b03f24d008413664145b\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:32.591Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:31.924Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"containerType\":\"project\",\"containerId\":\"12500\",\"source\":\"fullIssueScreen\",\"objectType\":\"issue\",\"objectId\":\"85161\",\"actionSubject\":\"renderer\",\"action\":\"rendered\",\"attributes\":{\"packageName\":\"@atlaskit/renderer\",\"packageVersion\":\"64.0.1\",\"componentName\":\"editorCore\",\"platform\":\"web\",\"duration\":808.4600000001956,\"ttfb\":921.3799999997718,\"nodes\":{\"doc\":1,\"heading\":4,\"text\":12,\"paragraph\":6,\"panel\":1,\"hardBreak\":1,\"inlineCard\":1,\"blockquote\":1}},\"tags\":[\"editor\",\"fabricEditor\"],\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"renderer rendered\",\"messageId\":\"ajs-b1dd369c20acccbb7afdd4159df08373\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:32.591Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:31.998Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"ui\",\"actionSubject\":\"ui\",\"action\":\"taskSuccess\",\"attributes\":{\"task\":\"jiraPageContainer\",\"analyticsSource\":\"navigationNext\",\"application\":\"unknown\",\"edition\":\"unknown\"},\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"ui taskSuccess\",\"messageId\":\"ajs-8d267074cbfc3b6529e98b9578dc88f1\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:32.591Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:32.171Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"bentoIssue\",\"actionSubject\":\"feature\",\"action\":\"exposed\",\"attributes\":{\"flagKey\":\"jira.share_button.experiment\",\"reason\":\"FALLTHROUGH\",\"ruleId\":\"\",\"value\":true,\"experimentKey\":\"jira.share_button.experiment\",\"cohort\":\"variant\",\"isEligible\":true,\"ineligibilityReasons\":null},\"eventType\":\"track\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"feature exposed\",\"messageId\":\"ajs-87b198770227d40d42c228fb17d5bbf3\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:32.591Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:32.198Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"@atlaskit/feature-flag-client\",\"actionSubject\":\"feature\",\"action\":\"exposed\",\"attributes\":{\"flagKey\":\"confluence.frontend.enable.joinable-products\",\"reason\":\"FALLTHROUGH\",\"value\":false},\"eventType\":\"track\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"feature exposed\",\"messageId\":\"ajs-7191638b6c8f0e6a8e5413402c3fcbcc\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:32.591Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:32.395Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"navigationNextScreen\",\"actionSubject\":\"navigationUI\",\"action\":\"initialised\",\"actionSubjectId\":\"container\",\"attributes\":{\"listenerVersion\":\"6.4.1\",\"sourceHierarchy\":\"navigationNextScreen\",\"componentHierarchy\":\"navigation\",\"packageHierarchy\":\"@atlaskit/navigation-next@7.3.3\",\"packageName\":\"@atlaskit/navigation-next\",\"packageVersion\":\"7.3.3\",\"navigationLayer\":\"container\",\"view\":\"project/software/index\",\"connectItems\":2,\"shortcutItems\":0,\"navItems\":7,\"selectedItemPageContext\":\"issues\",\"navVersion\":\"3\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"isExpanded\":true,\"flyoutOnHoverEnabled\":true,\"alternateFlyoutBehaviourEnabled\":true,\"fullWidthFlyoutEnabled\":false},\"tags\":[\"navigation\"],\"eventType\":\"operational\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"navigationUI initialised\",\"messageId\":\"ajs-922f34b49020440abcf985544b25296c\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:32.591Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}},{\"timestamp\":\"2020-09-04T09:41:32.493Z\",\"context\":{\"locale\":\"en_GB\",\"screen\":{\"width\":1920,\"height\":1080,\"density\":1},\"library\":{\"name\":\"analytics.js\",\"version\":\"1.12.0\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36\"},\"integrations\":{},\"properties\":{\"env\":\"prod\",\"product\":\"jira\",\"subproduct\":\"software\",\"version\":\"1.0.0\",\"origin\":\"web\",\"platform\":\"web\",\"tenantIdType\":\"cloudId\",\"tenantId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"userIdType\":\"atlassianAccount\",\"source\":\"on-call-schedule-navigation-item\",\"actionSubject\":\"onCallScheduleNavigationItem\",\"action\":\"viewed\",\"attributes\":{\"megaphone.embedded.feature.classic.experiment\":{\"value\":\"variation1\"}},\"eventType\":\"track\",\"tabId\":\"143af614-d7f7-41cd-8c5b-b1010ec5b7be\",\"sessionId\":\"1599209536585\",\"taskSessions\":{}},\"event\":\"onCallScheduleNavigationItem viewed\",\"messageId\":\"ajs-b71526a74691a8b1c8ed42089a96011c\",\"anonymousId\":\"bda2ad55-1425-45bb-93fb-14c32157953b\",\"type\":\"track\",\"writeKey\":\"\",\"userId\":\"5f3a07abd0884f0049937eb9\",\"sentAt\":\"2020-09-04T09:41:32.591Z\",\"_metadata\":{\"bundled\":[\"BeforeSend\",\"Segment.io\"],\"unbundled\":[\"Amplitude\"]}}],\"sentAt\":\"2020-09-04T09:41:32.591Z\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/batch"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/xpsearch-aggregator/experiment/v1",
+      "_postman_id": "84cada75-022b-4436-ac93-6cce58736c7d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"cloudId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"scopes\":[\"jira.issue\"],\"experience\":\"jira.nav-v3\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/xpsearch-aggregator/experiment/v1"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site/token/read",
+      "_postman_id": "4ea0029d-228a-44e1-90cf-71156206ff98",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site/token/read"
+      },
+      "response": []
     }
   ],
   "event": [
