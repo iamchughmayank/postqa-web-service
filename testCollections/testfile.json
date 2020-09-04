@@ -4535,6 +4535,125 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://ps8.pndsn.com/v2/presence/sub-key/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/channel/351c40b2a69d363554033b6bdf6029fc/heartbeat?state=%7B%7D&heartbeat=300&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5",
+      "_postman_id": "69ef3245-17ca-43ee-b815-b4d18972f350",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://ps8.pndsn.com/v2/presence/sub-key/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/channel/351c40b2a69d363554033b6bdf6029fc/heartbeat?state=%7B%7D&heartbeat=300&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca294b97",
+          "protocol": "https",
+          "host": [
+            "ps8",
+            "pndsn",
+            "com"
+          ],
+          "path": [
+            "v2",
+            "presence",
+            "sub-key",
+            "sub-c-0e078d3e-1d09-11e8-a183-761142583d66",
+            "channel",
+            "351c40b2a69d363554033b6bdf6029fc",
+            "heartbeat"
+          ],
+          "query": [
+            {
+              "key": "state",
+              "value": "%7B%7D"
+            },
+            {
+              "key": "heartbeat",
+              "value": "300"
+            },
+            {
+              "key": "uuid",
+              "value": "5f3a07abd0884f0049937eb9%3AJIRA"
+            },
+            {
+              "key": "pnsdk",
+              "value": "PubNub-JS-Web%2F4.21.6"
+            },
+            {
+              "key": "auth",
+              "value": "77703fad-4de8-4046-b5c9-a49eca294b97"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://calendar.google.com/calendar/u/1/check",
+      "_postman_id": "2621d734-f2d6-420f-85f2-ce1d8d2e40df",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-Is-Xhr-Request",
+            "value": "1"
+          },
+          {
+            "key": "X-If-No-Redirect",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "cwuik",
+              "value": "4"
+            },
+            {
+              "key": "f.req",
+              "value": "[172092.853,\"calendar_200826.08_p0\",\"32h66u44sn3akiq7tn2hmt9jdl\"]"
+            },
+            {
+              "key": "hl",
+              "value": "en"
+            },
+            {
+              "key": "secid",
+              "value": "oRSxD9xSizUgdo7QBM1-w9MJa_0"
+            }
+          ],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": "https://calendar.google.com/calendar/u/1/check"
+      },
+      "response": []
     }
   ],
   "event": [
