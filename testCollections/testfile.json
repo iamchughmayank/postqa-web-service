@@ -48411,6 +48411,91 @@
         "url": "https://postmanlabs.atlassian.net/gateway/api/gasv3/api/v1/t"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/analytics/1.0/publish/bulk",
+      "_postman_id": "1bb04d40-83e5-4163-bb14-0c567083dab9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json, text/javascript, */*; q=0.01"
+          },
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"name\":\"jira.frontend.fe.issue.comment.paste\",\"properties\":{\"analyticsSource\":\"full-issue\",\"designVersion\":\"v2-bento\",\"projectId\":\"13028\",\"issueId\":\"85367\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"IN_PROGRESS\",\"statusCategoryId\":4,\"issueTypeId\":\"3\",\"assigneeId\":\"5f3a07abd0884f0049937eb9\",\"containerType\":\"project\",\"containerId\":\"13028\",\"objectType\":\"issue\",\"objectId\":\"85367\",\"isNewComment\":true,\"pastedContentLength\":50,\"containsEmailAddress\":false,\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-3575},{\"name\":\"jira.frontend.fe.issue.comment.add-form.save\",\"properties\":{\"containerType\":\"project\",\"containerId\":\"13028\",\"objectType\":\"issue\",\"objectId\":\"85367\",\"analyticsSource\":\"full-issue\",\"designVersion\":\"v2-bento\",\"projectId\":\"13028\",\"issueId\":\"85367\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"IN_PROGRESS\",\"statusCategoryId\":4,\"issueTypeId\":\"3\",\"assigneeId\":\"5f3a07abd0884f0049937eb9\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-1930},{\"name\":\"jira.frontend.fe.issue.issue.delete-draft.request\",\"properties\":{\"type\":\"comment\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-1928},{\"name\":\"jira.frontend.fe.issue.issue.delete-draft.success\",\"properties\":{\"type\":\"comment\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-1928},{\"name\":\"jira.frontend.fe.navigation-next-screen.full-issue-screen.activity-feed-screen.comment-created\",\"properties\":{\"isCommentRestricted\":false,\"containerId\":\"13028\",\"containerType\":\"project\",\"objectId\":\"85367\",\"objectType\":\"issue\",\"actionSubjectOptimisticId\":\"NEW_OPTIMISTIC_COMMENT_1599212723671\",\"isInternal\":false,\"charactersInCommentCount\":365,\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-1446},{\"name\":\"jira.frontend.fe.issue.comment.save.success\",\"properties\":{\"analyticsSource\":\"full-issue\",\"designVersion\":\"v2-bento\",\"projectId\":\"13028\",\"issueId\":\"85367\",\"projectConfig\":\"classic\",\"projectType\":\"software\",\"nextGenProject\":false,\"statusCategory\":\"IN_PROGRESS\",\"statusCategoryId\":4,\"issueTypeId\":\"3\",\"assigneeId\":\"5f3a07abd0884f0049937eb9\",\"containerType\":\"project\",\"containerId\":\"13028\",\"objectType\":\"issue\",\"objectId\":\"85367\",\"actionSubjectId\":\"146777\",\"actionSubjectOptimisticId\":\"NEW_OPTIMISTIC_COMMENT_1599212723671\",\"isInternal\":false,\"charactersInCommentCount\":365,\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-1446},{\"name\":\"jira.frontend.fe.issue.issue.delete-draft.request\",\"properties\":{\"type\":\"comment\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-1446},{\"name\":\"jira.frontend.fe.issue.issue.delete-draft.success\",\"properties\":{\"type\":\"comment\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\",\"buildKey\":\"JF-PROD-18810\"},\"timeDelta\":-1446},{\"name\":\"browser.metrics.navigation\",\"properties\":{\"apdex\":1,\"threshold\":1000,\"readyForUser\":573,\"localHour\":15,\"localDayOfWeek\":5,\"browser\":\"Chrome 85.0\",\"key\":\"jira.fe.issue.fields.comments.time-to.render-saved-comment\",\"cancelExisting\":true,\"feedback\":41,\"deviceMemory\":8,\"hardwareConcurrency\":8,\"jiraFrontendVersion\":\"JF-PROD-18810\",\"jiraFrontendSSRVersion\":\"JF-PROD-18810\",\"jiraFrontendBundlerVersion\":\"4.44.1\",\"jiraFrontendBuildVariant\":\"chunks-modern\",\"bmVersion\":2,\"reactVersion\":\"16.13.1\",\"feedbackMark\":40.905000001657754,\"feedbackSloSuccess\":false},\"timeDelta\":-1422}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/analytics/1.0/publish/bulk"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/api/2/issue/IS-397/transitions?sortByOpsBarAndStatus=true",
+      "_postman_id": "cc1f3940-6316-40eb-bd80-9cbacbaf3b66",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/api/2/issue/IS-397/transitions?sortByOpsBarAndStatus=true",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "api",
+            "2",
+            "issue",
+            "IS-397",
+            "transitions"
+          ],
+          "query": [
+            {
+              "key": "sortByOpsBarAndStatus",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
