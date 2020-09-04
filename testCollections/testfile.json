@@ -3536,6 +3536,64 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://calendar.google.com/calendar/u/1/sync.sync",
+      "_postman_id": "510e82c7-ebe2-4aae-8d58-021ec5a7c835",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-Is-Xhr-Request",
+            "value": "1"
+          },
+          {
+            "key": "X-If-No-Redirect",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "cwuik",
+              "value": "4"
+            },
+            {
+              "key": "f.req",
+              "value": "[[[null,3,\"calendar_200826.08_p0\",null,null,null,null,328534333,null,\"COMPANION_GMAIL\",\"prod-d.web\",1],\"CqYCCjYKFDAwMDAxNTk5MjA1NjA1MjY2MDAwGh4iDAjlhcj6BRDo2/nyATAAOPzJ/ZwBQL2S1JwBSAASUgowQ05Da21aQ0J6LXNDRWhodFlYbGhibXN1WTJoMVoyaEFjRzl6ZEcxaGJpNWpiMjA9Gh4iDAjlhcj6BRDo2/nyATAAOPzJ/ZwBQL2S1JwBSAAaLgoMQ05Da21aQ0J6LXNDGh4iDAjlhcj6BRDo2/nyATAAOPn52ZwBQL2S1JwBSAAiDAi+8cL6BRDIzdnfAToMCL7xwvoFEMjN2d8BWhAIARIMCL7xwvoFEMjN2d8BWhAIBRIMCL7xwvoFEMjN2d8BWhAIBhIMCL7xwvoFEMjN2d8BWhAIAhIMCJj2wvoFEPDn2IMBYgQaAjAAErcBChhtYXlhbmsuY2h1Z2hAcG9zdG1hbi5jb20SBBoCMAAaZAocQ05Da21aQ0J6LXNDRU5Da21aQ0J6LXNDR0FVPSIOCIDmm8/BLhCAmvi01S4yDAjtyr36BRD4gLvOA2oeIgwI5YXI+gUQ6Nv58gEwADj5+dmcAUC9ktScAUgAsAG6ifbwxC4wAFoQCAQSDAi+8cL6BRDIzdnfAVoQCAMSDAi+8cL6BRDIzdnfAWIHCMWIi9SgBHACEvwBCjBhZGRyZXNzYm9vayNjb250YWN0c0Bncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20aXAocQ09EMF92Q0V6LXNDRU5Da21aQ0J6LXNDR0FFPSIOCIDmm8/BLhCAmvi01S4yDAj0yr36BRCw96feAWoWIgwI5YXI+gUQ6Nv58gEwADgAQABIALABspi178QuIgwI9Mq9+gUQsPen3gEwAUgAWhAIBBIMCL7xwvoFEMjN2d8BWhAIAxIMCL7xwvoFEMjN2d8BYjISMGFkZHJlc3Nib29rI2NvbnRhY3RzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbXABIOTvqpMEKhUxMTA3MDUyNTM3MTU4OTk0Mjc0MjeQAb2S1JwBoAEAuAEBwAEA\",null,null,[],null,null,[],null,[],366],20000]"
+            },
+            {
+              "key": "hl",
+              "value": "en"
+            },
+            {
+              "key": "secid",
+              "value": "oRSxD9xSizUgdo7QBM1-w9MJa_0"
+            }
+          ],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": "https://calendar.google.com/calendar/u/1/sync.sync"
+      },
+      "response": []
     }
   ],
   "event": [
