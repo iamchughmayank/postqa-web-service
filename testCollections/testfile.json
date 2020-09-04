@@ -51479,6 +51479,351 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://insight.adsrvr.org/track/up?adv=plg6wvi&ref=https%3A%2F%2Fwww.pingdom.com%2Fproduct%2Ftransaction-monitoring%2F&upid=i25zyam&upv=1.1.0",
+      "_postman_id": "7df2adfe-a60e-4251-80a7-c6a3ed1ed325",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": {
+          "raw": "https://insight.adsrvr.org/track/up?adv=plg6wvi&ref=https%3A%2F%2Fwww.pingdom.com%2Fproduct%2Ftransaction-monitoring%2F&upid=i25zyam&upv=1.1.0",
+          "protocol": "https",
+          "host": [
+            "insight",
+            "adsrvr",
+            "org"
+          ],
+          "path": [
+            "track",
+            "up"
+          ],
+          "query": [
+            {
+              "key": "adv",
+              "value": "plg6wvi"
+            },
+            {
+              "key": "ref",
+              "value": "https%3A%2F%2Fwww.pingdom.com%2Fproduct%2Ftransaction-monitoring%2F"
+            },
+            {
+              "key": "upid",
+              "value": "i25zyam"
+            },
+            {
+              "key": "upv",
+              "value": "1.1.0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://play.vidyard.com/player/Cvc2D4KujzkVSqYVF3hfBL.json?disable_popouts=1&v=4.2.24&type=inline",
+      "_postman_id": "da2e24d6-9141-45fd-be38-685c9bae1d36",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "referrer",
+            "value": "https://www.pingdom.com/product/transaction-monitoring/"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://play.vidyard.com/player/Cvc2D4KujzkVSqYVF3hfBL.json?disable_popouts=1&v=4.2.24&type=inline",
+          "protocol": "https",
+          "host": [
+            "play",
+            "vidyard",
+            "com"
+          ],
+          "path": [
+            "player",
+            "Cvc2D4KujzkVSqYVF3hfBL.json"
+          ],
+          "query": [
+            {
+              "key": "disable_popouts",
+              "value": "1"
+            },
+            {
+              "key": "v",
+              "value": "4.2.24"
+            },
+            {
+              "key": "type",
+              "value": "inline"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://rum-collector-2.pingdom.net/img/beacon.gif?id=5bf5de65cea07b0016000526&sAW=1920&sAH=1080&bIW=1920&bIH=969&pD=24&dPR=1&or=landscape-primary&nT=0&rC=1&nS=0&cS=310&cE=310&dLE=310&dLS=310&fS=310&hS=-1&rE=310&rS=3&reS=342&resS=366&resE=376&uEE=-1&uES=-",
+      "_postman_id": "7d84948c-fed3-4da9-83f8-1ec4ecd9ae05",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://rum-collector-2.pingdom.net/img/beacon.gif?id=5bf5de65cea07b0016000526&sAW=1920&sAH=1080&bIW=1920&bIH=969&pD=24&dPR=1&or=landscape-primary&nT=0&rC=1&nS=0&cS=310&cE=310&dLE=310&dLS=310&fS=310&hS=-1&rE=310&rS=3&reS=342&resS=366&resE=376&uEE=-1&uES=-1&dL=537&dI=1141&dCLES=1141&dCLEE=1151&dC=2962&lES=2963&lEE=2982&s=nt&title=Transaction%20Monitoring%20Tools%20%7C%20Pingdom&path=https%3A%2F%2Fwww.pingdom.com%2Fproduct%2Ftransaction-monitoring%2F&ref=&sId=9whka6xs&sST=1599212884&sIS=1&rV=1&v=1.4.1",
+          "protocol": "https",
+          "host": [
+            "rum-collector-2",
+            "pingdom",
+            "net"
+          ],
+          "path": [
+            "img",
+            "beacon.gif"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "5bf5de65cea07b0016000526"
+            },
+            {
+              "key": "sAW",
+              "value": "1920"
+            },
+            {
+              "key": "sAH",
+              "value": "1080"
+            },
+            {
+              "key": "bIW",
+              "value": "1920"
+            },
+            {
+              "key": "bIH",
+              "value": "969"
+            },
+            {
+              "key": "pD",
+              "value": "24"
+            },
+            {
+              "key": "dPR",
+              "value": "1"
+            },
+            {
+              "key": "or",
+              "value": "landscape-primary"
+            },
+            {
+              "key": "nT",
+              "value": "0"
+            },
+            {
+              "key": "rC",
+              "value": "1"
+            },
+            {
+              "key": "nS",
+              "value": "0"
+            },
+            {
+              "key": "cS",
+              "value": "310"
+            },
+            {
+              "key": "cE",
+              "value": "310"
+            },
+            {
+              "key": "dLE",
+              "value": "310"
+            },
+            {
+              "key": "dLS",
+              "value": "310"
+            },
+            {
+              "key": "fS",
+              "value": "310"
+            },
+            {
+              "key": "hS",
+              "value": "-1"
+            },
+            {
+              "key": "rE",
+              "value": "310"
+            },
+            {
+              "key": "rS",
+              "value": "3"
+            },
+            {
+              "key": "reS",
+              "value": "342"
+            },
+            {
+              "key": "resS",
+              "value": "366"
+            },
+            {
+              "key": "resE",
+              "value": "376"
+            },
+            {
+              "key": "uEE",
+              "value": "-1"
+            },
+            {
+              "key": "uES",
+              "value": "-1"
+            },
+            {
+              "key": "dL",
+              "value": "537"
+            },
+            {
+              "key": "dI",
+              "value": "1141"
+            },
+            {
+              "key": "dCLES",
+              "value": "1141"
+            },
+            {
+              "key": "dCLEE",
+              "value": "1151"
+            },
+            {
+              "key": "dC",
+              "value": "2962"
+            },
+            {
+              "key": "lES",
+              "value": "2963"
+            },
+            {
+              "key": "lEE",
+              "value": "2982"
+            },
+            {
+              "key": "s",
+              "value": "nt"
+            },
+            {
+              "key": "title",
+              "value": "Transaction%20Monitoring%20Tools%20%7C%20Pingdom"
+            },
+            {
+              "key": "path",
+              "value": "https%3A%2F%2Fwww.pingdom.com%2Fproduct%2Ftransaction-monitoring%2F"
+            },
+            {
+              "key": "ref",
+              "value": ""
+            },
+            {
+              "key": "sId",
+              "value": "9whka6xs"
+            },
+            {
+              "key": "sST",
+              "value": "1599212884"
+            },
+            {
+              "key": "sIS",
+              "value": "1"
+            },
+            {
+              "key": "rV",
+              "value": "1"
+            },
+            {
+              "key": "v",
+              "value": "1.4.1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/stream_master_JJQEOFzMofNr-OiIU9t3VQ.m3u8?wo_5OzNtKYtQEUS3uiTlsLKtayNk40eFTdstsoNN9jD-pg6fXo-L0PeSx13V7si2SJzQ21Z2cSKSOQU6YwE27oegIbcvulN-uiVQR8HjRnLGR2FCjQsEGDrLQzbyHkVHmQrHlTWe3ALx9ZYqDsQ4T6l7g3t",
+      "_postman_id": "30a2ce82-2924-4e8e-a6b8-b840cf727512",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/stream_master_JJQEOFzMofNr-OiIU9t3VQ.m3u8?wo_5OzNtKYtQEUS3uiTlsLKtayNk40eFTdstsoNN9jD-pg6fXo-L0PeSx13V7si2SJzQ21Z2cSKSOQU6YwE27oegIbcvulN-uiVQR8HjRnLGR2FCjQsEGDrLQzbyHkVHmQrHlTWe3ALx9ZYqDsQ4T6l7g3tpjl8qUewAeQlSGoDdxWfhZA86-FQKelyp7BTE4ihU",
+          "protocol": "https",
+          "host": [
+            "cdn",
+            "vidyard",
+            "com"
+          ],
+          "path": [
+            "hls-videos",
+            "Vml9h823c5N2wwCMhpwOIQ",
+            "stream_master_JJQEOFzMofNr-OiIU9t3VQ.m3u8"
+          ],
+          "query": [
+            {
+              "key": "wo_5OzNtKYtQEUS3uiTlsLKtayNk40eFTdstsoNN9jD-pg6fXo-L0PeSx13V7si2SJzQ21Z2cSKSOQU6YwE27oegIbcvulN-uiVQR8HjRnLGR2FCjQsEGDrLQzbyHkVHmQrHlTWe3ALx9ZYqDsQ4T6l7g3tpjl8qUewAeQlSGoDdxWfhZA86-FQKelyp7BTE4ihU",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
