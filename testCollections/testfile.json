@@ -20978,57 +20978,6 @@
         "url": "https://postmanlabs.atlassian.net/rest/internal/latest/userPermission/browseUsersGroups"
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/rest/greenhopper/1.0/rapidviews/recent?maxResults=1&userBoard=true",
-      "_postman_id": "62cdac89-2118-4065-b490-dd18c2ca6545",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json,text/javascript,*/*"
-          },
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "https://postmanlabs.atlassian.net/rest/greenhopper/1.0/rapidviews/recent?maxResults=1&userBoard=true",
-          "protocol": "https",
-          "host": [
-            "postmanlabs",
-            "atlassian",
-            "net"
-          ],
-          "path": [
-            "rest",
-            "greenhopper",
-            "1.0",
-            "rapidviews",
-            "recent"
-          ],
-          "query": [
-            {
-              "key": "maxResults",
-              "value": "1"
-            },
-            {
-              "key": "userBoard",
-              "value": "true"
-            }
-          ]
-        }
-      },
-      "response": []
     }
   ],
   "event": [
