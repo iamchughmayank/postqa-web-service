@@ -4125,6 +4125,72 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true&authuser=1",
+      "_postman_id": "18c1b087-59cc-401b-a7e1-36b6a5339b3f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH 2f18382e11b99d5562f20e4273fd88020c0b88b1"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\"]],407,[[\"1599210876265\",null,[],null,null,null,null,\"[23,1599210876265000,\\\"!U1ClUHFCb9x2bfZutzNYlS_Jfc7dWaYCAAAAPlIAAAAYCgCGnYvIxjsIUCg2huJZSWq_aOykVovNIL-twPxjv_rOBo0kTShgq7qa6z6HEyI7z57RWIA4lZEP5okhW9vOl0LU7QE4VxcPge6akxqPISbtNV0TuV-bNTYGXee3LytcEE8D9mM3QqqDehIL3GNVi-JzLep2cIeyiqL2zRLz-b1EqXaacEn-Lf2ZAa84T8VbJmLL8OHgFVxm-2ddW_SFW2klMY6cHd0kGMb5J3ZnjdCvuiidP5858Du0J6Uh-db6cMjJzkq8yqGNeQfO-ZLlFAM4sankgn5QMgvz1wZaEXvLObPi8-7AY92zR_acCWJ5Ot1PEAofzHqn168JUVJmiOyqcV51KzSrcIwYOJ9S5cPic_KgPR2KO0D6RdEUbm2y5xhRAHdnAwby15wkg3qgX2k6hgkQnvW1TwWVk8e_j8FlFgy3gHIFWPYRWcbjtH2ahvSHvsY5wLc19cROdHgb4IkYaCMFQbm6EVm2Z8zX6EAKOzBw8GjXPLyba_ovU0xxxnL3sw4uoeS2xWouUAyC9OgfVZaokgekeQu2nRJv9gLhZdfRLUGc2AJGgisEZqhXLrzVb3V0jibHUPTeOMSDHk3BFprUxA61wfMPuAGpPnwFDlq6GyfPeEP7tOFHNUsy7KtjD3qpIdmD369NO7fQf4UBLwlA5p7cDDhTUWIwIkb5tY_JsMp3mSa4WuawoomyF2A1SCV1IL1tdZaac5ycJ3t7E_v3YR6DpB7kYOIN0mpuJ0PmU20E2Lkz3w\\\",1174168413,false]\",null,null,null,null,null,null,null,null,null,null,null,[],321,null,null,null,null,null,[]]],\"1599210876265\",[],null,null,null,null,null,null,null,null,0]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true&authuser=1",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            },
+            {
+              "key": "authuser",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
