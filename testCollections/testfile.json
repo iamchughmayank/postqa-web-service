@@ -5255,6 +5255,60 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=RecentlyViewedQuery",
+      "_postman_id": "668a542e-3a4b-43c5-b073-1a22db985e0e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "RecentlyViewedQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"RecentlyViewedQuery\",\"variables\":{\"cloudId\":\"0d13b137-2934-4b74-a921-694ab83c54c5\",\"first\":25,\"after\":\"\"},\"query\":\"query RecentlyViewedQuery($cloudId: ID!, $first: Int, $after: String) {\\n  activities {\\n    myActivities {\\n      viewed(filters: [{type: AND, arguments: {products: [CONFLUENCE], objectTypes: [PAGE, BLOGPOST], cloudIds: [$cloudId]}}], first: $first, after: $after) {\\n        edges {\\n          node {\\n            id\\n            timestamp\\n            object {\\n              id\\n              url\\n              content {\\n                ...PageContentFragment\\n                __typename\\n              }\\n              __typename\\n            }\\n            __typename\\n          }\\n          cursor\\n          __typename\\n        }\\n        pageInfo {\\n          hasNextPage\\n          __typename\\n        }\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment PageContentFragment on Content {\\n  id\\n  type\\n  title\\n  status\\n  metadata {\\n    currentuser {\\n      favourited {\\n        isFavourite\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n  space {\\n    id\\n    key\\n    name\\n    __typename\\n  }\\n  __typename\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=RecentlyViewedQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "RecentlyViewedQuery"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
