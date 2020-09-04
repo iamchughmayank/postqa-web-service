@@ -52971,6 +52971,28 @@
         "url": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/sd_segmented/sd_segmented_001.ts"
       },
       "response": []
+    },
+    {
+      "name": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/sd_segmented/sd_segmented_002.ts",
+      "_postman_id": "fe3f55b1-7232-4337-b1cc-858210708f12",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://cdn.vidyard.com/hls-videos/Vml9h823c5N2wwCMhpwOIQ/sd_segmented/sd_segmented_002.ts"
+      },
+      "response": []
     }
   ],
   "event": [
