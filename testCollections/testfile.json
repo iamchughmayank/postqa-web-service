@@ -40611,6 +40611,48 @@
         "url": "https://postmanlabs.atlassian.net/rest/gira/1/"
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/standard?altScale=XHDPI",
+      "_postman_id": "dbf747dc-59a0-40ba-8402-7003a5bc5ee5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/standard?altScale=XHDPI",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "gateway",
+            "api",
+            "emoji",
+            "standard"
+          ],
+          "query": [
+            {
+              "key": "altScale",
+              "value": "XHDPI"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
