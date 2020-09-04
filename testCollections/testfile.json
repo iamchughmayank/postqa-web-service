@@ -46942,6 +46942,110 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/atlassian-connect/latest/addons-baseurl",
+      "_postman_id": "c0dedd08-49cf-45f8-8353-bef0f2b84fa3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://postmanlabs.atlassian.net/rest/atlassian-connect/latest/addons-baseurl"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/gateway/api/pubsub/subscribe",
+      "_postman_id": "ac376083-9f76-4194-8c5d-b847b25e1d97",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"clientInfo\":{\"version\":\"4.0.5\",\"platform\":\"WEB\",\"capabilities\":[\"PUBNUB\"]},\"product\":\"JIRA\",\"channels\":[\"ari:cloud:jira:0d13b137-2934-4b74-a921-694ab83c54c5:project/13157\"]}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/gateway/api/pubsub/subscribe"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/atlassian-connect/1/addons/com.gtmhub.jira.addon/properties/gtmhub-accountId?_r=1599212717842",
+      "_postman_id": "e27c3294-399d-489e-bf98-3f17d2a65ccb",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "*/*"
+          },
+          {
+            "key": "AP-Client-Key",
+            "value": "com.gtmhub.jira.addon"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          }
+        ],
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/rest/atlassian-connect/1/addons/com.gtmhub.jira.addon/properties/gtmhub-accountId?_r=1599212717842",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "rest",
+            "atlassian-connect",
+            "1",
+            "addons",
+            "com.gtmhub.jira.addon",
+            "properties",
+            "gtmhub-accountId"
+          ],
+          "query": [
+            {
+              "key": "_r",
+              "value": "1599212717842"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
