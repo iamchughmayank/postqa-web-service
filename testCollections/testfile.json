@@ -2467,6 +2467,163 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://ps8.pndsn.com/v2/subscribe/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/351c40b2a69d363554033b6bdf6029fc/0?heartbeat=300&tt=15992089237741369&tr=7&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca2",
+      "_postman_id": "dc1f52d6-fe48-4d39-b408-fff4f0244579",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://ps8.pndsn.com/v2/subscribe/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/351c40b2a69d363554033b6bdf6029fc/0?heartbeat=300&tt=15992089237741369&tr=7&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca294b97",
+          "protocol": "https",
+          "host": [
+            "ps8",
+            "pndsn",
+            "com"
+          ],
+          "path": [
+            "v2",
+            "subscribe",
+            "sub-c-0e078d3e-1d09-11e8-a183-761142583d66",
+            "351c40b2a69d363554033b6bdf6029fc",
+            "0"
+          ],
+          "query": [
+            {
+              "key": "heartbeat",
+              "value": "300"
+            },
+            {
+              "key": "tt",
+              "value": "15992089237741369"
+            },
+            {
+              "key": "tr",
+              "value": "7"
+            },
+            {
+              "key": "uuid",
+              "value": "5f3a07abd0884f0049937eb9%3AJIRA"
+            },
+            {
+              "key": "pnsdk",
+              "value": "PubNub-JS-Web%2F4.21.6"
+            },
+            {
+              "key": "auth",
+              "value": "77703fad-4de8-4046-b5c9-a49eca294b97"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://0.client-channel.google.com/client-channel/channel/bind?authuser=1&ctype=gsuite-companion&gsessionid=6GUaQakQwXHmlFdnEOjFoZsu5XcBFFErs7ioNzHIm8Q&VER=8&RID=rpc&SID=655D672991BE62AE&CI=0&AID=88&TYPE=xmlhttp&zx=7y38kdif1cf2&t=1",
+      "_postman_id": "0c76416f-6a21-4230-8ef5-ca2d0e4e04c6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-Origin",
+            "value": "https://mail.google.com"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH 1599208570_80cdd4d5b922013a816233bae5161ba58d9b06c1"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://0.client-channel.google.com/client-channel/channel/bind?authuser=1&ctype=gsuite-companion&gsessionid=6GUaQakQwXHmlFdnEOjFoZsu5XcBFFErs7ioNzHIm8Q&VER=8&RID=rpc&SID=655D672991BE62AE&CI=0&AID=88&TYPE=xmlhttp&zx=7y38kdif1cf2&t=1",
+          "protocol": "https",
+          "host": [
+            "0",
+            "client-channel",
+            "google",
+            "com"
+          ],
+          "path": [
+            "client-channel",
+            "channel",
+            "bind"
+          ],
+          "query": [
+            {
+              "key": "authuser",
+              "value": "1"
+            },
+            {
+              "key": "ctype",
+              "value": "gsuite-companion"
+            },
+            {
+              "key": "gsessionid",
+              "value": "6GUaQakQwXHmlFdnEOjFoZsu5XcBFFErs7ioNzHIm8Q"
+            },
+            {
+              "key": "VER",
+              "value": "8"
+            },
+            {
+              "key": "RID",
+              "value": "rpc"
+            },
+            {
+              "key": "SID",
+              "value": "655D672991BE62AE"
+            },
+            {
+              "key": "CI",
+              "value": "0"
+            },
+            {
+              "key": "AID",
+              "value": "88"
+            },
+            {
+              "key": "TYPE",
+              "value": "xmlhttp"
+            },
+            {
+              "key": "zx",
+              "value": "7y38kdif1cf2"
+            },
+            {
+              "key": "t",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
