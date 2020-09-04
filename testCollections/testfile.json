@@ -5201,6 +5201,60 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=RecentSpacesQuery",
+      "_postman_id": "6fce0b08-c7d6-4bbd-aff8-9c7032fb521f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "RecentSpacesQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"operationName\":\"RecentSpacesQuery\",\"variables\":{\"selectedSpaceKey\":\"INT\"},\"query\":\"query RecentSpacesQuery {\\n  recentSpaces {\\n    ...SpaceFragment\\n    __typename\\n  }\\n}\\n\\nfragment SpaceFragment on Space {\\n  id\\n  name\\n  key\\n  icon {\\n    path\\n    __typename\\n  }\\n  __typename\\n}\\n\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=RecentSpacesQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "RecentSpacesQuery"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
