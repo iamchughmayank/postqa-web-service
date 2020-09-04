@@ -40695,49 +40695,6 @@
         }
       },
       "response": []
-    },
-    {
-      "name": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site?altScale=XHDPI",
-      "_postman_id": "eb52731a-c9c5-4f65-b425-02b989dc1e5f",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "User-Agent",
-            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-          },
-          {
-            "key": "Accept",
-            "value": "*/*"
-          }
-        ],
-        "url": {
-          "raw": "https://postmanlabs.atlassian.net/gateway/api/emoji/0d13b137-2934-4b74-a921-694ab83c54c5/site?altScale=XHDPI",
-          "protocol": "https",
-          "host": [
-            "postmanlabs",
-            "atlassian",
-            "net"
-          ],
-          "path": [
-            "gateway",
-            "api",
-            "emoji",
-            "0d13b137-2934-4b74-a921-694ab83c54c5",
-            "site"
-          ],
-          "query": [
-            {
-              "key": "altScale",
-              "value": "XHDPI"
-            }
-          ]
-        }
-      },
-      "response": []
     }
   ],
   "event": [
