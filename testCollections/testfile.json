@@ -45558,6 +45558,116 @@
         "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
       },
       "response": []
+    },
+    {
+      "name": "https://applications.zoom.us/atlassian/servicedesk/sidebar?issueKey=CFDTN-241&issueId=85636&xdm_e=https%3A%2F%2Fpostmanlabs.atlassian.net&xdm_c=channel-zoom-servicedesk__zoom-meetings&cp=&xdm_deprecated_addon_key_do_not_use=zoom-servicedesk&lic=none&cv=10",
+      "_postman_id": "c209a860-706d-4ca5-bb13-1b046f9886db",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": {
+          "raw": "https://applications.zoom.us/atlassian/servicedesk/sidebar?issueKey=CFDTN-241&issueId=85636&xdm_e=https%3A%2F%2Fpostmanlabs.atlassian.net&xdm_c=channel-zoom-servicedesk__zoom-meetings&cp=&xdm_deprecated_addon_key_do_not_use=zoom-servicedesk&lic=none&cv=1001.0.0-SNAPSHOT&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjNhMDdhYmQwODg0ZjAwNDk5MzdlYjkiLCJxc2giOiIwOTczNTBjNjZlYzYyYzU0YTliZGQ4NTA5ZjZmMDYyNzJkYTJkMzQyMzA1MWYzMmM1ZDQ1MmU3MDUwMmY2MGIwIiwiaXNzIjoiamlyYTpkNGFmNTU4Ni00YWUxLTRiYWQtYTVjNS1kNjNlYjI3ZDc2YjkiLCJjb250ZXh0Ijp7fSwiZXhwIjoxNTk5MjEzNjEzLCJpYXQiOjE1OTkyMTI3MTN9.GNc36dSRj5OVfSFWvLUs4aq90qKMzojfz8OupS8w2Pk",
+          "protocol": "https",
+          "host": [
+            "applications",
+            "zoom",
+            "us"
+          ],
+          "path": [
+            "atlassian",
+            "servicedesk",
+            "sidebar"
+          ],
+          "query": [
+            {
+              "key": "issueKey",
+              "value": "CFDTN-241"
+            },
+            {
+              "key": "issueId",
+              "value": "85636"
+            },
+            {
+              "key": "xdm_e",
+              "value": "https%3A%2F%2Fpostmanlabs.atlassian.net"
+            },
+            {
+              "key": "xdm_c",
+              "value": "channel-zoom-servicedesk__zoom-meetings"
+            },
+            {
+              "key": "cp",
+              "value": ""
+            },
+            {
+              "key": "xdm_deprecated_addon_key_do_not_use",
+              "value": "zoom-servicedesk"
+            },
+            {
+              "key": "lic",
+              "value": "none"
+            },
+            {
+              "key": "cv",
+              "value": "1001.0.0-SNAPSHOT"
+            },
+            {
+              "key": "jwt",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjNhMDdhYmQwODg0ZjAwNDk5MzdlYjkiLCJxc2giOiIwOTczNTBjNjZlYzYyYzU0YTliZGQ4NTA5ZjZmMDYyNzJkYTJkMzQyMzA1MWYzMmM1ZDQ1MmU3MDUwMmY2MGIwIiwiaXNzIjoiamlyYTpkNGFmNTU4Ni00YWUxLTRiYWQtYTVjNS1kNjNlYjI3ZDc2YjkiLCJjb250ZXh0Ijp7fSwiZXhwIjoxNTk5MjEzNjEzLCJpYXQiOjE1OTkyMTI3MTN9.GNc36dSRj5OVfSFWvLUs4aq90qKMzojfz8OupS8w2Pk"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info",
+      "_postman_id": "833e3d89-9f95-47c1-92b6-1b69d104ee60",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json,text/javascript,*/*"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sentFrom\":\"jira.frontend.Ecosystem.DefaultConnectIFrameProvider\",\"message\":\"handleIframeLoadingStarted\",\"event\":{\"appKey\":\"com.xpandit.plugins.xray\"},\"buildKey\":\"JF-PROD-18810\",\"logTime\":\"2020-09-04T09:45:15.599Z\",\"browserName\":\"Chrome\",\"browserVersion\":\"85.0\"}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/rest/internal/2/log/safe/info"
+      },
+      "response": []
     }
   ],
   "event": [
