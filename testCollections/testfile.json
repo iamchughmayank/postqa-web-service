@@ -1311,6 +1311,75 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://docs.google.com/drawings/offline/cacheupdate?ouid=u98371d2e499ee6de&uc=en&jobset=prod&ftrack=1&docosJobset=prod&al=1",
+      "_postman_id": "fe94bff9-ef66-436b-9ad8-9d2452b36fe2",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "X-Chrome-Connected",
+            "value": "id=112175423944800645571,mode=0,enable_account_consistency=false,consistency_enabled_by_default=false"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/drawings/offline/cacheupdate?ouid=u98371d2e499ee6de&uc=en&jobset=prod&ftrack=1&docosJobset=prod&al=1",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "drawings",
+            "offline",
+            "cacheupdate"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            },
+            {
+              "key": "uc",
+              "value": "en"
+            },
+            {
+              "key": "jobset",
+              "value": "prod"
+            },
+            {
+              "key": "ftrack",
+              "value": "1"
+            },
+            {
+              "key": "docosJobset",
+              "value": "prod"
+            },
+            {
+              "key": "al",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
