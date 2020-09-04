@@ -50457,6 +50457,262 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://ps2.pndsn.com/v2/presence/sub-key/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/channel/bbfb79d8dc1a5064bc1010257f417a10/heartbeat?state=%7B%7D&heartbeat=300&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5",
+      "_postman_id": "bd274b23-15b4-4e7e-8ac5-a86089b38cc4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://ps2.pndsn.com/v2/presence/sub-key/sub-c-0e078d3e-1d09-11e8-a183-761142583d66/channel/bbfb79d8dc1a5064bc1010257f417a10/heartbeat?state=%7B%7D&heartbeat=300&uuid=5f3a07abd0884f0049937eb9%3AJIRA&pnsdk=PubNub-JS-Web%2F4.21.6&auth=77703fad-4de8-4046-b5c9-a49eca294b97",
+          "protocol": "https",
+          "host": [
+            "ps2",
+            "pndsn",
+            "com"
+          ],
+          "path": [
+            "v2",
+            "presence",
+            "sub-key",
+            "sub-c-0e078d3e-1d09-11e8-a183-761142583d66",
+            "channel",
+            "bbfb79d8dc1a5064bc1010257f417a10",
+            "heartbeat"
+          ],
+          "query": [
+            {
+              "key": "state",
+              "value": "%7B%7D"
+            },
+            {
+              "key": "heartbeat",
+              "value": "300"
+            },
+            {
+              "key": "uuid",
+              "value": "5f3a07abd0884f0049937eb9%3AJIRA"
+            },
+            {
+              "key": "pnsdk",
+              "value": "PubNub-JS-Web%2F4.21.6"
+            },
+            {
+              "key": "auth",
+              "value": "77703fad-4de8-4046-b5c9-a49eca294b97"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.pingdom.com/product/transaction-monitoring",
+      "_postman_id": "09988316-39ae-430f-a814-0eeb67f12046",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": "https://www.pingdom.com/product/transaction-monitoring"
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.pingdom.com/product/transaction-monitoring/",
+      "_postman_id": "9606b20d-7d8b-4ea1-8951-2728bb31e238",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          }
+        ],
+        "url": "https://www.pingdom.com/product/transaction-monitoring/"
+      },
+      "response": []
+    },
+    {
+      "name": "https://solarwinds.tt.omtrdc.net/m2/solarwinds/mbox/json?mbox=target-global-mbox&mboxSession=35a50bdc62154b949019376dc429afd5&mboxPC=acb927b5501d44daa30ab59c5000196e.31_0&mboxPage=8cc048cb97e6499ca06b6c641faa0f34&mboxRid=2bb66b488689443b9ec1d8e0eb621170&m",
+      "_postman_id": "3a72589d-507e-4739-8529-01647bcd4a29",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://solarwinds.tt.omtrdc.net/m2/solarwinds/mbox/json?mbox=target-global-mbox&mboxSession=35a50bdc62154b949019376dc429afd5&mboxPC=acb927b5501d44daa30ab59c5000196e.31_0&mboxPage=8cc048cb97e6499ca06b6c641faa0f34&mboxRid=2bb66b488689443b9ec1d8e0eb621170&mboxVersion=1.8.0&mboxCount=1&mboxTime=1599232682591&mboxHost=www.pingdom.com&mboxURL=https%3A%2F%2Fwww.pingdom.com%2Fproduct%2Ftransaction-monitoring%2F&mboxReferrer=&browserHeight=969&browserWidth=1920&browserTimeOffset=330&screenHeight=1080&screenWidth=1920&colorDepth=24&devicePixelRatio=1&screenOrientation=landscape&webGLRenderer=Intel(R)%20Iris(TM)%20Plus%20Graphics%20OpenGL%20Engine&mboxMCSDID=6ECA06804579991D-7F91DF32A933F3AF&vst.trk=metrics.solarwinds.com&vst.trks=smetrics.solarwinds.com&mboxMCGVID=88952210817239916853042859465165804800&mboxAAMB=RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y&mboxMCGLH=12",
+          "protocol": "https",
+          "host": [
+            "solarwinds",
+            "tt",
+            "omtrdc",
+            "net"
+          ],
+          "path": [
+            "m2",
+            "solarwinds",
+            "mbox",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "mbox",
+              "value": "target-global-mbox"
+            },
+            {
+              "key": "mboxSession",
+              "value": "35a50bdc62154b949019376dc429afd5"
+            },
+            {
+              "key": "mboxPC",
+              "value": "acb927b5501d44daa30ab59c5000196e.31_0"
+            },
+            {
+              "key": "mboxPage",
+              "value": "8cc048cb97e6499ca06b6c641faa0f34"
+            },
+            {
+              "key": "mboxRid",
+              "value": "2bb66b488689443b9ec1d8e0eb621170"
+            },
+            {
+              "key": "mboxVersion",
+              "value": "1.8.0"
+            },
+            {
+              "key": "mboxCount",
+              "value": "1"
+            },
+            {
+              "key": "mboxTime",
+              "value": "1599232682591"
+            },
+            {
+              "key": "mboxHost",
+              "value": "www.pingdom.com"
+            },
+            {
+              "key": "mboxURL",
+              "value": "https%3A%2F%2Fwww.pingdom.com%2Fproduct%2Ftransaction-monitoring%2F"
+            },
+            {
+              "key": "mboxReferrer",
+              "value": ""
+            },
+            {
+              "key": "browserHeight",
+              "value": "969"
+            },
+            {
+              "key": "browserWidth",
+              "value": "1920"
+            },
+            {
+              "key": "browserTimeOffset",
+              "value": "330"
+            },
+            {
+              "key": "screenHeight",
+              "value": "1080"
+            },
+            {
+              "key": "screenWidth",
+              "value": "1920"
+            },
+            {
+              "key": "colorDepth",
+              "value": "24"
+            },
+            {
+              "key": "devicePixelRatio",
+              "value": "1"
+            },
+            {
+              "key": "screenOrientation",
+              "value": "landscape"
+            },
+            {
+              "key": "webGLRenderer",
+              "value": "Intel(R)%20Iris(TM)%20Plus%20Graphics%20OpenGL%20Engine"
+            },
+            {
+              "key": "mboxMCSDID",
+              "value": "6ECA06804579991D-7F91DF32A933F3AF"
+            },
+            {
+              "key": "vst.trk",
+              "value": "metrics.solarwinds.com"
+            },
+            {
+              "key": "vst.trks",
+              "value": "smetrics.solarwinds.com"
+            },
+            {
+              "key": "mboxMCGVID",
+              "value": "88952210817239916853042859465165804800"
+            },
+            {
+              "key": "mboxAAMB",
+              "value": "RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y"
+            },
+            {
+              "key": "mboxMCGLH",
+              "value": "12"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
