@@ -12000,6 +12000,97 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/wiki/rest/webResources/1.0/resources",
+      "_postman_id": "48289945-0a3a-4227-9ed9-3e0d72f9f4a1",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json, text/javascript, */*; q=0.01"
+          },
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"r\":[\"com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-content-byline-resources-v5\"],\"c\":[],\"xc\":[\"_super\"],\"xr\":[\"com.atlassian.auiplugin:aui-reset\",\"com.atlassian.auiplugin:aui-page-typography\",\"com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles\",\"com.atlassian.confluence.plugins.confluence-ui-components:blank-placeholder-box\",\"com.atlassian.confluence.plugins.confluence-inline-tasks:sortable-table-styles\",\"com.atlassian.confluence.plugins.confluence-inline-tasks:tasks-report-resources\"]}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "https://postmanlabs.atlassian.net/wiki/rest/webResources/1.0/resources"
+      },
+      "response": []
+    },
+    {
+      "name": "https://postmanlabs.atlassian.net/cgraphql?q=PageTree,UserContextQuery",
+      "_postman_id": "a72b8126-c3e1-4166-a128-ef2abc7cd067",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "X-APOLLO-OPERATION-NAME",
+            "value": "PageTree,UserContextQuery"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"operationName\":\"PageTree\",\"variables\":{\"paginationLimit\":500,\"contentId\":\"1565590307\",\"spaceKey\":\"INT\"},\"query\":\"query PageTree($spaceKey: String!, $contentId: ID!, $paginationLimit: Int, $nearestAncestorCursor: String, $naPreviousSiblingsCursor: String, $naFollowingSiblingsCursor: String, $previousSiblingsCursor: String, $followingSiblingsCursor: String, $childrenCursor: String) {\\n  currentPage: page(id: $contentId, pageTree: $paginationLimit, enablePaging: true) {\\n    ...PageInfoFragment\\n    nearestAncestors(after: $nearestAncestorCursor) {\\n      count\\n      pageInfo {\\n        hasNextPage\\n        endCursor\\n        __typename\\n      }\\n      nodes {\\n        ...PageInfoFragment\\n        previousSiblings(after: $naPreviousSiblingsCursor) {\\n          ...PageListFragment\\n          __typename\\n        }\\n        followingSiblings(after: $naFollowingSiblingsCursor) {\\n          ...PageListFragment\\n          __typename\\n        }\\n        __typename\\n      }\\n      __typename\\n    }\\n    previousSiblings(after: $previousSiblingsCursor) {\\n      ...PageListFragment\\n      __typename\\n    }\\n    followingSiblings(after: $followingSiblingsCursor) {\\n      ...PageListFragment\\n      __typename\\n    }\\n    children(after: $childrenCursor) {\\n      ...PageListFragment\\n      __typename\\n    }\\n    __typename\\n  }\\n  rootLevelPages: pages(spaceKey: $spaceKey) {\\n    nodes {\\n      ...PageInfoFragment\\n      __typename\\n    }\\n    __typename\\n  }\\n  space(key: $spaceKey) {\\n    id\\n    homepage {\\n      id\\n      __typename\\n    }\\n    operations {\\n      operation\\n      targetType\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment PageInfoFragment on Page {\\n  id\\n  title\\n  hasChildren\\n  hasRestrictions\\n  hasInheritedRestrictions\\n  links {\\n    webui\\n    __typename\\n  }\\n  __typename\\n}\\n\\nfragment PageListFragment on PaginatedPageList {\\n  count\\n  nodes {\\n    ...PageInfoFragment\\n    __typename\\n  }\\n  pageInfo {\\n    hasNextPage\\n    endCursor\\n    __typename\\n  }\\n  __typename\\n}\\n\"},{\"operationName\":\"UserContextQuery\",\"variables\":{},\"query\":\"query UserContextQuery {\\n  user(current: true) {\\n    id\\n    displayName\\n    emails {\\n      value\\n      isPrimary\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\"}]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://postmanlabs.atlassian.net/cgraphql?q=PageTree,UserContextQuery",
+          "protocol": "https",
+          "host": [
+            "postmanlabs",
+            "atlassian",
+            "net"
+          ],
+          "path": [
+            "cgraphql"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "PageTree,UserContextQuery"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
