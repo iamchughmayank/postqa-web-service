@@ -3660,6 +3660,182 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true&u=1&authuser=1",
+      "_postman_id": "fa798594-e0c4-4a5e-9f68-286ada2d8a84",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH ca2bbefec59a9aae5ca221c88778d0e00d507054"
+          },
+          {
+            "key": "Content-Encoding",
+            "value": "gzip"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/binary"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\u001f\u008b\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u00c5\u00d01\u000e\u0080 \f\u0005\u00d0\u00bbt\u00ee@\u0091R9K\u00d3\u001b\u00187\u00ef\u00af&jL\u0014C\u0013\u008dK\u0007>|x\u00a8\u0012\u008e\u00d304\u000f\u00ad%f\u00c8\u0001U\u0081\u00b8\u0094H\u00a1\u000f)'\u0082\u00ed\u0094\u00dd\u0096\u0081V\u00eb\u00ceW\u00920\u00d9\u00a5a\u007f\u00f9\u0012\u00c1iy\u00dd\u00dc\u00ae1L]\u00f7\u0094\u001b~$\u008a\u001eQ\u00f4\u0089R\u00bbH8\u00bf$\u0092\u00ec\u0010I\u00f6\u0089\u00f8\u0017\u0091xD\u00e2\u0013=|\u00c0\"2<DQ\n1\u00d40w#\u00d8\f\u007f\u0000\u00a0\u00f8\u00d7\u0003\u0000\u0000",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true&u=1&authuser=1",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            },
+            {
+              "key": "u",
+              "value": "1"
+            },
+            {
+              "key": "authuser",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://13.client-channel.google.com/client-channel/channel/bind?authuser=1&ctype=hangouts&prop=gmail&appver=babel-chat.frontend_20200831.06_p0&gsessionid=JofUWkqJ7G-FcWn9EatwMemuq_1Ycf-piSBnTb9Dhgo&VER=8&RID=rpc&SID=17B5E1400932EFB4&CI=0&AID=99&TYPE=xmlh",
+      "_postman_id": "1e01b50d-b886-4669-881c-e6ec4a0fe1b9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "X-Origin",
+            "value": "https://hangouts.google.com"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH 1599208580_0b91ddc4ba67e99dc7fc929e473426020a33a44c"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://13.client-channel.google.com/client-channel/channel/bind?authuser=1&ctype=hangouts&prop=gmail&appver=babel-chat.frontend_20200831.06_p0&gsessionid=JofUWkqJ7G-FcWn9EatwMemuq_1Ycf-piSBnTb9Dhgo&VER=8&RID=rpc&SID=17B5E1400932EFB4&CI=0&AID=99&TYPE=xmlhttp&zx=v3akzi1rrz3y&t=1",
+          "protocol": "https",
+          "host": [
+            "13",
+            "client-channel",
+            "google",
+            "com"
+          ],
+          "path": [
+            "client-channel",
+            "channel",
+            "bind"
+          ],
+          "query": [
+            {
+              "key": "authuser",
+              "value": "1"
+            },
+            {
+              "key": "ctype",
+              "value": "hangouts"
+            },
+            {
+              "key": "prop",
+              "value": "gmail"
+            },
+            {
+              "key": "appver",
+              "value": "babel-chat.frontend_20200831.06_p0"
+            },
+            {
+              "key": "gsessionid",
+              "value": "JofUWkqJ7G-FcWn9EatwMemuq_1Ycf-piSBnTb9Dhgo"
+            },
+            {
+              "key": "VER",
+              "value": "8"
+            },
+            {
+              "key": "RID",
+              "value": "rpc"
+            },
+            {
+              "key": "SID",
+              "value": "17B5E1400932EFB4"
+            },
+            {
+              "key": "CI",
+              "value": "0"
+            },
+            {
+              "key": "AID",
+              "value": "99"
+            },
+            {
+              "key": "TYPE",
+              "value": "xmlhttp"
+            },
+            {
+              "key": "zx",
+              "value": "v3akzi1rrz3y"
+            },
+            {
+              "key": "t",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
