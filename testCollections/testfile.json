@@ -2012,6 +2012,413 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.kJ3_Mx5tByI.O/rt=j/d=0/exm=q_d,q_pc,qaaw,qaid,qald,qalo,qapid,qawd,qbd,qbg,qcon,qcwid,qdbg,qdgm,qdsh,qebr,qein,qhga,qhin,qhtt,qmd,qmutsd,qtd,sy10,sy11,sy12,sy13,sy14,sy15,sy16,sy17,sy18,sy19,sy1a,sy1b,sy1c,sy",
+      "_postman_id": "4d25b7de-8dc6-4e7c-bc6f-615eed714f0e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.kJ3_Mx5tByI.O/rt=j/d=0/exm=q_d,q_pc,qaaw,qaid,qald,qalo,qapid,qawd,qbd,qbg,qcon,qcwid,qdbg,qdgm,qdsh,qebr,qein,qhga,qhin,qhtt,qmd,qmutsd,qtd,sy10,sy11,sy12,sy13,sy14,sy15,sy16,sy17,sy18,sy19,sy1a,sy1b,sy1c,sy1d,sy1e,sy1f,sy1g,sy1h,sy1i,sy1j,sy1k,sy1l,sy1m,sy1o,sy1p,sy1q,sy1s,sy1t,syb,syc,syd,sye,syf,syg,syh,syi,syj,syk,syl,sym,syn,syo,syp,syq,syr,syt,syu,syv,syw,syx/ed=1/im=1/rs=AA2YrTsSogpQ6Vc87fTMIxTFcfQq-Aa8fw"
+      },
+      "response": []
+    },
+    {
+      "name": "https://docs.google.com/offline/taskiframe?ouid=u98371d2e499ee6de",
+      "_postman_id": "862b9278-a3a4-4e4e-bbf9-d396bac7a364",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "X-Chrome-Connected",
+            "value": "id=112175423944800645571,mode=0,enable_account_consistency=false,consistency_enabled_by_default=false"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/offline/taskiframe?ouid=u98371d2e499ee6de",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "offline",
+            "taskiframe"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://docs.google.com/offline/flags?ouid=u98371d2e499ee6de",
+      "_postman_id": "eecf1bd2-3049-4bf1-b656-89586ef94653",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/offline/flags?ouid=u98371d2e499ee6de",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "offline",
+            "flags"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://docs.google.com/offline/flags?ouid=u98371d2e499ee6de",
+      "_postman_id": "bb507f82-b14b-4364-ba98-27a9c485e535",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://docs.google.com/offline/flags?ouid=u98371d2e499ee6de",
+          "protocol": "https",
+          "host": [
+            "docs",
+            "google",
+            "com"
+          ],
+          "path": [
+            "offline",
+            "flags"
+          ],
+          "query": [
+            {
+              "key": "ouid",
+              "value": "u98371d2e499ee6de"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://clients6.google.com/drive/v2internal/about?openDrive=true&reason=301&syncType=0&errorRecovery=false&fields=kind%2Cuser%2CquotaBytesTotal%2CquotaBytesUsed%2CquotaBytesUsedAggregate%2CquotaBytesUsedInTrash%2CquotaBytesByService%2CquotaType%2CrootFol",
+      "_postman_id": "b25f1a0e-97fe-467b-80cf-29b683af624d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "SAPISIDHASH 1599210575_29e2d5b028b366e0e71bf1a3fdbd6c72c35c31b9_u"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://clients6.google.com/drive/v2internal/about?openDrive=true&reason=301&syncType=0&errorRecovery=false&fields=kind%2Cuser%2CquotaBytesTotal%2CquotaBytesUsed%2CquotaBytesUsedAggregate%2CquotaBytesUsedInTrash%2CquotaBytesByService%2CquotaType%2CrootFolderId%2CdomainSharingPolicy%2ClargestChangeId%2CimportFormats&retryCount=0&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ",
+          "protocol": "https",
+          "host": [
+            "clients6",
+            "google",
+            "com"
+          ],
+          "path": [
+            "drive",
+            "v2internal",
+            "about"
+          ],
+          "query": [
+            {
+              "key": "openDrive",
+              "value": "true"
+            },
+            {
+              "key": "reason",
+              "value": "301"
+            },
+            {
+              "key": "syncType",
+              "value": "0"
+            },
+            {
+              "key": "errorRecovery",
+              "value": "false"
+            },
+            {
+              "key": "fields",
+              "value": "kind%2Cuser%2CquotaBytesTotal%2CquotaBytesUsed%2CquotaBytesUsedAggregate%2CquotaBytesUsedInTrash%2CquotaBytesByService%2CquotaType%2CrootFolderId%2CdomainSharingPolicy%2ClargestChangeId%2CimportFormats"
+            },
+            {
+              "key": "retryCount",
+              "value": "0"
+            },
+            {
+              "key": "key",
+              "value": "AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://clients6.google.com/drive/v2internal/changes/getRemainingCount?openDrive=false&reason=301&syncType=0&errorRecovery=false&pageToken=171&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ",
+      "_postman_id": "0043987d-46ca-4004-870f-05784e99ad8b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "SAPISIDHASH 1599210575_29e2d5b028b366e0e71bf1a3fdbd6c72c35c31b9_u"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "https://clients6.google.com/drive/v2internal/changes/getRemainingCount?openDrive=false&reason=301&syncType=0&errorRecovery=false&pageToken=171&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ",
+          "protocol": "https",
+          "host": [
+            "clients6",
+            "google",
+            "com"
+          ],
+          "path": [
+            "drive",
+            "v2internal",
+            "changes",
+            "getRemainingCount"
+          ],
+          "query": [
+            {
+              "key": "openDrive",
+              "value": "false"
+            },
+            {
+              "key": "reason",
+              "value": "301"
+            },
+            {
+              "key": "syncType",
+              "value": "0"
+            },
+            {
+              "key": "errorRecovery",
+              "value": "false"
+            },
+            {
+              "key": "pageToken",
+              "value": "171"
+            },
+            {
+              "key": "key",
+              "value": "AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://play.google.com/log?format=json&hasfast=true&authuser=1",
+      "_postman_id": "d47ede00-83f8-4880-8487-ee2f3d701af7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "SAPISIDHASH 2f18382e11b99d5562f20e4273fd88020c0b88b1"
+          },
+          {
+            "key": "X-Goog-AuthUser",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\"]],407,[[\"1599210575941\",null,[],null,null,null,null,\"[23,1599210575941000,\\\"!YGOlY0JCb9x2bfZutzNYlS_Jfc7dWaYCAAAAPlIAAAAUCgCG69AZO5nkQJDNuXfMjUzD7XoCzXVxtZCuhmCQ2YA1C5AhaR_EUjyfoS2elHmiNq1xqltiJgFXcNOmrETzv-ihWvBNUcvQzBOngfMp8szN7bT1qpNfzjWTLZi05HVFLiNRyk73ik9U-rWU0kayEVTXH-rnte-yKmXxtvaeX5WuEU5d20vSWnqZAa84T8VbJmLL8OHgFVxm-2ddW_SFW2klMY6cHd0kGMb5J3ZnjdCvuiidP5858Du0J6Uh-db6cMjJzkq8yqGNeQfO-ZLlFAM4sankgn5QMgvz1wZaEXvLObPi8-7AY92zR_acCWJ5Ot1PEAofzHqn168JUVJmiOyqcV51KzSrcIwYOJ9S5cPic_KgPR2KO0D6RdEUbm2y5xhRAHdnAwby15wkg3qgX2k6hgkQnvW1TwWVk8e_j8FlFgy3gHIFWPYRWcbjtH2ahvSHvsY5wLc19cROdHgb4IkYaCMFQbm6EVm2Z8zX6EAKOzBw8GjXPLyba_ovU0xxxnL3sw4uoeS2xWouUAyC9OgfVZaokgekeQu2nRJv9gLhZdfRLUGc2AJGgisEZqhXLrzVb3V0jibHUPTeOMSDHk3BFprUxA61wfMPuAGpPnwFDlq6GyfPeEP7tOFHNUsy7KtjD3qpIdmD369NO7fQf4UBLwlA5p7cDDhTUWIwIkb5tY_JsMp3mSa4WuawoYmymI0Kw75AJcrjiTlOC3ug6sjEhiBgtqR2vLDqyCOM2636MYkzJ9QzUlzXcA\\\",1174168413,false]\",null,null,null,null,null,null,null,null,null,null,null,[],320,null,null,null,null,null,[]]],\"1599210575941\",[],null,null,null,null,null,null,null,null,0]",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://play.google.com/log?format=json&hasfast=true&authuser=1",
+          "protocol": "https",
+          "host": [
+            "play",
+            "google",
+            "com"
+          ],
+          "path": [
+            "log"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "hasfast",
+              "value": "true"
+            },
+            {
+              "key": "authuser",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://clients6.google.com/batch/drive/v2internal?%24ct=multipart%2Fmixed%3B%20boundary%3D%22%3D%3D%3D%3D%3Djiny2txfoz5h%3D%3D%3D%3D%3D%22&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ",
+      "_postman_id": "43ce30e2-f9b4-49bb-88cb-3f5425f644f0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          {
+            "key": "content-type",
+            "value": "text/plain; charset=UTF-8"
+          },
+          {
+            "key": "Accept",
+            "value": "*/*"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "--=====jiny2txfoz5h=====\r\ncontent-type: application/http\r\ncontent-transfer-encoding: binary\r\n\r\nGET /drive/v2internal/changes?openDrive=false&reason=302&syncType=0&errorRecovery=false&includeDeleted=true&includeSubscribed=true&maxResults=1000&startChangeId=172&fields=kind%2ClargestChangeId%2CnextPageToken%2Citems(deleted%2CfileId%2Cid%2Ckind%2Cfile(kind%2CmodifiedDate%2CpairedDocType%2ChasAppsScriptAddOn%2CmodifiedByMeDate%2ClastViewedByMeDate%2Cowners(kind%2CpermissionId%2CdisplayName%2Cpicture%2CemailAddress%2Cdomain%2Cid)%2ChasThumbnail%2CthumbnailVersion%2Ctitle%2Cid%2Cshared%2CsharedWithMeDate%2CuserPermission(role)%2CexplicitlyTrashed%2CmimeType%2Csubscribed%2CfileExtension%2CprimarySyncParentId%2Crecency%2CrecencyReason%2Cversion%2CactionItems%2CteamDriveId%2CtemplateData(description%2Ccategory%2CgalleryState)%2ChasAugmentedPermissions%2CprimaryDomainName%2CorganizationDisplayName%2CpassivelySubscribed%2Cparents(id)%2Ccapabilities(canShareChildFiles%2CcanShareChildFolders%2CcanDownload%2CcanEdit%2CcanShare%2CcanTrash%2CcanReadTeamDrive)%2Clabels(starred%2Ctrashed%2Crestricted))%2CteamDriveId%2CteamDrive(kind%2Cid%2Cname%2CcolorRgb%2CbackgroundImageLink%2Ccreator%2CpermissionsSummary%2Ctrusted%2CprimaryDomainName%2CorganizationDisplayName%2Crestrictions%2CbackgroundImageGridViewLink%2CbackgroundImageListViewLink%2Chidden%2Ccapabilities(canAddChildren%2CcanAddFolderFromAnotherDrive%2CcanChangeTeamDriveBackground%2CcanComment%2CcanCopy%2CcanDeleteTeamDrive%2CcanDownload%2CcanEdit%2CcanManageMembers%2CcanManageVisitors%2CcanRemoveChildren%2CcanRename%2CcanRenameTeamDrive%2CcanShareOutsideDomain%2CcanDeleteChildren%2CcanTrashChildren)))&appDataFilter=NO_APP_DATA&filters=DRIVE_DATASERVICE&supportsTeamDrives=true&includeCorpusRemovals=true&includeTeamDriveItems=true&retryCount=0&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ HTTP/1.1\r\nauthorization: SAPISIDHASH 1599210576_b5c0cef3b7a5f0afa6a9478de36d34f9219927bb_u\r\n\r\n--=====jiny2txfoz5h=====--\r\n",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "https://clients6.google.com/batch/drive/v2internal?%24ct=multipart%2Fmixed%3B%20boundary%3D%22%3D%3D%3D%3D%3Djiny2txfoz5h%3D%3D%3D%3D%3D%22&key=AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ",
+          "protocol": "https",
+          "host": [
+            "clients6",
+            "google",
+            "com"
+          ],
+          "path": [
+            "batch",
+            "drive",
+            "v2internal"
+          ],
+          "query": [
+            {
+              "key": "%24ct",
+              "value": "multipart%2Fmixed%3B%20boundary%3D%22%3D%3D%3D%3D%3Djiny2txfoz5h%3D%3D%3D%3D%3D%22"
+            },
+            {
+              "key": "key",
+              "value": "AIzaSyDrRZPb_oNAJLpNm167axWK5i85cuYG_HQ"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
